@@ -1,0 +1,3980 @@
+commit a13e699e478b7716b5667897ffe2e3ef382b68a3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Oct 15 00:45:30 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:45:30 up 18 min,  1 user,  load average: 0.20, 0.39, 0.29
+    c2eafe2c9811fe127012e237fee40a00e9311ad1
+
+:000000 100755 0000000... ec0bf22... A	"PA1\345\256\236\351\252\214\346\212\245\345\221\212 161290019.pdf"
+:000000 100755 0000000... e4ddd3a... A	Q1_1st.pdf
+:000000 100755 0000000... ff68100... A	Q2_1st.pdf
+:000000 100755 0000000... a909736... A	Q3_1st.pdf
+:100755 000000 8723fff... 0000000... D	nemu/nemu
+:000000 100644 0000000... 99ef480... A	nemu/src/cpu/.alu.c.swp
+:100644 000000 3fd9ecf... 0000000... D	nemu/src/cpu/.fpu.c.swp
+:100644 000000 fba52da... 0000000... D	nemu/src/cpu/alu.d
+:100644 000000 03ee5f8... 0000000... D	nemu/src/cpu/alu.o
+:100644 000000 b7dc632... 0000000... D	nemu/src/cpu/cpu.d
+:100644 000000 01fe226... 0000000... D	nemu/src/cpu/cpu.o
+:100644 000000 d33b6f6... 0000000... D	nemu/src/cpu/decode/debug.d
+:100644 000000 8d6a58a... 0000000... D	nemu/src/cpu/decode/debug.o
+:100644 000000 6eb18a3... 0000000... D	nemu/src/cpu/decode/modrm.d
+:100644 000000 e5a0478... 0000000... D	nemu/src/cpu/decode/modrm.o
+:100644 000000 772c045... 0000000... D	nemu/src/cpu/decode/opcode.d
+:100644 000000 b05881e... 0000000... D	nemu/src/cpu/decode/opcode.o
+:100644 000000 4b89732... 0000000... D	nemu/src/cpu/decode/operand.d
+:100644 000000 c2b12fd... 0000000... D	nemu/src/cpu/decode/operand.o
+:100644 000000 224fdd7... 0000000... D	nemu/src/cpu/decode/sib.d
+:100644 000000 a99ffca... 0000000... D	nemu/src/cpu/decode/sib.o
+:100644 000000 9e9cf30... 0000000... D	nemu/src/cpu/fpu.d
+:100644 000000 549a2a9... 0000000... D	nemu/src/cpu/fpu.o
+:100644 000000 a730a8e... 0000000... D	nemu/src/cpu/instr/bt.d
+:100644 000000 efb2b25... 0000000... D	nemu/src/cpu/instr/bt.o
+:100644 000000 78ac763... 0000000... D	nemu/src/cpu/instr/cbw.d
+:100644 000000 8bdfa92... 0000000... D	nemu/src/cpu/instr/cbw.o
+:100644 000000 605cf5f... 0000000... D	nemu/src/cpu/instr/cltd.d
+:100644 000000 0b2814f... 0000000... D	nemu/src/cpu/instr/cltd.o
+:100644 000000 d0d86b6... 0000000... D	nemu/src/cpu/instr/cmov.d
+:100644 000000 66cc257... 0000000... D	nemu/src/cpu/instr/cmov.o
+:100644 000000 513c88a... 0000000... D	nemu/src/cpu/instr/cmps.d
+:100644 000000 e55db0c... 0000000... D	nemu/src/cpu/instr/cmps.o
+:100644 000000 ad83cfe... 0000000... D	nemu/src/cpu/instr/data_size.d
+:100644 000000 3cdae2b... 0000000... D	nemu/src/cpu/instr/data_size.o
+:100644 000000 eb132be... 0000000... D	nemu/src/cpu/instr/div.d
+:100644 000000 e6f2987... 0000000... D	nemu/src/cpu/instr/div.o
+:100644 000000 684b632... 0000000... D	nemu/src/cpu/instr/flags.d
+:100644 000000 d707348... 0000000... D	nemu/src/cpu/instr/flags.o
+:100644 000000 b2a046b... 0000000... D	nemu/src/cpu/instr/group.d
+:100644 000000 dfda65d... 0000000... D	nemu/src/cpu/instr/group.o
+:100644 000000 85c80b6... 0000000... D	nemu/src/cpu/instr/hlt.d
+:100644 000000 947c903... 0000000... D	nemu/src/cpu/instr/hlt.o
+:100644 000000 d5ac48e... 0000000... D	nemu/src/cpu/instr/idiv.d
+:100644 000000 b4f808a... 0000000... D	nemu/src/cpu/instr/idiv.o
+:100644 000000 3f177bf... 0000000... D	nemu/src/cpu/instr/imul.d
+:100644 000000 105f52f... 0000000... D	nemu/src/cpu/instr/imul.o
+:100644 000000 b665536... 0000000... D	nemu/src/cpu/instr/inv.d
+:100644 000000 602f958... 0000000... D	nemu/src/cpu/instr/inv.o
+:100644 000000 398221f... 0000000... D	nemu/src/cpu/instr/jcc.d
+:100644 000000 f120267... 0000000... D	nemu/src/cpu/instr/jcc.o
+:100644 000000 b72070d... 0000000... D	nemu/src/cpu/instr/jmp.d
+:100644 000000 d73bb59... 0000000... D	nemu/src/cpu/instr/jmp.o
+:100644 000000 b71b9ff... 0000000... D	nemu/src/cpu/instr/mov.d
+:100644 000000 fce32d0... 0000000... D	nemu/src/cpu/instr/mov.o
+:100644 000000 9bffd3e... 0000000... D	nemu/src/cpu/instr/movs.d
+:100644 000000 8cf9b18... 0000000... D	nemu/src/cpu/instr/movs.o
+:100644 000000 429e698... 0000000... D	nemu/src/cpu/instr/mul.d
+:100644 000000 3988762... 0000000... D	nemu/src/cpu/instr/mul.o
+:100644 000000 0dd1cbf... 0000000... D	nemu/src/cpu/instr/nemu_trap.d
+:100644 000000 e0f6918... 0000000... D	nemu/src/cpu/instr/nemu_trap.o
+:100644 000000 dc2be45... 0000000... D	nemu/src/cpu/instr/nop.d
+:100644 000000 29a4e18... 0000000... D	nemu/src/cpu/instr/nop.o
+:100644 000000 ecb109c... 0000000... D	nemu/src/cpu/instr/opcode_2_byte.d
+:100644 000000 94d33e2... 0000000... D	nemu/src/cpu/instr/opcode_2_byte.o
+:100644 000000 2f94e6c... 0000000... D	nemu/src/cpu/instr/rep_repe.d
+:100644 000000 01aecd0... 0000000... D	nemu/src/cpu/instr/rep_repe.o
+:100644 000000 31041ed... 0000000... D	nemu/src/cpu/instr/sar.d
+:100644 000000 1a930eb... 0000000... D	nemu/src/cpu/instr/sar.o
+:100644 000000 8c2f2e5... 0000000... D	nemu/src/cpu/instr/setcc.d
+:100644 000000 275a2ec... 0000000... D	nemu/src/cpu/instr/setcc.o
+:100644 000000 c1b8e4f... 0000000... D	nemu/src/cpu/instr/shl.d
+:100644 000000 49ec62f... 0000000... D	nemu/src/cpu/instr/shl.o
+:100644 000000 186af85... 0000000... D	nemu/src/cpu/instr/shr.d
+:100644 000000 20323ac... 0000000... D	nemu/src/cpu/instr/shr.o
+:100644 000000 d642b55... 0000000... D	nemu/src/cpu/instr/stos.d
+:100644 000000 39744af... 0000000... D	nemu/src/cpu/instr/stos.o
+:100644 000000 640863b... 0000000... D	nemu/src/cpu/instr/x87.d
+:100644 000000 b978d99... 0000000... D	nemu/src/cpu/instr/x87.o
+:100644 000000 24d56f2... 0000000... D	nemu/src/cpu/intr.d
+:100644 000000 b80a391... 0000000... D	nemu/src/cpu/intr.o
+:100644 000000 022ea5d... 0000000... D	nemu/src/cpu/reg.d
+:100644 000000 d31c4c4... 0000000... D	nemu/src/cpu/reg.o
+:100644 000000 d9dde98... 0000000... D	nemu/src/cpu/test/alu_test.d
+:100644 000000 4f4e9cf... 0000000... D	nemu/src/cpu/test/alu_test.o
+:100644 000000 ff41ef8... 0000000... D	nemu/src/cpu/test/fpu_test.d
+:100644 000000 eb8e00b... 0000000... D	nemu/src/cpu/test/fpu_test.o
+:100644 000000 c6947a3... 0000000... D	nemu/src/device/dev/ide.d
+:100644 000000 986c3c4... 0000000... D	nemu/src/device/dev/ide.o
+:100644 000000 3f6f806... 0000000... D	nemu/src/device/dev/keyboard.d
+:100644 000000 7065c60... 0000000... D	nemu/src/device/dev/keyboard.o
+:100644 000000 ead9334... 0000000... D	nemu/src/device/dev/serial.d
+:100644 000000 566486d... 0000000... D	nemu/src/device/dev/serial.o
+:100644 000000 476d632... 0000000... D	nemu/src/device/dev/timer.d
+:100644 000000 63c3216... 0000000... D	nemu/src/device/dev/timer.o
+:100644 000000 250bd36... 0000000... D	nemu/src/device/dev/vga-palette.d
+:100644 000000 8fb183c... 0000000... D	nemu/src/device/dev/vga-palette.o
+:100644 000000 7a81b99... 0000000... D	nemu/src/device/dev/vga.d
+:100644 000000 e95bbd1... 0000000... D	nemu/src/device/dev/vga.o
+:100644 000000 3832483... 0000000... D	nemu/src/device/i8259_pic.d
+:100644 000000 a4b9749... 0000000... D	nemu/src/device/i8259_pic.o
+:100644 000000 64f46e5... 0000000... D	nemu/src/device/io/mm_io.d
+:100644 000000 3af136e... 0000000... D	nemu/src/device/io/mm_io.o
+:100644 000000 4c8f456... 0000000... D	nemu/src/device/io/port_io.d
+:100644 000000 f0095a5... 0000000... D	nemu/src/device/io/port_io.o
+:100644 000000 c712bc4... 0000000... D	nemu/src/device/sdl.d
+:100644 000000 99819c3... 0000000... D	nemu/src/device/sdl.o
+:100644 000000 1b6174a... 0000000... D	nemu/src/main.d
+:100644 000000 9e95ba0... 0000000... D	nemu/src/main.o
+:100644 000000 df298ba... 0000000... D	nemu/src/memory/memory.d
+:100644 000000 48041a9... 0000000... D	nemu/src/memory/memory.o
+:100644 000000 8821cb2... 0000000... D	nemu/src/memory/mmu/page.d
+:100644 000000 548c226... 0000000... D	nemu/src/memory/mmu/page.o
+:100644 000000 6f3a354... 0000000... D	nemu/src/memory/mmu/segment.d
+:100644 000000 64237cd... 0000000... D	nemu/src/memory/mmu/segment.o
+:100644 000000 7dfaf8b... 0000000... D	nemu/src/memory/mmu/tlb.d
+:100644 000000 ddbe998... 0000000... D	nemu/src/memory/mmu/tlb.o
+:100644 000000 cac6a6c... 0000000... D	nemu/src/monitor/breakpoint.d
+:100644 000000 39d7122... 0000000... D	nemu/src/monitor/breakpoint.o
+:100644 000000 1c22ae8... 0000000... D	nemu/src/monitor/elf.d
+:100644 000000 b95a0b2... 0000000... D	nemu/src/monitor/elf.o
+:100644 000000 02f3248... 0000000... D	nemu/src/monitor/expr.d
+:100644 000000 536a51f... 0000000... D	nemu/src/monitor/expr.o
+:100644 000000 6869c5f... 0000000... D	nemu/src/monitor/ui.d
+:100644 000000 eb143a8... 0000000... D	nemu/src/monitor/ui.o
+
+commit eae8da1c7720cce01bf5f5fe8ab54e15a1666ecf
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:55:16 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:55:16 up  8:45,  1 user,  load average: 0.47, 0.12, 0.05
+    1b6cd4f73814e54fbbd2443dc832fac8d7be0b79
+
+:100755 100755 d024b91... 8723fff... M	nemu/nemu
+:100644 100644 6a9e2a3... 3fd9ecf... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 a9494b3... ce9c1c0... M	nemu/src/cpu/fpu.c
+:100644 100644 a7c56cd... 549a2a9... M	nemu/src/cpu/fpu.o
+
+commit 6b1b810b0baec80eff7ee984b8812c6d4cddef21
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:54:55 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:54:55 up  8:45,  1 user,  load average: 0.18, 0.05, 0.03
+    d3197e7cf646ea7766ac9c12104f0a5f54de64de
+
+:100755 100755 887c051... d024b91... M	nemu/nemu
+:100644 100644 6bf3151... 6a9e2a3... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 64429e5... a9494b3... M	nemu/src/cpu/fpu.c
+:100644 100644 56f8ae4... a7c56cd... M	nemu/src/cpu/fpu.o
+
+commit f095f933d4f6d37c3be02bdc5d3adeb8b540a2b9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:54:33 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:54:33 up  8:45,  1 user,  load average: 0.00, 0.00, 0.01
+    6feaf23f67a895b848a6ed00f0c03f5e11ab5194
+
+:100755 100755 6d14904... 887c051... M	nemu/nemu
+:100644 100644 ca15aa9... 6bf3151... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 ea3a15c... 64429e5... M	nemu/src/cpu/fpu.c
+:100644 100644 0d0f563... 8693cc2... M	nemu/src/cpu/test/.fpu_test.c.swp
+:100644 100644 a031cd6... eb8e00b... M	nemu/src/cpu/test/fpu_test.o
+
+commit 9578054d367fb7778a288ac4726ff57d767aa28a
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:37:10 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:37:10 up  8:27,  1 user,  load average: 0.18, 0.15, 0.09
+    a02f7dd142df936114b5d1628794f42f5c568019
+
+:100755 100755 810b1a1... 6d14904... M	nemu/nemu
+:100644 100644 5d1e5a2... ca15aa9... M	nemu/src/cpu/.fpu.c.swp
+:100644 100644 6f58009... 56f8ae4... M	nemu/src/cpu/fpu.o
+:100644 100644 05023d6... 0d0f563... M	nemu/src/cpu/test/.fpu_test.c.swp
+:100755 100755 20761c8... 9f664b3... M	nemu/src/cpu/test/fpu_test.c
+
+commit 908cd51fac87bbcd0a1ebcbba4e0852006b43828
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:36:48 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:36:48 up  8:27,  1 user,  load average: 0.00, 0.12, 0.07
+    9085526fb6bc774e32a6ce2a6829170c828e60ad
+
+:100755 100755 9f18de3... 810b1a1... M	nemu/nemu
+:100644 100644 f2db4d3... 5d1e5a2... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 2206a58... ea3a15c... M	nemu/src/cpu/fpu.c
+:100644 100644 f193533... 6f58009... M	nemu/src/cpu/fpu.o
+
+commit 8cf53078b844db1ab064b82a3a7d2960e7929d14
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:30:53 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:30:53 up  8:21,  1 user,  load average: 0.05, 0.02, 0.00
+    d0cf01b538675717bda175f99ed434de8a47d334
+
+:100755 100755 86a2ac1... 9f18de3... M	nemu/nemu
+:100644 100644 8a10ad5... f2db4d3... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 60bc215... 2206a58... M	nemu/src/cpu/fpu.c
+:100644 100644 e0307b0... f193533... M	nemu/src/cpu/fpu.o
+
+commit 6d53b5f049eff2fa3059dabdd6b703eb45b48473
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:24:52 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:24:52 up  8:15,  1 user,  load average: 0.00, 0.00, 0.00
+    5a5ae54971f122fe610bbff63b37c74c1abbc246
+
+:100755 100755 d9314f5... 86a2ac1... M	nemu/nemu
+:100644 100644 a6706a0... 8a10ad5... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 e94a046... 60bc215... M	nemu/src/cpu/fpu.c
+:100644 100644 f056363... e0307b0... M	nemu/src/cpu/fpu.o
+
+commit f0dfdaf3152b06d704a1c9414ef6e3c6ec25141d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 09:17:39 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:17:39 up  8:08,  1 user,  load average: 0.04, 0.03, 0.00
+    a9d161e33bfb3f006998d77e3cfcbb83bbd19c86
+
+:100755 100755 b9129a3... d9314f5... M	nemu/nemu
+:100644 100644 da6b97f... a6706a0... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 061be84... e94a046... M	nemu/src/cpu/fpu.c
+:100644 100644 59cd7a4... f056363... M	nemu/src/cpu/fpu.o
+
+commit 2ebfa2ae52cf0cbc29d7995f9047e5c9b033555c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 05:15:13 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:15:13 up  4:05,  1 user,  load average: 0.17, 0.06, 0.01
+    d2e7f7e19189ea767bd49ce74bdf18168e1023
+
+:100644 100644 d6a5b31... da6b97f... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 c69a80c... 061be84... M	nemu/src/cpu/fpu.c
+
+commit fa049d2c0c6393dc9f76151b267b1bebdfebd3cc
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 05:13:55 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:13:55 up  4:04,  1 user,  load average: 0.02, 0.03, 0.00
+    509f1ddf606eb71a1d2f3fdb97298657cb71015
+
+:100644 100644 b96b5a5... d6a5b31... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 7775331... c69a80c... M	nemu/src/cpu/fpu.c
+
+commit 6a81e9d60b56512d4ee7ca70e9b63db563d31da6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 05:13:37 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:13:37 up  4:04,  1 user,  load average: 0.03, 0.03, 0.00
+    68835f73ada8a15470a9622fe3101a05196925f0
+
+:100644 100644 8a997e3... 728bbfa... M	nemu/include/cpu/.fpu.h.swp
+:100755 100755 c76f8c6... b9129a3... M	nemu/nemu
+:100644 100644 d95894a... b96b5a5... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 7911366... 7775331... M	nemu/src/cpu/fpu.c
+:100644 100644 2741448... 59cd7a4... M	nemu/src/cpu/fpu.o
+
+commit 382c51e82b9a7013456748f7cb9257bd7c49b799
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 04:16:09 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:16:09 up  3:06,  1 user,  load average: 0.00, 0.00, 0.00
+    a0e5c0e8ac422476cdd60dd7319f207bbe98f463
+
+:100644 100644 e5829b8... d95894a... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 af78e69... 7911366... M	nemu/src/cpu/fpu.c
+
+commit d96ee993ca20855cf7e368477fa2cbd7dce5e98f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 04:15:44 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:15:44 up  3:06,  1 user,  load average: 0.00, 0.00, 0.00
+    f2304b78299a16c69456ea255759636366cc208e
+
+:100755 100755 2adb039... c76f8c6... M	nemu/nemu
+:100644 100644 9ec1278... e5829b8... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 2e833cf... af78e69... M	nemu/src/cpu/fpu.c
+:100644 100644 3ae6ebc... a031cd6... M	nemu/src/cpu/test/fpu_test.o
+
+commit c8c452b89d29ac60d698343e8a9e00368662216f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 04:05:04 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:05:04 up  2:55,  1 user,  load average: 0.00, 0.00, 0.00
+    413fd64fb0fff402faba416e5548a1d25cbd835e
+
+:100644 100644 66bed0f... 05023d6... M	nemu/src/cpu/test/.fpu_test.c.swp
+:100755 100755 cf30bb2... 20761c8... M	nemu/src/cpu/test/fpu_test.c
+
+commit 87381c1c14bd25922baa68009175f15c9d945883
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 04:01:39 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:01:39 up  2:52,  1 user,  load average: 0.00, 0.00, 0.00
+    5549a3295a2712be4a337b9b8d819c7a878f684f
+
+:100755 100755 8561f3b... 2adb039... M	nemu/nemu
+:100644 100644 0c939a0... 2741448... M	nemu/src/cpu/fpu.o
+:100644 100644 60e1b5b... 66bed0f... M	nemu/src/cpu/test/.fpu_test.c.swp
+:100755 100755 50fc223... cf30bb2... M	nemu/src/cpu/test/fpu_test.c
+:100644 100644 3ebb268... 3ae6ebc... M	nemu/src/cpu/test/fpu_test.o
+
+commit 6284bed1659f927934edafd7727309000e3aa090
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 20 03:58:54 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:58:54 up  2:49,  1 user,  load average: 0.00, 0.00, 0.00
+    f81e5743874cca463cf9c03b7ac5274ce0022101
+
+:100755 100755 068fde3... 8561f3b... M	nemu/nemu
+:100644 100644 3ba612f... 9ec1278... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 7eb5c52... 2e833cf... M	nemu/src/cpu/fpu.c
+:100644 100644 2741448... 0c939a0... M	nemu/src/cpu/fpu.o
+:100644 100644 c68d321... 60e1b5b... M	nemu/src/cpu/test/.fpu_test.c.swp
+:100755 100755 7ab27b5... 50fc223... M	nemu/src/cpu/test/fpu_test.c
+
+commit 441d5123b87672f401b023cd7a26035bb43b5433
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 14:08:34 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     14:08:34 up  1:58,  1 user,  load average: 0.14, 0.05, 0.04
+    6704abbd9bbdf630aa2ae644a0789d0cb708cc84
+
+:100755 100755 ecf2c60... 068fde3... M	nemu/nemu
+:100644 100644 985c485... 3ba612f... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 2e833cf... 7eb5c52... M	nemu/src/cpu/fpu.c
+:100644 100644 f35f5e2... 2741448... M	nemu/src/cpu/fpu.o
+
+commit 64e5c238015810b627bd122876b86ea34ff0fea7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 14:07:47 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     14:07:47 up  1:58,  1 user,  load average: 0.00, 0.01, 0.03
+    d4e587da3c019176cd870e0f83f3275ae73bd1fc
+
+:100755 100755 e8ce4ab... ecf2c60... M	nemu/nemu
+:100644 100644 ee21eec... 985c485... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 49746fc... 2e833cf... M	nemu/src/cpu/fpu.c
+:100644 100644 40d00a5... f35f5e2... M	nemu/src/cpu/fpu.o
+
+commit bdb302d58b8283b504d92092f24967b371d20820
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:54:40 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:54:40 up  1:45,  1 user,  load average: 0.05, 0.13, 0.08
+    8c49dafef7da848f22515547a6979bd6fc16b0b1
+
+:100755 100755 3a04974... e8ce4ab... M	nemu/nemu
+:100644 100644 e896819... ee21eec... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 73bee07... 49746fc... M	nemu/src/cpu/fpu.c
+:100644 100644 d7396bb... c68d321... M	nemu/src/cpu/test/.fpu_test.c.swp
+:100644 100644 f738797... 3ebb268... M	nemu/src/cpu/test/fpu_test.o
+
+commit f0f01160cfcce6cb91ba4e945743e7a493c72355
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:49:58 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:49:58 up  1:40,  1 user,  load average: 0.50, 0.26, 0.10
+    37a2570fd23ad0c9bfd9d2cf7a5dc830f9bcc14a
+
+:100755 100755 628feca... 3a04974... M	nemu/nemu
+:100644 100644 33afd8d... 40d00a5... M	nemu/src/cpu/fpu.o
+:100644 100644 c22f1cd... d7396bb... M	nemu/src/cpu/test/.fpu_test.c.swp
+:100755 100755 33d54bd... 7ab27b5... M	nemu/src/cpu/test/fpu_test.c
+
+commit 0170f71dd710310c029f93f4d770e38eb36f7d2f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:49:00 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:49:00 up  1:39,  1 user,  load average: 0.41, 0.18, 0.06
+    de7963c8503ba476dd94938e85010c44a5c1b2c7
+
+:100644 100644 e396542... e896819... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 7fdd935... 73bee07... M	nemu/src/cpu/fpu.c
+
+commit a0e1be5c02499df726318bab0c5e2225feef874b
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:48:44 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:48:44 up  1:39,  1 user,  load average: 0.44, 0.17, 0.05
+    6d8b7e66f52855a9f5c4a96996b9b880c97bd354
+
+:000000 100644 0000000... 8a997e3... A	nemu/include/cpu/.fpu.h.swp
+:100755 100755 b63092a... 628feca... M	nemu/nemu
+:100644 100644 0ad66fe... e396542... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 1cb934a... 7fdd935... M	nemu/src/cpu/fpu.c
+:100644 100644 aa5ceb3... 33afd8d... M	nemu/src/cpu/fpu.o
+
+commit c51eadf8e3de3834bf3e48500248f546dbe5e3b0
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:23:11 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:23:11 up  1:13,  1 user,  load average: 0.06, 0.04, 0.00
+    fcbc415912a4262b80f590e5fb5cb13759a3ad35
+
+:100755 100755 030c0ee... b63092a... M	nemu/nemu
+:100644 100644 addc363... 0ad66fe... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 cf11db8... 1cb934a... M	nemu/src/cpu/fpu.c
+:100644 100644 d829bd2... aa5ceb3... M	nemu/src/cpu/fpu.o
+
+commit b2b93cd6d8000e674a0f970754c6cfe97d5254e7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:20:37 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:20:37 up  1:11,  1 user,  load average: 0.11, 0.05, 0.01
+    59850a964f554b93a50e306ab8db00e6edcec5d
+
+:100755 100755 cfb1273... 030c0ee... M	nemu/nemu
+:100644 100644 2686496... addc363... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 fe3c341... cf11db8... M	nemu/src/cpu/fpu.c
+:100644 100644 53ccfbc... d829bd2... M	nemu/src/cpu/fpu.o
+
+commit 3e466c821340e6ed3a14de460daa99d3c04d28cb
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:19:42 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:19:42 up  1:10,  1 user,  load average: 0.01, 0.03, 0.00
+    2bc38b2aecfde0527c6ab15610f9e12cb79cc
+
+:100644 100644 f6a0979... 2686496... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 5f394a2... fe3c341... M	nemu/src/cpu/fpu.c
+
+commit 896b768835a35d0ab1ed673ea2b6904ab36224f7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:19:32 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:19:32 up  1:09,  1 user,  load average: 0.01, 0.03, 0.00
+    4735ff45b0c5009f65dea7d719a067719831cff3
+
+:100644 100644 2b09ac4... f6a0979... M	nemu/src/cpu/.fpu.c.swp
+:100755 100755 98e8a71... 5f394a2... M	nemu/src/cpu/fpu.c
+
+commit 3ef0dfa069cd6bcd684398f4a9711c94914c6a86
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Tue Sep 19 13:13:40 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:13:40 up  1:04,  1 user,  load average: 0.04, 0.01, 0.00
+    efa8f051ab7d423631ec97211b1e72f8d09b80e3
+
+:100644 000000 9ae53cc... 0000000... D	nemu/include/cpu/.fpu.h.swp
+:100755 100755 7aeac49... cfb1273... M	nemu/nemu
+:100644 100644 b69d37b... 2b09ac4... M	nemu/src/cpu/.fpu.c.swp
+:100644 100644 3ac9e2b... 53ccfbc... M	nemu/src/cpu/fpu.o
+:100644 100644 b1bde72... c22f1cd... M	nemu/src/cpu/test/.fpu_test.c.swp
+
+commit e498a79c26189bdf55639f706be12d91d2eb11fc
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Mon Sep 18 09:18:18 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     09:18:18 up  6:09,  1 user,  load average: 0.00, 0.00, 0.00
+    9b860372d683c1726bff6a056342052861e9ee7
+
+:100644 100644 8c4a3b7... 9ae53cc... R062	nemu/src/cpu/test/.alu_test.c.swp	nemu/include/cpu/.fpu.h.swp
+:100755 100755 603436c... 7aeac49... M	nemu/nemu
+:100644 000000 f394b0e... 0000000... D	nemu/src/cpu/.alu.c.swp
+:000000 100644 0000000... b69d37b... A	nemu/src/cpu/.fpu.c.swp
+:100644 100644 55e06d1... 03ee5f8... M	nemu/src/cpu/alu.o
+:100755 100755 2bef19f... 98e8a71... M	nemu/src/cpu/fpu.c
+:000000 100644 0000000... b1bde72... A	nemu/src/cpu/test/.fpu_test.c.swp
+
+commit eadbc5d10ce03da6bdb619a54e46bf6e0d0fa01d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Mon Sep 18 03:30:33 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:30:33 up 22 min,  1 user,  load average: 0.16, 0.15, 0.31
+    fdffbc56c205867f334c7693cf8e9b192557b561
+
+:100644 100644 a5e0404... f394b0e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 effd688... 91fb24a... M	nemu/src/cpu/alu.c
+
+commit 3f1ef99c811e881289a4fb18bd67090a6672787c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Mon Sep 18 03:29:58 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:29:58 up 21 min,  1 user,  load average: 0.06, 0.13, 0.31
+    d908fbebd5ae23d981e8b25d264e86dea33f31ad
+
+:100755 100755 f18f5df... 603436c... M	nemu/nemu
+:100644 100644 3ec2662... a5e0404... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 46b9168... 55e06d1... M	nemu/src/cpu/alu.o
+
+commit 40087c20658da91970f11fb9826199d8ecc9523e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Mon Sep 18 03:29:51 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:29:51 up 21 min,  1 user,  load average: 0.07, 0.14, 0.32
+    307a59757bcd677bf28809b9988d3a19d93a74bb
+
+:100755 100755 144e6b5... f18f5df... M	nemu/nemu
+:100644 100644 933cc1c... 3ec2662... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 86cb772... effd688... M	nemu/src/cpu/alu.c
+:100644 100644 2e18e75... 46b9168... M	nemu/src/cpu/alu.o
+
+commit 8b7d0af544e31160e09991f18f38f7dba322dc01
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Mon Sep 18 03:28:15 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:28:15 up 19 min,  1 user,  load average: 0.14, 0.17, 0.35
+    cf754f5fad19fb0716e24b9a1b231caa443d66a7
+
+:100644 100644 0c592d5... 933cc1c... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 6562f46... 86cb772... M	nemu/src/cpu/alu.c
+:100644 100644 8c3ebb7... 8c4a3b7... M	nemu/src/cpu/test/.alu_test.c.swp
+
+commit 7be1ca662475f2a3c2e291d3f650d6dd251f2e11
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Mon Sep 18 03:15:35 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:15:34 up 7 min,  1 user,  load average: 2.07, 1.47, 0.74
+    be8af13e8db2781c5743e1f139d81e69c6cd951
+
+:100755 100755 639b4f7... 144e6b5... M	nemu/nemu
+:100644 100644 e2fcbcf... 0c592d5... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 ac39792... 2e18e75... M	nemu/src/cpu/alu.o
+
+commit 946c4d1003dec3704f561f6be19c23a5e1887173
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 04:58:05 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:58:05 up  5:44,  1 user,  load average: 0.16, 0.10, 0.03
+    5b2e5e47bcc4c6f1ac32119d7e7acb6aaa372f51
+
+:100755 100755 08947ee... 639b4f7... M	nemu/nemu
+:100644 100644 31a2ac1... e2fcbcf... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 8b836a6... 6562f46... M	nemu/src/cpu/alu.c
+:100644 100644 51195ff... ac39792... M	nemu/src/cpu/alu.o
+
+commit 3a3bf096698e3f80456e7a9c483671d3adfa7909
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 04:49:12 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:49:11 up  5:35,  1 user,  load average: 0.04, 0.02, 0.00
+    322e56175e85f523bf49b71ea5fda00425dcf0da
+
+:100755 100755 0de66f3... 08947ee... M	nemu/nemu
+:100644 100644 49c158f... 31a2ac1... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 daec325... 8b836a6... M	nemu/src/cpu/alu.c
+:100644 100644 d37dd7a... 51195ff... M	nemu/src/cpu/alu.o
+
+commit 7a58c0be2cabffabe8c7927a7cb9b30fcd3622a9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 04:36:48 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:36:48 up  5:22,  1 user,  load average: 0.14, 0.07, 0.01
+    17d85ed5539affb2990e658bca78826e8937c804
+
+:100644 100644 7f24f0d... 49c158f... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 d2efd38... daec325... M	nemu/src/cpu/alu.c
+
+commit 031f19d77138db415777675dddf6ff7098b2c824
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 04:36:12 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:36:12 up  5:22,  1 user,  load average: 0.26, 0.08, 0.02
+    233a8de986a6fcc4a6b3afa10b662c9dde71
+
+:100755 100755 7a6011d... 0de66f3... M	nemu/nemu
+:100644 100644 59af55c... 7f24f0d... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 62d2655... d2efd38... M	nemu/src/cpu/alu.c
+:100644 100644 f7db007... d37dd7a... M	nemu/src/cpu/alu.o
+
+commit 47bd7915913997351929a1cfcbb1d0a554f2fc99
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 04:00:18 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:00:18 up  4:46,  1 user,  load average: 0.00, 0.02, 0.05
+    41b0663f8bd8aa4aab1e4916d934b6fc63814d3f
+
+:100755 100755 27c06e2... 7a6011d... M	nemu/nemu
+:100644 100644 4d3ad12... 59af55c... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 7d4f78d... 62d2655... M	nemu/src/cpu/alu.c
+:100644 100644 f4479df... f7db007... M	nemu/src/cpu/alu.o
+
+commit 61c00dcef375aa95d359838ae5fa95a30065e438
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:55:03 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:55:03 up  4:41,  1 user,  load average: 0.03, 0.08, 0.07
+    b2c5d7662cf0779df59c0a15cae6b221e1d790bd
+
+:100755 100755 95754cc... 27c06e2... M	nemu/nemu
+:100644 100644 d62fcef... 4d3ad12... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c450f96... 7d4f78d... M	nemu/src/cpu/alu.c
+:100644 100644 bd2f538... f4479df... M	nemu/src/cpu/alu.o
+
+commit 5d24019c8d63edf7c066657e8df0ec861964a9cf
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:53:36 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:53:36 up  4:39,  1 user,  load average: 0.14, 0.11, 0.08
+    c2ddc0c99caf0e8e5f421b44736c5cadcd5c3b3
+
+:100755 100755 b24ca66... 95754cc... M	nemu/nemu
+:100644 100644 7f40c55... d62fcef... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ee825b0... c450f96... M	nemu/src/cpu/alu.c
+:100644 100644 603f94e... 4f4e9cf... M	nemu/src/cpu/test/alu_test.o
+
+commit 54212cf1eff07a1ae4fc66d859e86ed355b80060
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:51:30 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:51:30 up  4:37,  1 user,  load average: 0.09, 0.11, 0.07
+    ea87c5bf3691edd110918c73671fcb90391ecd8
+
+:100755 100755 f1fcf3a... b24ca66... M	nemu/nemu
+:100644 100644 a23e4bc... 7f40c55... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 6498620... bd2f538... M	nemu/src/cpu/alu.o
+:100644 100644 a0a6618... 8c3ebb7... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 19a29cb... 1d4abc3... M	nemu/src/cpu/test/alu_test.c
+
+commit 2d11254e577fb6f2f569bf004cfa66fbbd6bde9d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:49:41 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:49:41 up  4:35,  1 user,  load average: 0.50, 0.14, 0.08
+    fcde8685b7d54ab5c640b595ee1b708a1c7c3841
+
+:100755 100755 5335805... f1fcf3a... M	nemu/nemu
+:100644 100644 6e03b5e... a23e4bc... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 f4938e4... ee825b0... M	nemu/src/cpu/alu.c
+:100644 100644 b021695... 6498620... M	nemu/src/cpu/alu.o
+
+commit b4a9c049e5ae65e77b76c45a120dfc0b47a88cef
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:49:15 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:49:15 up  4:35,  1 user,  load average: 0.01, 0.03, 0.04
+    567a9d719c74f5361c54a40c373bc1edf296deb1
+
+:100755 100755 8c783e3... 5335805... M	nemu/nemu
+:100644 100644 5781d73... 6e03b5e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 e02afc7... f4938e4... M	nemu/src/cpu/alu.c
+:100644 100644 ba9604b... b021695... M	nemu/src/cpu/alu.o
+:100644 100644 9afd253... a0a6618... M	nemu/src/cpu/test/.alu_test.c.swp
+
+commit ddb63b94e388c4f3a0d330420818802503c38232
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:34:19 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:34:19 up  4:20,  1 user,  load average: 0.04, 0.04, 0.00
+    939367366379c76ee67ae0d8f3077e498f4d9427
+
+:100755 100755 9baa48c... 8c783e3... M	nemu/nemu
+:100644 100644 5f86566... 5781d73... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 5c75cc0... e02afc7... M	nemu/src/cpu/alu.c
+:100644 100644 a83802f... ba9604b... M	nemu/src/cpu/alu.o
+
+commit 50a74ffa07d4731a4dc378b254ae8afe3062ba64
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:33:20 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:33:20 up  4:19,  1 user,  load average: 0.03, 0.03, 0.00
+    5bf44bcd9bb74083633018272760c4dc2e9fbcfc
+
+:100755 100755 2c93534... 9baa48c... M	nemu/nemu
+:100644 100644 ec59114... 5f86566... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 dfc8d18... 5c75cc0... M	nemu/src/cpu/alu.c
+:100644 100644 1254463... a83802f... M	nemu/src/cpu/alu.o
+
+commit 4072ee16f75ddda52899031cdf2e38c94b5aec56
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:31:27 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:31:27 up  4:17,  1 user,  load average: 0.10, 0.04, 0.01
+    35691d83275f85ccb3e2553fb4558bdb9895fc4
+
+:100644 100644 66ada62... ec59114... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 4750d65... dfc8d18... M	nemu/src/cpu/alu.c
+
+commit 01f0e15458db497eea746f24e24f1697b8243ba6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:31:12 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:31:12 up  4:17,  1 user,  load average: 0.12, 0.04, 0.01
+    2337c93e5faa068743ffc3cccc1f305b11514182
+
+:100755 100755 174cbad... 2c93534... M	nemu/nemu
+:100644 100644 b6e5e73... 66ada62... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 2bc7301... 4750d65... M	nemu/src/cpu/alu.c
+:100644 100644 2109cb0... 9afd253... M	nemu/src/cpu/test/.alu_test.c.swp
+:100644 100644 9366d1d... 603f94e... M	nemu/src/cpu/test/alu_test.o
+
+commit 3cbb36404e9c8cc98016454a96a3bf710f6e08af
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:24:48 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:24:48 up  4:10,  1 user,  load average: 0.06, 0.05, 0.00
+    dc8c0c144e29f4e6de4ebfdea24333bbe1915430
+
+:100755 100755 4e525f9... 174cbad... M	nemu/nemu
+:100644 100644 dd72aeb... b6e5e73... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 f7049a0... 1254463... M	nemu/src/cpu/alu.o
+:100644 100644 f459335... 2109cb0... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 6b26fed... 19a29cb... M	nemu/src/cpu/test/alu_test.c
+
+commit 8f43d1252e44f7da8f5fd831a2dbcf2f55969b7d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:24:15 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:24:15 up  4:10,  1 user,  load average: 0.01, 0.04, 0.00
+    42b6ae6b1d078a363f8da387eb8f4fa2b279ce03
+
+:100755 100755 ed2b986... 4e525f9... M	nemu/nemu
+:100644 100644 3eb070b... dd72aeb... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ab84f14... 2bc7301... M	nemu/src/cpu/alu.c
+:100644 100644 2d9a3cc... f7049a0... M	nemu/src/cpu/alu.o
+
+commit b49e64ed385fcd94ed260c81cbdced6d6bcbb3fd
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:19:39 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:19:39 up  4:05,  1 user,  load average: 0.06, 0.05, 0.01
+    1f187c9e3a5c3006f930aa445c8504f15e3486a9
+
+:100755 100755 6eed847... ed2b986... M	nemu/nemu
+:100644 100644 7590791... 3eb070b... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 3e97277... ab84f14... M	nemu/src/cpu/alu.c
+:100644 100644 2762635... f459335... M	nemu/src/cpu/test/.alu_test.c.swp
+:100644 100644 bc313f3... 9366d1d... M	nemu/src/cpu/test/alu_test.o
+
+commit 1f67452b2452accd19be546c50a0db229748dbaf
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:18:22 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:18:22 up  4:04,  1 user,  load average: 0.02, 0.04, 0.00
+    706d00736568a6c155467e85f4e6aece2146cde0
+
+:100755 100755 b063cec... 6eed847... M	nemu/nemu
+:100644 100644 4d360cd... 7590791... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 d2a3823... 2d9a3cc... M	nemu/src/cpu/alu.o
+:100644 100644 e4a9928... 2762635... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 7e9ebe7... 6b26fed... M	nemu/src/cpu/test/alu_test.c
+
+commit edd28c21b9250bf85d06dc92d72f5e6306a4cc55
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:16:23 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:16:23 up  4:02,  1 user,  load average: 0.01, 0.03, 0.00
+    f7f7a1786c733b8ae8e55236245150f665bd5c30
+
+:100755 100755 5365e83... b063cec... M	nemu/nemu
+:100644 100644 74b0e2d... 4d360cd... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 51536a7... 3e97277... M	nemu/src/cpu/alu.c
+:100644 100644 bbd09d8... d2a3823... M	nemu/src/cpu/alu.o
+
+commit 25e16ee7195f2ffcb44b871fb72d2296ccb488f8
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:14:03 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:14:03 up  4:00,  1 user,  load average: 0.00, 0.03, 0.01
+    f3d3551a2aedc1026fe7e79067f4fc0c8cf13243
+
+:100755 100755 4c844ca... 5365e83... M	nemu/nemu
+:100644 100644 d559a3b... 74b0e2d... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 5bce090... 51536a7... M	nemu/src/cpu/alu.c
+:100644 100644 9fbc23d... e4a9928... M	nemu/src/cpu/test/.alu_test.c.swp
+:100644 100644 66aedf3... bc313f3... M	nemu/src/cpu/test/alu_test.o
+
+commit d697be1df8e89cf391f47c0c078ce4bbc9f2b501
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:09:39 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:09:39 up  3:55,  1 user,  load average: 0.04, 0.09, 0.03
+    271e568f66a79b2d14233930c624142e81c6bbe9
+
+:100755 100755 21b837a... 4c844ca... M	nemu/nemu
+:100644 100644 91ed6e3... 9fbc23d... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 77a724d... 7e9ebe7... M	nemu/src/cpu/test/alu_test.c
+:100644 100644 7ccc389... 66aedf3... M	nemu/src/cpu/test/alu_test.o
+
+commit 583085100bddc5096f44c497e27146748d2d95bd
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 03:07:06 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:07:06 up  3:53,  1 user,  load average: 0.22, 0.11, 0.03
+    9a127afcdb71effeb33074a130ef57d2f68fc43d
+
+:100644 100644 bf84595... 91ed6e3... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 dbd7525... 77a724d... M	nemu/src/cpu/test/alu_test.c
+
+commit 01804f8bf0a040ec7ea46d22aaeb3705366bfe86
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 02:59:54 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:59:54 up  3:45,  1 user,  load average: 0.03, 0.03, 0.00
+    464dae233a0f9a031ad458982b8dec3430a62ff3
+
+:100644 100644 d696aa5... bf84595... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 9a687c6... dbd7525... M	nemu/src/cpu/test/alu_test.c
+
+commit baf3ddf9ea20faaaa98fd7563468a6115225f5ec
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 02:58:38 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:58:38 up  3:44,  1 user,  load average: 0.12, 0.05, 0.01
+    b8b74104f0e6a9e2baf40cb0a8a515e2438c15ae
+
+:100644 100644 5c6730f... d696aa5... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 5719879... 9a687c6... M	nemu/src/cpu/test/alu_test.c
+
+commit 89746bcbeeeae382164bd71a5b3246e0b4dfa93d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 02:56:12 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:56:12 up  3:42,  1 user,  load average: 0.02, 0.03, 0.00
+    320d331d793357c8c07ebb1fd232fe7e6b5b1c1b
+
+:100644 100644 c77c52d... 5c6730f... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 a481e2f... 5719879... M	nemu/src/cpu/test/alu_test.c
+
+commit 7eca455006e62923bd911d3a9ba80152e19936cf
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 02:52:16 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:52:16 up  3:38,  1 user,  load average: 0.00, 0.00, 0.00
+    cf89e425c2ae2d0d2e813fc35a8ba16bffd898e5
+
+:100755 100755 a41b203... 21b837a... M	nemu/nemu
+:100644 100644 a84f149... bbd09d8... M	nemu/src/cpu/alu.o
+:100644 100644 6915e2a... c77c52d... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 d149157... a481e2f... M	nemu/src/cpu/test/alu_test.c
+
+commit ccd6b76049785fab08982982822a34aabfafd413
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 02:47:41 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:47:41 up  3:33,  1 user,  load average: 0.00, 0.00, 0.00
+    4c0cb78347dbc034446c857a18033e7afe91ea5b
+
+:100755 100755 21f2455... a41b203... M	nemu/nemu
+:100644 100644 9523ab7... d559a3b... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c7032fa... 5bce090... M	nemu/src/cpu/alu.c
+:100644 100644 21a1760... a84f149... M	nemu/src/cpu/alu.o
+
+commit ec63aeea34dc17686c1247f4c6d6205ddd26e05c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:18:58 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:18:58 up  1:04,  1 user,  load average: 0.07, 0.08, 0.06
+    33049ab08db61c128842427ee486847aadc65ed5
+
+:100755 100755 49b23c1... 21f2455... M	nemu/nemu
+:100644 100644 bee9dc8... 9523ab7... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 badabc7... c7032fa... M	nemu/src/cpu/alu.c
+:100644 100644 d948391... 21a1760... M	nemu/src/cpu/alu.o
+
+commit eefef21649604e822dd47bbe27d9def5e2aad079
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:17:12 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:17:12 up  1:03,  1 user,  load average: 0.25, 0.09, 0.06
+    d1b6c0b46d0d2cd18543433d19106ffc6785b7a3
+
+:100755 100755 1d3276f... 49b23c1... M	nemu/nemu
+:100644 100644 5526c5b... bee9dc8... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 9f133ed... badabc7... M	nemu/src/cpu/alu.c
+:100644 100644 c658408... d948391... M	nemu/src/cpu/alu.o
+
+commit e6ee916ffb6d0c258647497a817b3b7ed5069d30
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:16:47 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:16:47 up  1:02,  1 user,  load average: 0.08, 0.04, 0.04
+    567d381668ac40a349f01971b6aef35f53efab00
+
+:100644 100644 411c18d... 5526c5b... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 59d4ee0... 9f133ed... M	nemu/src/cpu/alu.c
+
+commit 8fa3fca1f96904e16010db950c61727492da0d2d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:16:22 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:16:22 up  1:02,  1 user,  load average: 0.00, 0.03, 0.04
+    d1d87e68a815170362db61aab36fd1588864f80
+
+:100755 100755 77b2309... 1d3276f... M	nemu/nemu
+:100644 100644 f4eb4d8... 411c18d... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 93f6080... 59d4ee0... M	nemu/src/cpu/alu.c
+:100644 100644 6b1de23... c658408... M	nemu/src/cpu/alu.o
+
+commit b865c5d455795c090953fc890ccdf2bd67046456
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:13:18 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:13:18 up 59 min,  1 user,  load average: 0.08, 0.04, 0.05
+    651ca748f52caed53824753c217884ba14decd
+
+:100755 100755 f096284... 77b2309... M	nemu/nemu
+:100644 100644 68c70cd... f4eb4d8... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 7a6e3cd... 93f6080... M	nemu/src/cpu/alu.c
+:100644 100644 86402e7... 6b1de23... M	nemu/src/cpu/alu.o
+
+commit e3934371eea1e9f40fb7513e33b7144b3a049198
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:06:01 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:06:01 up 52 min,  1 user,  load average: 0.00, 0.04, 0.06
+    d190267424c9ee5f65138980fb3eadab3e7bfa7d
+
+:100755 100755 790b3c7... f096284... M	nemu/nemu
+:100644 100644 9e70a4b... 68c70cd... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 b217f04... 7a6e3cd... M	nemu/src/cpu/alu.c
+:100644 100644 33bc815... 86402e7... M	nemu/src/cpu/alu.o
+
+commit 367e604860f0ae40fd7b5206e1884b8a16f957b4
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:02:56 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:02:56 up 48 min,  1 user,  load average: 0.02, 0.07, 0.08
+    a9b60e2b384d9cfe16f2c12a37d405e2b6bf25
+
+:100644 100644 9072339... 9e70a4b... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 32be3fa... b217f04... M	nemu/src/cpu/alu.c
+
+commit 3ce904e0d08721d3b47165598b3090ff4728034b
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:02:36 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:02:36 up 48 min,  1 user,  load average: 0.02, 0.07, 0.08
+    4e95b06dca7e932bd18ad88cd0f0149d27cf48f5
+
+:100644 100644 76f2e61... 9072339... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 f277787... 32be3fa... M	nemu/src/cpu/alu.c
+
+commit 9b1e1cb64d8b8233817b6e07ef74dec907c35508
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 17 00:02:25 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:02:25 up 48 min,  1 user,  load average: 0.03, 0.07, 0.08
+    b57d9ae67608e8b1ee9c297230c997779d36c46
+
+:000000 100755 0000000... 790b3c7... A	nemu/nemu
+:100644 100644 3bb91f9... 76f2e61... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 4e0d367... f277787... M	nemu/src/cpu/alu.c
+:000000 100644 0000000... fba52da... A	nemu/src/cpu/alu.d
+:000000 100644 0000000... 33bc815... A	nemu/src/cpu/alu.o
+:000000 100644 0000000... b7dc632... A	nemu/src/cpu/cpu.d
+:000000 100644 0000000... 01fe226... A	nemu/src/cpu/cpu.o
+:000000 100644 0000000... d33b6f6... A	nemu/src/cpu/decode/debug.d
+:000000 100644 0000000... 8d6a58a... A	nemu/src/cpu/decode/debug.o
+:000000 100644 0000000... 6eb18a3... A	nemu/src/cpu/decode/modrm.d
+:000000 100644 0000000... e5a0478... A	nemu/src/cpu/decode/modrm.o
+:000000 100644 0000000... 772c045... A	nemu/src/cpu/decode/opcode.d
+:000000 100644 0000000... b05881e... A	nemu/src/cpu/decode/opcode.o
+:000000 100644 0000000... 4b89732... A	nemu/src/cpu/decode/operand.d
+:000000 100644 0000000... c2b12fd... A	nemu/src/cpu/decode/operand.o
+:000000 100644 0000000... 224fdd7... A	nemu/src/cpu/decode/sib.d
+:000000 100644 0000000... a99ffca... A	nemu/src/cpu/decode/sib.o
+:000000 100644 0000000... 9e9cf30... A	nemu/src/cpu/fpu.d
+:000000 100644 0000000... 3ac9e2b... A	nemu/src/cpu/fpu.o
+:000000 100644 0000000... a730a8e... A	nemu/src/cpu/instr/bt.d
+:000000 100644 0000000... efb2b25... A	nemu/src/cpu/instr/bt.o
+:000000 100644 0000000... 78ac763... A	nemu/src/cpu/instr/cbw.d
+:000000 100644 0000000... 8bdfa92... A	nemu/src/cpu/instr/cbw.o
+:000000 100644 0000000... 605cf5f... A	nemu/src/cpu/instr/cltd.d
+:000000 100644 0000000... 0b2814f... A	nemu/src/cpu/instr/cltd.o
+:000000 100644 0000000... d0d86b6... A	nemu/src/cpu/instr/cmov.d
+:000000 100644 0000000... 66cc257... A	nemu/src/cpu/instr/cmov.o
+:000000 100644 0000000... 513c88a... A	nemu/src/cpu/instr/cmps.d
+:000000 100644 0000000... e55db0c... A	nemu/src/cpu/instr/cmps.o
+:000000 100644 0000000... ad83cfe... A	nemu/src/cpu/instr/data_size.d
+:000000 100644 0000000... 3cdae2b... A	nemu/src/cpu/instr/data_size.o
+:000000 100644 0000000... eb132be... A	nemu/src/cpu/instr/div.d
+:000000 100644 0000000... e6f2987... A	nemu/src/cpu/instr/div.o
+:000000 100644 0000000... 684b632... A	nemu/src/cpu/instr/flags.d
+:000000 100644 0000000... d707348... A	nemu/src/cpu/instr/flags.o
+:000000 100644 0000000... b2a046b... A	nemu/src/cpu/instr/group.d
+:000000 100644 0000000... dfda65d... A	nemu/src/cpu/instr/group.o
+:000000 100644 0000000... 85c80b6... A	nemu/src/cpu/instr/hlt.d
+:000000 100644 0000000... 947c903... A	nemu/src/cpu/instr/hlt.o
+:000000 100644 0000000... d5ac48e... A	nemu/src/cpu/instr/idiv.d
+:000000 100644 0000000... b4f808a... A	nemu/src/cpu/instr/idiv.o
+:000000 100644 0000000... 3f177bf... A	nemu/src/cpu/instr/imul.d
+:000000 100644 0000000... 105f52f... A	nemu/src/cpu/instr/imul.o
+:000000 100644 0000000... b665536... A	nemu/src/cpu/instr/inv.d
+:000000 100644 0000000... 602f958... A	nemu/src/cpu/instr/inv.o
+:000000 100644 0000000... 398221f... A	nemu/src/cpu/instr/jcc.d
+:000000 100644 0000000... f120267... A	nemu/src/cpu/instr/jcc.o
+:000000 100644 0000000... b72070d... A	nemu/src/cpu/instr/jmp.d
+:000000 100644 0000000... d73bb59... A	nemu/src/cpu/instr/jmp.o
+:000000 100644 0000000... b71b9ff... A	nemu/src/cpu/instr/mov.d
+:000000 100644 0000000... fce32d0... A	nemu/src/cpu/instr/mov.o
+:000000 100644 0000000... 9bffd3e... A	nemu/src/cpu/instr/movs.d
+:000000 100644 0000000... 8cf9b18... A	nemu/src/cpu/instr/movs.o
+:000000 100644 0000000... 429e698... A	nemu/src/cpu/instr/mul.d
+:000000 100644 0000000... 3988762... A	nemu/src/cpu/instr/mul.o
+:000000 100644 0000000... 0dd1cbf... A	nemu/src/cpu/instr/nemu_trap.d
+:000000 100644 0000000... e0f6918... A	nemu/src/cpu/instr/nemu_trap.o
+:000000 100644 0000000... dc2be45... A	nemu/src/cpu/instr/nop.d
+:000000 100644 0000000... 29a4e18... A	nemu/src/cpu/instr/nop.o
+:000000 100644 0000000... ecb109c... A	nemu/src/cpu/instr/opcode_2_byte.d
+:000000 100644 0000000... 94d33e2... A	nemu/src/cpu/instr/opcode_2_byte.o
+:000000 100644 0000000... 2f94e6c... A	nemu/src/cpu/instr/rep_repe.d
+:000000 100644 0000000... 01aecd0... A	nemu/src/cpu/instr/rep_repe.o
+:000000 100644 0000000... 31041ed... A	nemu/src/cpu/instr/sar.d
+:000000 100644 0000000... 1a930eb... A	nemu/src/cpu/instr/sar.o
+:000000 100644 0000000... 8c2f2e5... A	nemu/src/cpu/instr/setcc.d
+:000000 100644 0000000... 275a2ec... A	nemu/src/cpu/instr/setcc.o
+:000000 100644 0000000... c1b8e4f... A	nemu/src/cpu/instr/shl.d
+:000000 100644 0000000... 49ec62f... A	nemu/src/cpu/instr/shl.o
+:000000 100644 0000000... 186af85... A	nemu/src/cpu/instr/shr.d
+:000000 100644 0000000... 20323ac... A	nemu/src/cpu/instr/shr.o
+:000000 100644 0000000... d642b55... A	nemu/src/cpu/instr/stos.d
+:000000 100644 0000000... 39744af... A	nemu/src/cpu/instr/stos.o
+:000000 100644 0000000... 640863b... A	nemu/src/cpu/instr/x87.d
+:000000 100644 0000000... b978d99... A	nemu/src/cpu/instr/x87.o
+:000000 100644 0000000... 24d56f2... A	nemu/src/cpu/intr.d
+:000000 100644 0000000... b80a391... A	nemu/src/cpu/intr.o
+:000000 100644 0000000... 022ea5d... A	nemu/src/cpu/reg.d
+:000000 100644 0000000... d31c4c4... A	nemu/src/cpu/reg.o
+:000000 100644 0000000... d9dde98... A	nemu/src/cpu/test/alu_test.d
+:000000 100644 0000000... 7ccc389... A	nemu/src/cpu/test/alu_test.o
+:000000 100644 0000000... ff41ef8... A	nemu/src/cpu/test/fpu_test.d
+:000000 100644 0000000... f738797... A	nemu/src/cpu/test/fpu_test.o
+:000000 100644 0000000... c6947a3... A	nemu/src/device/dev/ide.d
+:000000 100644 0000000... 986c3c4... A	nemu/src/device/dev/ide.o
+:000000 100644 0000000... 3f6f806... A	nemu/src/device/dev/keyboard.d
+:000000 100644 0000000... 7065c60... A	nemu/src/device/dev/keyboard.o
+:000000 100644 0000000... ead9334... A	nemu/src/device/dev/serial.d
+:000000 100644 0000000... 566486d... A	nemu/src/device/dev/serial.o
+:000000 100644 0000000... 476d632... A	nemu/src/device/dev/timer.d
+:000000 100644 0000000... 63c3216... A	nemu/src/device/dev/timer.o
+:000000 100644 0000000... 250bd36... A	nemu/src/device/dev/vga-palette.d
+:000000 100644 0000000... 8fb183c... A	nemu/src/device/dev/vga-palette.o
+:000000 100644 0000000... 7a81b99... A	nemu/src/device/dev/vga.d
+:000000 100644 0000000... e95bbd1... A	nemu/src/device/dev/vga.o
+:000000 100644 0000000... 3832483... A	nemu/src/device/i8259_pic.d
+:000000 100644 0000000... a4b9749... A	nemu/src/device/i8259_pic.o
+:000000 100644 0000000... 64f46e5... A	nemu/src/device/io/mm_io.d
+:000000 100644 0000000... 3af136e... A	nemu/src/device/io/mm_io.o
+:000000 100644 0000000... 4c8f456... A	nemu/src/device/io/port_io.d
+:000000 100644 0000000... f0095a5... A	nemu/src/device/io/port_io.o
+:000000 100644 0000000... c712bc4... A	nemu/src/device/sdl.d
+:000000 100644 0000000... 99819c3... A	nemu/src/device/sdl.o
+:000000 100644 0000000... 1b6174a... A	nemu/src/main.d
+:000000 100644 0000000... 9e95ba0... A	nemu/src/main.o
+:000000 100644 0000000... df298ba... A	nemu/src/memory/memory.d
+:000000 100644 0000000... 48041a9... A	nemu/src/memory/memory.o
+:000000 100644 0000000... 8821cb2... A	nemu/src/memory/mmu/page.d
+:000000 100644 0000000... 548c226... A	nemu/src/memory/mmu/page.o
+:000000 100644 0000000... 6f3a354... A	nemu/src/memory/mmu/segment.d
+:000000 100644 0000000... 64237cd... A	nemu/src/memory/mmu/segment.o
+:000000 100644 0000000... 7dfaf8b... A	nemu/src/memory/mmu/tlb.d
+:000000 100644 0000000... ddbe998... A	nemu/src/memory/mmu/tlb.o
+:000000 100644 0000000... cac6a6c... A	nemu/src/monitor/breakpoint.d
+:000000 100644 0000000... 39d7122... A	nemu/src/monitor/breakpoint.o
+:000000 100644 0000000... 1c22ae8... A	nemu/src/monitor/elf.d
+:000000 100644 0000000... b95a0b2... A	nemu/src/monitor/elf.o
+:000000 100644 0000000... 02f3248... A	nemu/src/monitor/expr.d
+:000000 100644 0000000... 536a51f... A	nemu/src/monitor/expr.o
+:000000 100644 0000000... 6869c5f... A	nemu/src/monitor/ui.d
+:000000 100644 0000000... eb143a8... A	nemu/src/monitor/ui.o
+
+commit d5aeb8e641677a1983199bf9f21211a241020981
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:59:49 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:59:49 up 45 min,  1 user,  load average: 0.21, 0.08, 0.08
+    81e1be79a6f72a2d1146687dc5496661a869004c
+
+:100644 100644 f4fab11... 3bb91f9... M	nemu/src/cpu/.alu.c.swp
+:100644 000000 fba52da... 0000000... D	nemu/src/cpu/alu.d
+:100644 000000 7e7ed3f... 0000000... D	nemu/src/cpu/alu.o
+:100644 000000 b7dc632... 0000000... D	nemu/src/cpu/cpu.d
+:100644 000000 01fe226... 0000000... D	nemu/src/cpu/cpu.o
+:100644 000000 d33b6f6... 0000000... D	nemu/src/cpu/decode/debug.d
+:100644 000000 8d6a58a... 0000000... D	nemu/src/cpu/decode/debug.o
+:100644 000000 6eb18a3... 0000000... D	nemu/src/cpu/decode/modrm.d
+:100644 000000 e5a0478... 0000000... D	nemu/src/cpu/decode/modrm.o
+:100644 000000 772c045... 0000000... D	nemu/src/cpu/decode/opcode.d
+:100644 000000 b05881e... 0000000... D	nemu/src/cpu/decode/opcode.o
+:100644 000000 4b89732... 0000000... D	nemu/src/cpu/decode/operand.d
+:100644 000000 c2b12fd... 0000000... D	nemu/src/cpu/decode/operand.o
+:100644 000000 224fdd7... 0000000... D	nemu/src/cpu/decode/sib.d
+:100644 000000 a99ffca... 0000000... D	nemu/src/cpu/decode/sib.o
+:100644 000000 9e9cf30... 0000000... D	nemu/src/cpu/fpu.d
+:100644 000000 3ac9e2b... 0000000... D	nemu/src/cpu/fpu.o
+:100644 000000 a730a8e... 0000000... D	nemu/src/cpu/instr/bt.d
+:100644 000000 efb2b25... 0000000... D	nemu/src/cpu/instr/bt.o
+:100644 000000 78ac763... 0000000... D	nemu/src/cpu/instr/cbw.d
+:100644 000000 8bdfa92... 0000000... D	nemu/src/cpu/instr/cbw.o
+:100644 000000 605cf5f... 0000000... D	nemu/src/cpu/instr/cltd.d
+:100644 000000 0b2814f... 0000000... D	nemu/src/cpu/instr/cltd.o
+:100644 000000 d0d86b6... 0000000... D	nemu/src/cpu/instr/cmov.d
+:100644 000000 66cc257... 0000000... D	nemu/src/cpu/instr/cmov.o
+:100644 000000 513c88a... 0000000... D	nemu/src/cpu/instr/cmps.d
+:100644 000000 e55db0c... 0000000... D	nemu/src/cpu/instr/cmps.o
+:100644 000000 ad83cfe... 0000000... D	nemu/src/cpu/instr/data_size.d
+:100644 000000 3cdae2b... 0000000... D	nemu/src/cpu/instr/data_size.o
+:100644 000000 eb132be... 0000000... D	nemu/src/cpu/instr/div.d
+:100644 000000 e6f2987... 0000000... D	nemu/src/cpu/instr/div.o
+:100644 000000 684b632... 0000000... D	nemu/src/cpu/instr/flags.d
+:100644 000000 d707348... 0000000... D	nemu/src/cpu/instr/flags.o
+:100644 000000 b2a046b... 0000000... D	nemu/src/cpu/instr/group.d
+:100644 000000 dfda65d... 0000000... D	nemu/src/cpu/instr/group.o
+:100644 000000 85c80b6... 0000000... D	nemu/src/cpu/instr/hlt.d
+:100644 000000 947c903... 0000000... D	nemu/src/cpu/instr/hlt.o
+:100644 000000 d5ac48e... 0000000... D	nemu/src/cpu/instr/idiv.d
+:100644 000000 b4f808a... 0000000... D	nemu/src/cpu/instr/idiv.o
+:100644 000000 3f177bf... 0000000... D	nemu/src/cpu/instr/imul.d
+:100644 000000 105f52f... 0000000... D	nemu/src/cpu/instr/imul.o
+:100644 000000 b665536... 0000000... D	nemu/src/cpu/instr/inv.d
+:100644 000000 602f958... 0000000... D	nemu/src/cpu/instr/inv.o
+:100644 000000 398221f... 0000000... D	nemu/src/cpu/instr/jcc.d
+:100644 000000 f120267... 0000000... D	nemu/src/cpu/instr/jcc.o
+:100644 000000 b72070d... 0000000... D	nemu/src/cpu/instr/jmp.d
+:100644 000000 d73bb59... 0000000... D	nemu/src/cpu/instr/jmp.o
+:100644 000000 b71b9ff... 0000000... D	nemu/src/cpu/instr/mov.d
+:100644 000000 fce32d0... 0000000... D	nemu/src/cpu/instr/mov.o
+:100644 000000 9bffd3e... 0000000... D	nemu/src/cpu/instr/movs.d
+:100644 000000 8cf9b18... 0000000... D	nemu/src/cpu/instr/movs.o
+:100644 000000 429e698... 0000000... D	nemu/src/cpu/instr/mul.d
+:100644 000000 3988762... 0000000... D	nemu/src/cpu/instr/mul.o
+:100644 000000 0dd1cbf... 0000000... D	nemu/src/cpu/instr/nemu_trap.d
+:100644 000000 e0f6918... 0000000... D	nemu/src/cpu/instr/nemu_trap.o
+:100644 000000 dc2be45... 0000000... D	nemu/src/cpu/instr/nop.d
+:100644 000000 29a4e18... 0000000... D	nemu/src/cpu/instr/nop.o
+:100644 000000 ecb109c... 0000000... D	nemu/src/cpu/instr/opcode_2_byte.d
+:100644 000000 94d33e2... 0000000... D	nemu/src/cpu/instr/opcode_2_byte.o
+:100644 000000 2f94e6c... 0000000... D	nemu/src/cpu/instr/rep_repe.d
+:100644 000000 01aecd0... 0000000... D	nemu/src/cpu/instr/rep_repe.o
+:100644 000000 31041ed... 0000000... D	nemu/src/cpu/instr/sar.d
+:100644 000000 1a930eb... 0000000... D	nemu/src/cpu/instr/sar.o
+:100644 000000 8c2f2e5... 0000000... D	nemu/src/cpu/instr/setcc.d
+:100644 000000 275a2ec... 0000000... D	nemu/src/cpu/instr/setcc.o
+:100644 000000 c1b8e4f... 0000000... D	nemu/src/cpu/instr/shl.d
+:100644 000000 49ec62f... 0000000... D	nemu/src/cpu/instr/shl.o
+:100644 000000 186af85... 0000000... D	nemu/src/cpu/instr/shr.d
+:100644 000000 20323ac... 0000000... D	nemu/src/cpu/instr/shr.o
+:100644 000000 d642b55... 0000000... D	nemu/src/cpu/instr/stos.d
+:100644 000000 39744af... 0000000... D	nemu/src/cpu/instr/stos.o
+:100644 000000 640863b... 0000000... D	nemu/src/cpu/instr/x87.d
+:100644 000000 b978d99... 0000000... D	nemu/src/cpu/instr/x87.o
+:100644 000000 24d56f2... 0000000... D	nemu/src/cpu/intr.d
+:100644 000000 b80a391... 0000000... D	nemu/src/cpu/intr.o
+:100644 000000 022ea5d... 0000000... D	nemu/src/cpu/reg.d
+:100644 000000 d31c4c4... 0000000... D	nemu/src/cpu/reg.o
+:100644 000000 d9dde98... 0000000... D	nemu/src/cpu/test/alu_test.d
+:100644 000000 7ccc389... 0000000... D	nemu/src/cpu/test/alu_test.o
+:100644 000000 ff41ef8... 0000000... D	nemu/src/cpu/test/fpu_test.d
+:100644 000000 f738797... 0000000... D	nemu/src/cpu/test/fpu_test.o
+:100644 000000 c6947a3... 0000000... D	nemu/src/device/dev/ide.d
+:100644 000000 986c3c4... 0000000... D	nemu/src/device/dev/ide.o
+:100644 000000 3f6f806... 0000000... D	nemu/src/device/dev/keyboard.d
+:100644 000000 7065c60... 0000000... D	nemu/src/device/dev/keyboard.o
+:100644 000000 ead9334... 0000000... D	nemu/src/device/dev/serial.d
+:100644 000000 566486d... 0000000... D	nemu/src/device/dev/serial.o
+:100644 000000 476d632... 0000000... D	nemu/src/device/dev/timer.d
+:100644 000000 63c3216... 0000000... D	nemu/src/device/dev/timer.o
+:100644 000000 250bd36... 0000000... D	nemu/src/device/dev/vga-palette.d
+:100644 000000 8fb183c... 0000000... D	nemu/src/device/dev/vga-palette.o
+:100644 000000 7a81b99... 0000000... D	nemu/src/device/dev/vga.d
+:100644 000000 e95bbd1... 0000000... D	nemu/src/device/dev/vga.o
+:100644 000000 3832483... 0000000... D	nemu/src/device/i8259_pic.d
+:100644 000000 a4b9749... 0000000... D	nemu/src/device/i8259_pic.o
+:100644 000000 64f46e5... 0000000... D	nemu/src/device/io/mm_io.d
+:100644 000000 3af136e... 0000000... D	nemu/src/device/io/mm_io.o
+:100644 000000 4c8f456... 0000000... D	nemu/src/device/io/port_io.d
+:100644 000000 f0095a5... 0000000... D	nemu/src/device/io/port_io.o
+:100644 000000 c712bc4... 0000000... D	nemu/src/device/sdl.d
+:100644 000000 99819c3... 0000000... D	nemu/src/device/sdl.o
+:100644 000000 1b6174a... 0000000... D	nemu/src/main.d
+:100644 000000 9e95ba0... 0000000... D	nemu/src/main.o
+:100644 000000 df298ba... 0000000... D	nemu/src/memory/memory.d
+:100644 000000 48041a9... 0000000... D	nemu/src/memory/memory.o
+:100644 000000 8821cb2... 0000000... D	nemu/src/memory/mmu/page.d
+:100644 000000 548c226... 0000000... D	nemu/src/memory/mmu/page.o
+:100644 000000 6f3a354... 0000000... D	nemu/src/memory/mmu/segment.d
+:100644 000000 64237cd... 0000000... D	nemu/src/memory/mmu/segment.o
+:100644 000000 7dfaf8b... 0000000... D	nemu/src/memory/mmu/tlb.d
+:100644 000000 ddbe998... 0000000... D	nemu/src/memory/mmu/tlb.o
+:100644 000000 cac6a6c... 0000000... D	nemu/src/monitor/breakpoint.d
+:100644 000000 39d7122... 0000000... D	nemu/src/monitor/breakpoint.o
+:100644 000000 1c22ae8... 0000000... D	nemu/src/monitor/elf.d
+:100644 000000 b95a0b2... 0000000... D	nemu/src/monitor/elf.o
+:100644 000000 02f3248... 0000000... D	nemu/src/monitor/expr.d
+:100644 000000 536a51f... 0000000... D	nemu/src/monitor/expr.o
+:100644 000000 6869c5f... 0000000... D	nemu/src/monitor/ui.d
+:100644 000000 eb143a8... 0000000... D	nemu/src/monitor/ui.o
+
+commit 2b128cb4e51d3e89d0d9615b758c6e854201946c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:59:45 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:59:45 up 45 min,  1 user,  load average: 0.23, 0.08, 0.08
+    c1492e0c261b045fc89bc93c1930118e2f78f82c
+
+:100644 100644 76dd30e... f4fab11... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 51b81f1... 4e0d367... M	nemu/src/cpu/alu.c
+
+commit 13e3cb77b6d9b4e6252478733ebd3ed4b37cd4d3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:56:53 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:56:53 up 42 min,  1 user,  load average: 0.06, 0.07, 0.08
+    2514adb6c98d41493487f59f3b1ef9f588380b7
+
+:100644 100644 b4c1da6... 76dd30e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 9a6a967... 51b81f1... M	nemu/src/cpu/alu.c
+:000000 100644 0000000... fba52da... A	nemu/src/cpu/alu.d
+:000000 100644 0000000... 7e7ed3f... A	nemu/src/cpu/alu.o
+:000000 100644 0000000... b7dc632... A	nemu/src/cpu/cpu.d
+:000000 100644 0000000... 01fe226... A	nemu/src/cpu/cpu.o
+:000000 100644 0000000... d33b6f6... A	nemu/src/cpu/decode/debug.d
+:000000 100644 0000000... 8d6a58a... A	nemu/src/cpu/decode/debug.o
+:000000 100644 0000000... 6eb18a3... A	nemu/src/cpu/decode/modrm.d
+:000000 100644 0000000... e5a0478... A	nemu/src/cpu/decode/modrm.o
+:000000 100644 0000000... 772c045... A	nemu/src/cpu/decode/opcode.d
+:000000 100644 0000000... b05881e... A	nemu/src/cpu/decode/opcode.o
+:000000 100644 0000000... 4b89732... A	nemu/src/cpu/decode/operand.d
+:000000 100644 0000000... c2b12fd... A	nemu/src/cpu/decode/operand.o
+:000000 100644 0000000... 224fdd7... A	nemu/src/cpu/decode/sib.d
+:000000 100644 0000000... a99ffca... A	nemu/src/cpu/decode/sib.o
+:000000 100644 0000000... 9e9cf30... A	nemu/src/cpu/fpu.d
+:000000 100644 0000000... 3ac9e2b... A	nemu/src/cpu/fpu.o
+:000000 100644 0000000... a730a8e... A	nemu/src/cpu/instr/bt.d
+:000000 100644 0000000... efb2b25... A	nemu/src/cpu/instr/bt.o
+:000000 100644 0000000... 78ac763... A	nemu/src/cpu/instr/cbw.d
+:000000 100644 0000000... 8bdfa92... A	nemu/src/cpu/instr/cbw.o
+:000000 100644 0000000... 605cf5f... A	nemu/src/cpu/instr/cltd.d
+:000000 100644 0000000... 0b2814f... A	nemu/src/cpu/instr/cltd.o
+:000000 100644 0000000... d0d86b6... A	nemu/src/cpu/instr/cmov.d
+:000000 100644 0000000... 66cc257... A	nemu/src/cpu/instr/cmov.o
+:000000 100644 0000000... 513c88a... A	nemu/src/cpu/instr/cmps.d
+:000000 100644 0000000... e55db0c... A	nemu/src/cpu/instr/cmps.o
+:000000 100644 0000000... ad83cfe... A	nemu/src/cpu/instr/data_size.d
+:000000 100644 0000000... 3cdae2b... A	nemu/src/cpu/instr/data_size.o
+:000000 100644 0000000... eb132be... A	nemu/src/cpu/instr/div.d
+:000000 100644 0000000... e6f2987... A	nemu/src/cpu/instr/div.o
+:000000 100644 0000000... 684b632... A	nemu/src/cpu/instr/flags.d
+:000000 100644 0000000... d707348... A	nemu/src/cpu/instr/flags.o
+:000000 100644 0000000... b2a046b... A	nemu/src/cpu/instr/group.d
+:000000 100644 0000000... dfda65d... A	nemu/src/cpu/instr/group.o
+:000000 100644 0000000... 85c80b6... A	nemu/src/cpu/instr/hlt.d
+:000000 100644 0000000... 947c903... A	nemu/src/cpu/instr/hlt.o
+:000000 100644 0000000... d5ac48e... A	nemu/src/cpu/instr/idiv.d
+:000000 100644 0000000... b4f808a... A	nemu/src/cpu/instr/idiv.o
+:000000 100644 0000000... 3f177bf... A	nemu/src/cpu/instr/imul.d
+:000000 100644 0000000... 105f52f... A	nemu/src/cpu/instr/imul.o
+:000000 100644 0000000... b665536... A	nemu/src/cpu/instr/inv.d
+:000000 100644 0000000... 602f958... A	nemu/src/cpu/instr/inv.o
+:000000 100644 0000000... 398221f... A	nemu/src/cpu/instr/jcc.d
+:000000 100644 0000000... f120267... A	nemu/src/cpu/instr/jcc.o
+:000000 100644 0000000... b72070d... A	nemu/src/cpu/instr/jmp.d
+:000000 100644 0000000... d73bb59... A	nemu/src/cpu/instr/jmp.o
+:000000 100644 0000000... b71b9ff... A	nemu/src/cpu/instr/mov.d
+:000000 100644 0000000... fce32d0... A	nemu/src/cpu/instr/mov.o
+:000000 100644 0000000... 9bffd3e... A	nemu/src/cpu/instr/movs.d
+:000000 100644 0000000... 8cf9b18... A	nemu/src/cpu/instr/movs.o
+:000000 100644 0000000... 429e698... A	nemu/src/cpu/instr/mul.d
+:000000 100644 0000000... 3988762... A	nemu/src/cpu/instr/mul.o
+:000000 100644 0000000... 0dd1cbf... A	nemu/src/cpu/instr/nemu_trap.d
+:000000 100644 0000000... e0f6918... A	nemu/src/cpu/instr/nemu_trap.o
+:000000 100644 0000000... dc2be45... A	nemu/src/cpu/instr/nop.d
+:000000 100644 0000000... 29a4e18... A	nemu/src/cpu/instr/nop.o
+:000000 100644 0000000... ecb109c... A	nemu/src/cpu/instr/opcode_2_byte.d
+:000000 100644 0000000... 94d33e2... A	nemu/src/cpu/instr/opcode_2_byte.o
+:000000 100644 0000000... 2f94e6c... A	nemu/src/cpu/instr/rep_repe.d
+:000000 100644 0000000... 01aecd0... A	nemu/src/cpu/instr/rep_repe.o
+:000000 100644 0000000... 31041ed... A	nemu/src/cpu/instr/sar.d
+:000000 100644 0000000... 1a930eb... A	nemu/src/cpu/instr/sar.o
+:000000 100644 0000000... 8c2f2e5... A	nemu/src/cpu/instr/setcc.d
+:000000 100644 0000000... 275a2ec... A	nemu/src/cpu/instr/setcc.o
+:000000 100644 0000000... c1b8e4f... A	nemu/src/cpu/instr/shl.d
+:000000 100644 0000000... 49ec62f... A	nemu/src/cpu/instr/shl.o
+:000000 100644 0000000... 186af85... A	nemu/src/cpu/instr/shr.d
+:000000 100644 0000000... 20323ac... A	nemu/src/cpu/instr/shr.o
+:000000 100644 0000000... d642b55... A	nemu/src/cpu/instr/stos.d
+:000000 100644 0000000... 39744af... A	nemu/src/cpu/instr/stos.o
+:000000 100644 0000000... 640863b... A	nemu/src/cpu/instr/x87.d
+:000000 100644 0000000... b978d99... A	nemu/src/cpu/instr/x87.o
+:000000 100644 0000000... 24d56f2... A	nemu/src/cpu/intr.d
+:000000 100644 0000000... b80a391... A	nemu/src/cpu/intr.o
+:000000 100644 0000000... 022ea5d... A	nemu/src/cpu/reg.d
+:000000 100644 0000000... d31c4c4... A	nemu/src/cpu/reg.o
+:000000 100644 0000000... d9dde98... A	nemu/src/cpu/test/alu_test.d
+:000000 100644 0000000... 7ccc389... A	nemu/src/cpu/test/alu_test.o
+:000000 100644 0000000... ff41ef8... A	nemu/src/cpu/test/fpu_test.d
+:000000 100644 0000000... f738797... A	nemu/src/cpu/test/fpu_test.o
+:000000 100644 0000000... c6947a3... A	nemu/src/device/dev/ide.d
+:000000 100644 0000000... 986c3c4... A	nemu/src/device/dev/ide.o
+:000000 100644 0000000... 3f6f806... A	nemu/src/device/dev/keyboard.d
+:000000 100644 0000000... 7065c60... A	nemu/src/device/dev/keyboard.o
+:000000 100644 0000000... ead9334... A	nemu/src/device/dev/serial.d
+:000000 100644 0000000... 566486d... A	nemu/src/device/dev/serial.o
+:000000 100644 0000000... 476d632... A	nemu/src/device/dev/timer.d
+:000000 100644 0000000... 63c3216... A	nemu/src/device/dev/timer.o
+:000000 100644 0000000... 250bd36... A	nemu/src/device/dev/vga-palette.d
+:000000 100644 0000000... 8fb183c... A	nemu/src/device/dev/vga-palette.o
+:000000 100644 0000000... 7a81b99... A	nemu/src/device/dev/vga.d
+:000000 100644 0000000... e95bbd1... A	nemu/src/device/dev/vga.o
+:000000 100644 0000000... 3832483... A	nemu/src/device/i8259_pic.d
+:000000 100644 0000000... a4b9749... A	nemu/src/device/i8259_pic.o
+:000000 100644 0000000... 64f46e5... A	nemu/src/device/io/mm_io.d
+:000000 100644 0000000... 3af136e... A	nemu/src/device/io/mm_io.o
+:000000 100644 0000000... 4c8f456... A	nemu/src/device/io/port_io.d
+:000000 100644 0000000... f0095a5... A	nemu/src/device/io/port_io.o
+:000000 100644 0000000... c712bc4... A	nemu/src/device/sdl.d
+:000000 100644 0000000... 99819c3... A	nemu/src/device/sdl.o
+:000000 100644 0000000... 1b6174a... A	nemu/src/main.d
+:000000 100644 0000000... 9e95ba0... A	nemu/src/main.o
+:000000 100644 0000000... df298ba... A	nemu/src/memory/memory.d
+:000000 100644 0000000... 48041a9... A	nemu/src/memory/memory.o
+:000000 100644 0000000... 8821cb2... A	nemu/src/memory/mmu/page.d
+:000000 100644 0000000... 548c226... A	nemu/src/memory/mmu/page.o
+:000000 100644 0000000... 6f3a354... A	nemu/src/memory/mmu/segment.d
+:000000 100644 0000000... 64237cd... A	nemu/src/memory/mmu/segment.o
+:000000 100644 0000000... 7dfaf8b... A	nemu/src/memory/mmu/tlb.d
+:000000 100644 0000000... ddbe998... A	nemu/src/memory/mmu/tlb.o
+:000000 100644 0000000... cac6a6c... A	nemu/src/monitor/breakpoint.d
+:000000 100644 0000000... 39d7122... A	nemu/src/monitor/breakpoint.o
+:000000 100644 0000000... 1c22ae8... A	nemu/src/monitor/elf.d
+:000000 100644 0000000... b95a0b2... A	nemu/src/monitor/elf.o
+:000000 100644 0000000... 02f3248... A	nemu/src/monitor/expr.d
+:000000 100644 0000000... 536a51f... A	nemu/src/monitor/expr.o
+:000000 100644 0000000... 6869c5f... A	nemu/src/monitor/ui.d
+:000000 100644 0000000... eb143a8... A	nemu/src/monitor/ui.o
+
+commit 228254f5038b560240481edb7035cb04f1355a39
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:55:22 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:55:22 up 41 min,  1 user,  load average: 0.06, 0.06, 0.08
+    21da33216d16ffddea9c06a352eccfa78604873f
+
+:100644 000000 fba52da... 0000000... D	nemu/src/cpu/alu.d
+:100644 000000 7e7ed3f... 0000000... D	nemu/src/cpu/alu.o
+:100644 000000 b7dc632... 0000000... D	nemu/src/cpu/cpu.d
+:100644 000000 01fe226... 0000000... D	nemu/src/cpu/cpu.o
+:100644 000000 d33b6f6... 0000000... D	nemu/src/cpu/decode/debug.d
+:100644 000000 8d6a58a... 0000000... D	nemu/src/cpu/decode/debug.o
+:100644 000000 6eb18a3... 0000000... D	nemu/src/cpu/decode/modrm.d
+:100644 000000 e5a0478... 0000000... D	nemu/src/cpu/decode/modrm.o
+:100644 000000 772c045... 0000000... D	nemu/src/cpu/decode/opcode.d
+:100644 000000 b05881e... 0000000... D	nemu/src/cpu/decode/opcode.o
+:100644 000000 4b89732... 0000000... D	nemu/src/cpu/decode/operand.d
+:100644 000000 c2b12fd... 0000000... D	nemu/src/cpu/decode/operand.o
+:100644 000000 224fdd7... 0000000... D	nemu/src/cpu/decode/sib.d
+:100644 000000 a99ffca... 0000000... D	nemu/src/cpu/decode/sib.o
+:100644 000000 9e9cf30... 0000000... D	nemu/src/cpu/fpu.d
+:100644 000000 3ac9e2b... 0000000... D	nemu/src/cpu/fpu.o
+:100644 000000 a730a8e... 0000000... D	nemu/src/cpu/instr/bt.d
+:100644 000000 efb2b25... 0000000... D	nemu/src/cpu/instr/bt.o
+:100644 000000 78ac763... 0000000... D	nemu/src/cpu/instr/cbw.d
+:100644 000000 8bdfa92... 0000000... D	nemu/src/cpu/instr/cbw.o
+:100644 000000 605cf5f... 0000000... D	nemu/src/cpu/instr/cltd.d
+:100644 000000 0b2814f... 0000000... D	nemu/src/cpu/instr/cltd.o
+:100644 000000 d0d86b6... 0000000... D	nemu/src/cpu/instr/cmov.d
+:100644 000000 66cc257... 0000000... D	nemu/src/cpu/instr/cmov.o
+:100644 000000 513c88a... 0000000... D	nemu/src/cpu/instr/cmps.d
+:100644 000000 e55db0c... 0000000... D	nemu/src/cpu/instr/cmps.o
+:100644 000000 ad83cfe... 0000000... D	nemu/src/cpu/instr/data_size.d
+:100644 000000 3cdae2b... 0000000... D	nemu/src/cpu/instr/data_size.o
+:100644 000000 eb132be... 0000000... D	nemu/src/cpu/instr/div.d
+:100644 000000 e6f2987... 0000000... D	nemu/src/cpu/instr/div.o
+:100644 000000 684b632... 0000000... D	nemu/src/cpu/instr/flags.d
+:100644 000000 d707348... 0000000... D	nemu/src/cpu/instr/flags.o
+:100644 000000 b2a046b... 0000000... D	nemu/src/cpu/instr/group.d
+:100644 000000 dfda65d... 0000000... D	nemu/src/cpu/instr/group.o
+:100644 000000 85c80b6... 0000000... D	nemu/src/cpu/instr/hlt.d
+:100644 000000 947c903... 0000000... D	nemu/src/cpu/instr/hlt.o
+:100644 000000 d5ac48e... 0000000... D	nemu/src/cpu/instr/idiv.d
+:100644 000000 b4f808a... 0000000... D	nemu/src/cpu/instr/idiv.o
+:100644 000000 3f177bf... 0000000... D	nemu/src/cpu/instr/imul.d
+:100644 000000 105f52f... 0000000... D	nemu/src/cpu/instr/imul.o
+:100644 000000 b665536... 0000000... D	nemu/src/cpu/instr/inv.d
+:100644 000000 602f958... 0000000... D	nemu/src/cpu/instr/inv.o
+:100644 000000 398221f... 0000000... D	nemu/src/cpu/instr/jcc.d
+:100644 000000 f120267... 0000000... D	nemu/src/cpu/instr/jcc.o
+:100644 000000 b72070d... 0000000... D	nemu/src/cpu/instr/jmp.d
+:100644 000000 d73bb59... 0000000... D	nemu/src/cpu/instr/jmp.o
+:100644 000000 b71b9ff... 0000000... D	nemu/src/cpu/instr/mov.d
+:100644 000000 fce32d0... 0000000... D	nemu/src/cpu/instr/mov.o
+:100644 000000 9bffd3e... 0000000... D	nemu/src/cpu/instr/movs.d
+:100644 000000 8cf9b18... 0000000... D	nemu/src/cpu/instr/movs.o
+:100644 000000 429e698... 0000000... D	nemu/src/cpu/instr/mul.d
+:100644 000000 3988762... 0000000... D	nemu/src/cpu/instr/mul.o
+:100644 000000 0dd1cbf... 0000000... D	nemu/src/cpu/instr/nemu_trap.d
+:100644 000000 e0f6918... 0000000... D	nemu/src/cpu/instr/nemu_trap.o
+:100644 000000 dc2be45... 0000000... D	nemu/src/cpu/instr/nop.d
+:100644 000000 29a4e18... 0000000... D	nemu/src/cpu/instr/nop.o
+:100644 000000 ecb109c... 0000000... D	nemu/src/cpu/instr/opcode_2_byte.d
+:100644 000000 94d33e2... 0000000... D	nemu/src/cpu/instr/opcode_2_byte.o
+:100644 000000 2f94e6c... 0000000... D	nemu/src/cpu/instr/rep_repe.d
+:100644 000000 01aecd0... 0000000... D	nemu/src/cpu/instr/rep_repe.o
+:100644 000000 31041ed... 0000000... D	nemu/src/cpu/instr/sar.d
+:100644 000000 1a930eb... 0000000... D	nemu/src/cpu/instr/sar.o
+:100644 000000 8c2f2e5... 0000000... D	nemu/src/cpu/instr/setcc.d
+:100644 000000 275a2ec... 0000000... D	nemu/src/cpu/instr/setcc.o
+:100644 000000 c1b8e4f... 0000000... D	nemu/src/cpu/instr/shl.d
+:100644 000000 49ec62f... 0000000... D	nemu/src/cpu/instr/shl.o
+:100644 000000 186af85... 0000000... D	nemu/src/cpu/instr/shr.d
+:100644 000000 20323ac... 0000000... D	nemu/src/cpu/instr/shr.o
+:100644 000000 d642b55... 0000000... D	nemu/src/cpu/instr/stos.d
+:100644 000000 39744af... 0000000... D	nemu/src/cpu/instr/stos.o
+:100644 000000 640863b... 0000000... D	nemu/src/cpu/instr/x87.d
+:100644 000000 b978d99... 0000000... D	nemu/src/cpu/instr/x87.o
+:100644 000000 24d56f2... 0000000... D	nemu/src/cpu/intr.d
+:100644 000000 b80a391... 0000000... D	nemu/src/cpu/intr.o
+:100644 000000 022ea5d... 0000000... D	nemu/src/cpu/reg.d
+:100644 000000 d31c4c4... 0000000... D	nemu/src/cpu/reg.o
+:100644 000000 d9dde98... 0000000... D	nemu/src/cpu/test/alu_test.d
+:100644 000000 7ccc389... 0000000... D	nemu/src/cpu/test/alu_test.o
+:100644 000000 ff41ef8... 0000000... D	nemu/src/cpu/test/fpu_test.d
+:100644 000000 f738797... 0000000... D	nemu/src/cpu/test/fpu_test.o
+:100644 000000 c6947a3... 0000000... D	nemu/src/device/dev/ide.d
+:100644 000000 986c3c4... 0000000... D	nemu/src/device/dev/ide.o
+:100644 000000 3f6f806... 0000000... D	nemu/src/device/dev/keyboard.d
+:100644 000000 7065c60... 0000000... D	nemu/src/device/dev/keyboard.o
+:100644 000000 ead9334... 0000000... D	nemu/src/device/dev/serial.d
+:100644 000000 566486d... 0000000... D	nemu/src/device/dev/serial.o
+:100644 000000 476d632... 0000000... D	nemu/src/device/dev/timer.d
+:100644 000000 63c3216... 0000000... D	nemu/src/device/dev/timer.o
+:100644 000000 250bd36... 0000000... D	nemu/src/device/dev/vga-palette.d
+:100644 000000 8fb183c... 0000000... D	nemu/src/device/dev/vga-palette.o
+:100644 000000 7a81b99... 0000000... D	nemu/src/device/dev/vga.d
+:100644 000000 e95bbd1... 0000000... D	nemu/src/device/dev/vga.o
+:100644 000000 3832483... 0000000... D	nemu/src/device/i8259_pic.d
+:100644 000000 a4b9749... 0000000... D	nemu/src/device/i8259_pic.o
+:100644 000000 64f46e5... 0000000... D	nemu/src/device/io/mm_io.d
+:100644 000000 3af136e... 0000000... D	nemu/src/device/io/mm_io.o
+:100644 000000 4c8f456... 0000000... D	nemu/src/device/io/port_io.d
+:100644 000000 f0095a5... 0000000... D	nemu/src/device/io/port_io.o
+:100644 000000 c712bc4... 0000000... D	nemu/src/device/sdl.d
+:100644 000000 99819c3... 0000000... D	nemu/src/device/sdl.o
+:100644 000000 1b6174a... 0000000... D	nemu/src/main.d
+:100644 000000 9e95ba0... 0000000... D	nemu/src/main.o
+:100644 000000 df298ba... 0000000... D	nemu/src/memory/memory.d
+:100644 000000 48041a9... 0000000... D	nemu/src/memory/memory.o
+:100644 000000 8821cb2... 0000000... D	nemu/src/memory/mmu/page.d
+:100644 000000 548c226... 0000000... D	nemu/src/memory/mmu/page.o
+:100644 000000 6f3a354... 0000000... D	nemu/src/memory/mmu/segment.d
+:100644 000000 64237cd... 0000000... D	nemu/src/memory/mmu/segment.o
+:100644 000000 7dfaf8b... 0000000... D	nemu/src/memory/mmu/tlb.d
+:100644 000000 ddbe998... 0000000... D	nemu/src/memory/mmu/tlb.o
+:100644 000000 cac6a6c... 0000000... D	nemu/src/monitor/breakpoint.d
+:100644 000000 39d7122... 0000000... D	nemu/src/monitor/breakpoint.o
+:100644 000000 1c22ae8... 0000000... D	nemu/src/monitor/elf.d
+:100644 000000 b95a0b2... 0000000... D	nemu/src/monitor/elf.o
+:100644 000000 02f3248... 0000000... D	nemu/src/monitor/expr.d
+:100644 000000 536a51f... 0000000... D	nemu/src/monitor/expr.o
+:100644 000000 6869c5f... 0000000... D	nemu/src/monitor/ui.d
+:100644 000000 eb143a8... 0000000... D	nemu/src/monitor/ui.o
+
+commit dce53c564c7c97d3d5ece7937a438b8e6548d257
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:55:14 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:55:14 up 41 min,  1 user,  load average: 0.08, 0.07, 0.08
+    17d8fc815f54e00a2a36811a8549674efdc667c6
+
+:100755 000000 da830b1... 0000000... D	nemu/nemu
+:100644 100644 d615c88... 7e7ed3f... M	nemu/src/cpu/alu.o
+
+commit 957983131edc22c3c788e169ca3ba93765bef4a1
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:54:58 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:54:58 up 40 min,  1 user,  load average: 0.10, 0.07, 0.08
+    595c1c4153fee6fd69e6f6cba7ce53b812fe01ba
+
+:100644 100644 b81fe7f... b4c1da6... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 2892262... 9a6a967... M	nemu/src/cpu/alu.c
+
+commit bac0db7e5b94e99eef405465fd51cc89d093a916
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:52:39 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:52:39 up 38 min,  1 user,  load average: 0.09, 0.08, 0.08
+    7542476584fe5c44b76b2d8471afb8e81d24b41
+
+:100644 100644 142e533... b81fe7f... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 d7f7dee... 2892262... M	nemu/src/cpu/alu.c
+
+commit b1c8b907a6304e0644df7cae3ff35a04fabe81c1
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:51:30 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:51:30 up 37 min,  1 user,  load average: 0.30, 0.10, 0.09
+    ecdbe3d0412718752b8395065823d889e5684c93
+
+:100755 100755 1935c8c... da830b1... M	nemu/nemu
+:100644 100644 f9010b6... 142e533... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ab8e336... d7f7dee... M	nemu/src/cpu/alu.c
+:100644 100644 8cb3c8f... d615c88... M	nemu/src/cpu/alu.o
+
+commit ad74cb3477f942678bb9876033babbd45fc1e1a6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:43:17 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:43:17 up 29 min,  1 user,  load average: 0.14, 0.07, 0.10
+    c9a0843447c71d01d8f338f794926c9b521d841f
+
+:100755 100755 510a979... 1935c8c... M	nemu/nemu
+:100644 100644 e0d3557... f9010b6... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ed17776... ab8e336... M	nemu/src/cpu/alu.c
+:100644 100644 607d9ea... 8cb3c8f... M	nemu/src/cpu/alu.o
+
+commit c82677897e8e4e813638df31bdfa6ea76e6441a5
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:35:30 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:35:30 up 21 min,  1 user,  load average: 0.24, 0.13, 0.16
+    100e9862ae399fb89d30b444d9b82718ce6e7d4c
+
+:100755 100755 e599813... 510a979... M	nemu/nemu
+:100644 100644 cb40a3e... e0d3557... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 8dddc92... ed17776... M	nemu/src/cpu/alu.c
+:100644 100644 c331a1a... 607d9ea... M	nemu/src/cpu/alu.o
+
+commit cc563d18a00cee16cd1034bf6d51522cea0a8374
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:35:02 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:35:02 up 21 min,  1 user,  load average: 0.04, 0.09, 0.15
+    cbc2a935699c50158ab4ae6464191bdb88e8ca4a
+
+:100755 100755 9d88da7... e599813... M	nemu/nemu
+:100644 100644 0082526... cb40a3e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 47633bb... 8dddc92... M	nemu/src/cpu/alu.c
+:100644 100644 04713c9... c331a1a... M	nemu/src/cpu/alu.o
+
+commit d93a03c1ecbb876da1c7c2742e16741712b9e532
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:34:02 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:34:02 up 20 min,  1 user,  load average: 0.04, 0.09, 0.16
+    2e308ac41d2ffd95896267e1261c128291f33761
+
+:100755 100755 09fd343... 9d88da7... M	nemu/nemu
+:100644 100644 68a0499... 0082526... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 6cdc6e0... 47633bb... M	nemu/src/cpu/alu.c
+:100644 100644 1bb48ef... 04713c9... M	nemu/src/cpu/alu.o
+
+commit 9dbc4c9f167ccd1162dce40e6d207be0909bf538
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:32:48 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:32:48 up 18 min,  1 user,  load average: 0.05, 0.11, 0.17
+    1941ac17b992cf88eedcd4d59e6bc529fdc20c2b
+
+:100755 100755 2368359... 09fd343... M	nemu/nemu
+:100644 100644 c410e23... 68a0499... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 0ab5c47... 6cdc6e0... M	nemu/src/cpu/alu.c
+:100644 100644 132e567... 1bb48ef... M	nemu/src/cpu/alu.o
+
+commit 68cf115f302f7567db0234b8b0737384a007bf36
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:27:48 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:27:48 up 13 min,  1 user,  load average: 0.00, 0.14, 0.20
+    7e0118e9779a1760c443ff297fc7beecec62a8b
+
+:100755 100755 1876b4c... 2368359... M	nemu/nemu
+:100644 100644 09de5ad... c410e23... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 8618728... 0ab5c47... M	nemu/src/cpu/alu.c
+:100644 100644 7a05583... 132e567... M	nemu/src/cpu/alu.o
+
+commit 6200bf532a463f182049ea032ebb12fad70959af
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:23:32 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:23:32 up 9 min,  1 user,  load average: 0.20, 0.32, 0.27
+    ae40bda4179cf938cbc5dc85849668736f49e3e
+
+:100755 100755 f7123ad... 1876b4c... M	nemu/nemu
+:100644 100644 aebd17c... 09de5ad... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 df222e4... 8618728... M	nemu/src/cpu/alu.c
+:100644 100644 810a744... 7a05583... M	nemu/src/cpu/alu.o
+
+commit bbc250196b3b987b17a72666962fccf717008185
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 23:19:23 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:19:23 up 5 min,  1 user,  load average: 0.38, 0.64, 0.34
+    49b62745fd67251266075ea41099d72f4066320c
+
+:100755 100755 39d7457... f7123ad... M	nemu/nemu
+:100644 100644 3a26533... aebd17c... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 b72ada3... df222e4... M	nemu/src/cpu/alu.c
+:100644 100644 a0cc29f... 810a744... M	nemu/src/cpu/alu.o
+:100644 100644 31da791... 6915e2a... M	nemu/src/cpu/test/.alu_test.c.swp
+
+commit b785a76182568da1f1b81fb5014322efae0450dc
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 13:33:30 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     13:33:30 up 1 day,  2:13,  1 user,  load average: 0.05, 0.01, 0.01
+    c5bfd955d2967f9ec237624072eb5ea3b17fe797
+
+:100755 100755 0362ab4... 39d7457... M	nemu/nemu
+:100644 100644 7e087d0... 3a26533... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 d65fa2f... b72ada3... M	nemu/src/cpu/alu.c
+:100644 100644 656153d... a0cc29f... M	nemu/src/cpu/alu.o
+
+commit 24939156801208022e9c606d156a2c46b808a6da
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 12:50:00 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     12:50:00 up 1 day,  1:29,  1 user,  load average: 0.00, 0.00, 0.00
+    6f03258d239fde9ebd5eb1bc10d770a35a645faa
+
+:100755 100755 3d18513... 0362ab4... M	nemu/nemu
+:100644 100644 d14b7ca... 7e087d0... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 0b57bd0... d65fa2f... M	nemu/src/cpu/alu.c
+:100644 100644 1dfbae7... 656153d... M	nemu/src/cpu/alu.o
+
+commit 7ea61e7262032b6273765dcd9c321dc48cfdab64
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 12:47:55 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     12:47:55 up 1 day,  1:27,  1 user,  load average: 0.00, 0.00, 0.00
+    60ad6eedad12b5e7f6006bb38e8efbd41deef01f
+
+:100755 100755 3c601db... 3d18513... M	nemu/nemu
+:100644 100644 b8e5a44... d14b7ca... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 0e411a3... 0b57bd0... M	nemu/src/cpu/alu.c
+:100644 100644 da13507... 1dfbae7... M	nemu/src/cpu/alu.o
+
+commit 0773a56214e6e5474cccec32715f25eca50c8b00
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:45:39 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:45:39 up 20:25,  1 user,  load average: 0.01, 0.03, 0.05
+    b83bb4ff8f34f71fc4d90a9f97003fa42bb50b54
+
+:100644 100644 feb8256... b8e5a44... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 f9c07b3... 0e411a3... M	nemu/src/cpu/alu.c
+
+commit 6cda1482ca6389784ac1a3f96744f06b363d03c5
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:45:15 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:45:15 up 20:25,  1 user,  load average: 0.02, 0.04, 0.05
+    abbcf1cf57045ff23f0213f928e9ea862b7b7703
+
+:100755 100755 29fd07a... 3c601db... M	nemu/nemu
+:100644 100644 3cbd257... feb8256... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c42bb0b... f9c07b3... M	nemu/src/cpu/alu.c
+:100644 100644 674e0f5... da13507... M	nemu/src/cpu/alu.o
+
+commit 775e343e159b6faf72de45a57319654a2f67b337
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:35:06 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:35:06 up 20:15,  1 user,  load average: 0.09, 0.15, 0.09
+    6041866fe28f5f8b0bcfadadada3245a7556a5
+
+:100755 100755 3c601db... 29fd07a... M	nemu/nemu
+:100644 100644 d0e667e... 3cbd257... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 6664f8f... c42bb0b... M	nemu/src/cpu/alu.c
+:100644 100644 da13507... 674e0f5... M	nemu/src/cpu/alu.o
+
+commit 55ee69ce68718e011425d5fb73e15ddb4f390496
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:34:44 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:34:44 up 20:14,  1 user,  load average: 0.05, 0.15, 0.09
+    d89fc0b9868eb2334b0159251e73375247eaaae7
+
+:100755 100755 f803f39... 3c601db... M	nemu/nemu
+:100644 100644 bb148a5... d0e667e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c42bb0b... 6664f8f... M	nemu/src/cpu/alu.c
+:100644 100644 2ad066b... da13507... M	nemu/src/cpu/alu.o
+
+commit 3c0695fe63a9661d03498af5c054681171cb0539
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:33:05 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:33:05 up 20:12,  1 user,  load average: 0.07, 0.17, 0.09
+    a8b040fd372acd76edd2b1b23ab3618d74987857
+
+:100755 100755 ea9db81... f803f39... M	nemu/nemu
+:100644 100644 4e1f28e... bb148a5... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 d19d70d... c42bb0b... M	nemu/src/cpu/alu.c
+:100644 100644 ac2e906... 2ad066b... M	nemu/src/cpu/alu.o
+
+commit d8a947481ab3a7258b97ad491e08d4a6b02c3088
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:28:34 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:28:34 up 20:08,  1 user,  load average: 0.51, 0.25, 0.10
+    d6f12bf92c22387512245261f575a2f15dff3385
+
+:100755 100755 a247b43... ea9db81... M	nemu/nemu
+:100644 100644 94a3830... 4e1f28e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 48ffa9c... d19d70d... M	nemu/src/cpu/alu.c
+:100644 100644 602ff42... ac2e906... M	nemu/src/cpu/alu.o
+:100644 100644 167c4ac... 7ccc389... M	nemu/src/cpu/test/alu_test.o
+
+commit 8febdff103e70c74511a4b87a41b509a747834e9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:28:15 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:28:15 up 20:08,  1 user,  load average: 0.31, 0.20, 0.08
+    bfd5fb2f211c77d96d448dbdeb618a87f585d6b
+
+:100755 100755 c4a7674... a247b43... M	nemu/nemu
+:100644 100644 eeb075f... 94a3830... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 d7a0100... 48ffa9c... M	nemu/src/cpu/alu.c
+:100644 100644 d57dcf2... 602ff42... M	nemu/src/cpu/alu.o
+:100644 100644 54448d8... 31da791... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 4ac50ec... d149157... M	nemu/src/cpu/test/alu_test.c
+
+commit 2e8e570049bc85534812186e9cd15830c1c3bbf7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:26:06 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:26:06 up 20:06,  1 user,  load average: 0.00, 0.01, 0.00
+    cdba4fbe52a06054ef9745b2165df0f8171d8236
+
+:100755 100755 ba56c9b... c4a7674... M	nemu/nemu
+:100644 100644 cfaf572... eeb075f... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c380c3a... d7a0100... M	nemu/src/cpu/alu.c
+:100644 100644 d9bcf4d... d57dcf2... M	nemu/src/cpu/alu.o
+
+commit b5a92576fec4167391d9d7cbd6a497af65388429
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:24:24 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:24:24 up 20:04,  1 user,  load average: 0.02, 0.02, 0.00
+    298a9d1456dbb1c397c60f4f113131a7f65f13a1
+
+:100755 100755 18b3658... ba56c9b... M	nemu/nemu
+:100644 100644 4cc6525... cfaf572... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 2bdd64f... c380c3a... M	nemu/src/cpu/alu.c
+:100644 100644 eeebc79... d9bcf4d... M	nemu/src/cpu/alu.o
+
+commit 1e5c150d2c8c94cf7ecd1ba277902e50414c0d0a
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:22:14 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:22:14 up 20:02,  1 user,  load average: 0.08, 0.03, 0.00
+    f485770bda8c2d3cc993e010c8ec98a86da0f00c
+
+:100644 100644 a126746... 4cc6525... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 055df3d... 2bdd64f... M	nemu/src/cpu/alu.c
+
+commit 72f7ff7752c09c30f3ebd7fe508db2e253d1ce99
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 07:21:17 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     07:21:17 up 20:01,  1 user,  load average: 0.06, 0.02, 0.00
+    2a0f0b3f139b005f18d82fadff79b258bea49f93
+
+:100755 100755 e1e0a91... 18b3658... M	nemu/nemu
+:100644 100644 574d430... a126746... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c0ae4e2... 055df3d... M	nemu/src/cpu/alu.c
+:100644 100644 3cf4cb1... eeebc79... M	nemu/src/cpu/alu.o
+
+commit 2f2e406ab0a64e82c3b2ea6a6aef34760dcd66d9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:49:36 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:49:36 up 19:29,  1 user,  load average: 0.00, 0.02, 0.00
+    24d406e921d7b2ee464d0a5dc5674427e31a6176
+
+:100755 100755 cd03933... e1e0a91... M	nemu/nemu
+:100644 100644 ffacec6... 574d430... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c42b8dc... c0ae4e2... M	nemu/src/cpu/alu.c
+:100644 100644 39424f2... 3cf4cb1... M	nemu/src/cpu/alu.o
+
+commit 838f7df3229e3a91531460310021e8a1dcf7470b
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:46:40 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:46:40 up 19:26,  1 user,  load average: 0.02, 0.02, 0.00
+    fa54b76f3f5f826aaedf9529bd46f37aa0da91df
+
+:100755 100755 c58c268... cd03933... M	nemu/nemu
+:100644 100644 3a963d6... ffacec6... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 b40f0e0... c42b8dc... M	nemu/src/cpu/alu.c
+:100644 100644 1e8b7c8... 39424f2... M	nemu/src/cpu/alu.o
+
+commit 147d7e2db3645e00ffbea9d1f69678f6b2315ad6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:44:32 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:44:32 up 19:24,  1 user,  load average: 0.16, 0.03, 0.01
+    434280ab670f13a16adb137d91a3f9fa39a53be
+
+:100755 100755 ad15c99... c58c268... M	nemu/nemu
+:100644 100644 efd8215... 3a963d6... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 217ae4e... b40f0e0... M	nemu/src/cpu/alu.c
+:100644 100644 22a5a12... 1e8b7c8... M	nemu/src/cpu/alu.o
+
+commit e2215f46eb7293f580f15b1b8fb6c314fe8031da
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:40:14 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:40:14 up 19:20,  1 user,  load average: 0.00, 0.01, 0.00
+    ad908a5b3df4de9ded13f4335af8413369d4d7dc
+
+:100755 100755 1cec874... ad15c99... M	nemu/nemu
+:100644 100644 88eaf77... efd8215... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 d2c54de... 217ae4e... M	nemu/src/cpu/alu.c
+:100644 100644 1837928... 22a5a12... M	nemu/src/cpu/alu.o
+
+commit c8a72378018f7edb5fec50f9fbfc86a3b0eff7fa
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:37:43 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:37:43 up 19:17,  1 user,  load average: 0.08, 0.02, 0.01
+    9af51441eb2cce61bd1b6cadd9284cd15b6d48d7
+
+:100755 100755 2d6b00e... 1cec874... M	nemu/nemu
+:100644 100644 12c4aa7... 88eaf77... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 7dbeb6a... d2c54de... M	nemu/src/cpu/alu.c
+:100644 100644 1382ca1... 1837928... M	nemu/src/cpu/alu.o
+
+commit 61fc20b9529defbf4d793aaa945304b1951e3ef1
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:34:18 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:34:18 up 19:14,  1 user,  load average: 0.02, 0.03, 0.00
+    e8f0a901947ae409c778d80e61e001a87bc9a65a
+
+:100755 100755 1f0f766... 2d6b00e... M	nemu/nemu
+:100644 100644 c304ffd... 12c4aa7... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 21f09c7... 7dbeb6a... M	nemu/src/cpu/alu.c
+:100644 100644 fb009d6... 54448d8... M	nemu/src/cpu/test/.alu_test.c.swp
+:100644 100644 74aae38... 167c4ac... M	nemu/src/cpu/test/alu_test.o
+
+commit 856b321463d30e7e31cef0ac9bd0c6721be15598
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:32:45 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:32:45 up 19:12,  1 user,  load average: 0.00, 0.02, 0.00
+    89f0168b7a21194e4db9b797907ec73e23552396
+
+:100755 100755 03d817f... 1f0f766... M	nemu/nemu
+:100644 100644 19b81a0... fb009d6... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 0d247d0... 4ac50ec... M	nemu/src/cpu/test/alu_test.c
+:100644 100644 00bc1a9... 74aae38... M	nemu/src/cpu/test/alu_test.o
+
+commit a98e660728ed25887f3324f13df97091fde4096c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:27:11 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:27:11 up 19:07,  1 user,  load average: 0.00, 0.03, 0.00
+    e5f27ac91c7f1f6fccd61cae37a5e2f6a7992d49
+
+:100755 100755 c4ac87d... 03d817f... M	nemu/nemu
+:100644 100644 d513454... c304ffd... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 e1dce5b... 1382ca1... M	nemu/src/cpu/alu.o
+:100644 100644 5acb98c... 19b81a0... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 7aec6d7... 0d247d0... M	nemu/src/cpu/test/alu_test.c
+
+commit c23aa80dde002c6182e9ff6e1157ca7f0c55ec7f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:19:47 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:19:47 up 18:59,  1 user,  load average: 0.11, 0.03, 0.01
+    ad4fd6d64ff0db240f2b6919e6c3beaaeecedd6
+
+:100755 100755 4e4aa98... c4ac87d... M	nemu/nemu
+:100644 100644 562b22f... d513454... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 f4c647f... 21f09c7... M	nemu/src/cpu/alu.c
+:100644 100644 937081d... e1dce5b... M	nemu/src/cpu/alu.o
+
+commit d7e802527544f915c6571a9965965a7e9bb6df24
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:18:37 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:18:37 up 18:58,  1 user,  load average: 0.00, 0.00, 0.00
+    140f9e0adbde70b14fffea4e677697ffe7d933fd
+
+:100755 100755 544bd71... 4e4aa98... M	nemu/nemu
+:100644 100644 3c1b94d... 562b22f... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 f6f7138... f4c647f... M	nemu/src/cpu/alu.c
+:100644 100644 c6d16e3... 937081d... M	nemu/src/cpu/alu.o
+
+commit b300ea62d0ee0b6bdc9c37f9d203a6321bb5cfd7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:14:37 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:14:37 up 18:54,  1 user,  load average: 0.00, 0.01, 0.00
+    68e1058762170660bcc73856ae673d9c73909e5b
+
+:100755 100755 2b6e423... 544bd71... M	nemu/nemu
+:100644 100644 097e8a2... 3c1b94d... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 7d9e6b3... f6f7138... M	nemu/src/cpu/alu.c
+:100644 100644 4608ab1... c6d16e3... M	nemu/src/cpu/alu.o
+
+commit d0947e68130f8eaf273152f52b8c10ae70eb7970
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:13:41 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:13:41 up 18:53,  1 user,  load average: 0.00, 0.01, 0.00
+    19ee2243fcbaffedb1205e6252425594d36adf90
+
+:100755 100755 fbc4d85... 2b6e423... M	nemu/nemu
+:100644 100644 a73c730... 097e8a2... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ffabf10... 7d9e6b3... M	nemu/src/cpu/alu.c
+:100644 100644 37f35f3... 4608ab1... M	nemu/src/cpu/alu.o
+
+commit 37ee7ece758bdd19b7965f63b1535b1047af7731
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:05:36 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:05:35 up 18:45,  1 user,  load average: 0.21, 0.08, 0.02
+    d9a54bc8d4e34d0623392d8c7489da7a53af52cb
+
+:100755 100755 cb308a5... fbc4d85... M	nemu/nemu
+:100644 100644 3fe5b7c... a73c730... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 0b4f6aa... ffabf10... M	nemu/src/cpu/alu.c
+:100644 100644 b7005a6... 37f35f3... M	nemu/src/cpu/alu.o
+
+commit 841738b54bd623df4370e420345f6c9adba762a5
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 06:02:51 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     06:02:51 up 18:42,  1 user,  load average: 0.07, 0.03, 0.00
+    ea605bd1eac8b07768e4f61ea22c5226ec462b3b
+
+:100755 100755 58907c6... cb308a5... M	nemu/nemu
+:100644 100644 cc19cfa... 3fe5b7c... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ad0eb70... 0b4f6aa... M	nemu/src/cpu/alu.c
+:100644 100644 025afb4... b7005a6... M	nemu/src/cpu/alu.o
+
+commit 2b39c0717d763806350f0b07299d0b37ebd762b8
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:36:23 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:36:23 up 18:16,  1 user,  load average: 0.16, 0.06, 0.01
+    1543938a1292caf480c54623e08a5432f31507fe
+
+:100644 100644 e5eb8b0... cc19cfa... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 88b8db5... ad0eb70... M	nemu/src/cpu/alu.c
+
+commit 2f0e720fe0c1ff2d75cddaccbc23141e4c07070a
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:35:58 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:35:58 up 18:15,  1 user,  load average: 0.00, 0.03, 0.00
+    dc6204c64099c0617a25343a2dbf450855bfeeb
+
+:100644 100644 522795e... e5eb8b0... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ed5feb8... 88b8db5... M	nemu/src/cpu/alu.c
+
+commit 86b8bf7565f79ca4a736fe2d0f466e89ec3f9a5c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:35:26 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:35:26 up 18:15,  1 user,  load average: 0.01, 0.04, 0.00
+    92cc225350fc5dc4b776f91bc11f9c8013e9d99c
+
+:100755 100755 7e8d91e... 58907c6... M	nemu/nemu
+:100644 100644 e9e5ffb... 522795e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 96d20f8... ed5feb8... M	nemu/src/cpu/alu.c
+:100644 100644 029d222... 025afb4... M	nemu/src/cpu/alu.o
+
+commit 3e3c66fbd4a55cd2dfb88a84ee1c90151d49d723
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:33:12 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:33:12 up 18:13,  1 user,  load average: 0.01, 0.05, 0.01
+    233c1240766b4f65d816350e35ac782e3db61cc
+
+:100755 100755 b453da8... 7e8d91e... M	nemu/nemu
+:100644 100644 b77e5dd... e9e5ffb... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 d2d0bee... 96d20f8... M	nemu/src/cpu/alu.c
+:100644 100644 3e1cece... 029d222... M	nemu/src/cpu/alu.o
+
+commit 8a6d9505971775fa69de9baf424f983947dfe953
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:32:18 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:32:18 up 18:12,  1 user,  load average: 0.03, 0.06, 0.02
+    326ac1c0c1d38f659df0c94254d686875a0af99b
+
+:100755 100755 c15cc94... b453da8... M	nemu/nemu
+:100644 100644 4fc8988... b77e5dd... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 33e47dd... d2d0bee... M	nemu/src/cpu/alu.c
+:100644 100644 b842b83... 5acb98c... M	nemu/src/cpu/test/.alu_test.c.swp
+:100644 100644 20abf5d... 00bc1a9... M	nemu/src/cpu/test/alu_test.o
+
+commit 7ae15ec236fbe0feb3fad400a356ff9085a66f3e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:30:50 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:30:50 up 18:10,  1 user,  load average: 0.14, 0.08, 0.02
+    1ca4da273e612ffdbf3478da4a4f73398cf07c1b
+
+:100755 100755 ccee2ad... c15cc94... M	nemu/nemu
+:100644 100644 5b7a792... b842b83... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 a583953... 7aec6d7... M	nemu/src/cpu/test/alu_test.c
+:100644 100644 c90d2a9... 20abf5d... M	nemu/src/cpu/test/alu_test.o
+
+commit 1fa3ce4fc9096e9e6807ad8771c9e9033e455b6f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:29:59 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:29:59 up 18:09,  1 user,  load average: 0.02, 0.06, 0.02
+    5b44600dc9e8100abc431e387c4a8882defdf32a
+
+:100755 100755 592d697... ccee2ad... M	nemu/nemu
+:100644 100644 b38a158... 4fc8988... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 6cf5b61... 3e1cece... M	nemu/src/cpu/alu.o
+:100644 100644 353a654... 5b7a792... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 f47860a... a583953... M	nemu/src/cpu/test/alu_test.c
+
+commit e11d4c97e709f88cc16f47a7817539d09290a295
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:26:50 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:26:49 up 18:06,  1 user,  load average: 0.41, 0.11, 0.03
+    76b4190f4470ea1ce3d8e675fee0873785d59afe
+
+:100755 100755 20d2e0f... 592d697... M	nemu/nemu
+:100644 100644 cf2e293... b38a158... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 5807f3a... 33e47dd... M	nemu/src/cpu/alu.c
+:100644 100644 ac19754... 6cf5b61... M	nemu/src/cpu/alu.o
+
+commit 13d238d5fa804ddaf609df005cf8bda66ed9c631
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:16:35 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:16:35 up 17:56,  1 user,  load average: 0.01, 0.01, 0.00
+    4dce513b2c553dbd226c474f83d35bfb1d12e7a
+
+:100755 100755 6280b27... 20d2e0f... M	nemu/nemu
+:100644 100644 aa18050... cf2e293... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 7096e87... 5807f3a... M	nemu/src/cpu/alu.c
+:100644 100644 8905120... ac19754... M	nemu/src/cpu/alu.o
+
+commit bda81df0b70e139167282ed6a6201d5a39dc5c73
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:16:19 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:16:19 up 17:56,  1 user,  load average: 0.01, 0.02, 0.00
+    f978c48f9c63e6eb1db0152c39aa6391813c9801
+
+:100644 100644 052b250... aa18050... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 808cbe8... 7096e87... M	nemu/src/cpu/alu.c
+
+commit 966c8e2f88b96759755fa4d530580cdc7a704135
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 05:16:04 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:16:04 up 17:55,  1 user,  load average: 0.02, 0.02, 0.00
+    b8136a68375092cf769d7400c256d4ce53a5b3fb
+
+:100644 100644 e2d069e... 052b250... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ad489bb... 808cbe8... M	nemu/src/cpu/alu.c
+
+commit 1b671e49bad6dc9418fe08d47f9923c53f18ef5f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Sep 16 00:21:23 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     00:21:23 up 13:01,  1 user,  load average: 0.11, 0.04, 0.01
+    31696db03f78d38b44e15cb2555ea84d9d5d1b9b
+
+:100755 100755 92610ab... 6280b27... M	nemu/nemu
+:100644 100644 323e3d8... e2d069e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ad98b45... ad489bb... M	nemu/src/cpu/alu.c
+:100644 100644 04d08b3... 8905120... M	nemu/src/cpu/alu.o
+
+commit ee15c4aaab820c4e88bac33ad2d31287821f3c7d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:21:44 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:21:44 up 12:01,  1 user,  load average: 0.00, 0.00, 0.00
+    7e1ab09342569c573a5496918136d27526324f0
+
+:100644 100644 67a8d56... 323e3d8... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 49d4311... ad98b45... M	nemu/src/cpu/alu.c
+
+commit bd5dd75c0dd3a7c798e559733be9d485ef292444
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:20:52 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:20:52 up 12:00,  1 user,  load average: 0.01, 0.01, 0.00
+    1e656702ced14ddd228965fd37bc0da0bbd1028a
+
+:100755 100755 6c9a109... 92610ab... M	nemu/nemu
+:100644 100644 a90cd5e... 67a8d56... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 1cef535... 49d4311... M	nemu/src/cpu/alu.c
+:100644 100644 87c1c65... 04d08b3... M	nemu/src/cpu/alu.o
+
+commit c7a68f5f9e502d2627e0179fd5cd1180b59b8e37
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:19:50 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:19:51 up 11:59,  1 user,  load average: 0.03, 0.01, 0.00
+    77aa17cbb5f704ebe8b4d677e5561f045f1cd78c
+
+:100755 100755 218417b... 6c9a109... M	nemu/nemu
+:100644 100644 3587e14... a90cd5e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 4fe5a65... 1cef535... M	nemu/src/cpu/alu.c
+:100644 100644 e092eca... 87c1c65... M	nemu/src/cpu/alu.o
+
+commit 731f3c80270d8b71df54b8d92dfc04a73a519ef9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:18:42 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:18:42 up 11:58,  1 user,  load average: 0.00, 0.00, 0.00
+    971494ef92e0e59f9f19e30d538927495826af2c
+
+:100644 100644 a9dbacc... 3587e14... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 b5f882c... 4fe5a65... M	nemu/src/cpu/alu.c
+
+commit 21f7908ddab6abd37d9faf0a11d2202c8012cb32
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:18:17 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:18:17 up 11:58,  1 user,  load average: 0.00, 0.00, 0.00
+    e17c2fc160dddfacd1abf076e38d113418c1ad95
+
+:100755 100755 10776f1... 218417b... M	nemu/nemu
+:100644 100644 ce7dbed... a9dbacc... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ef99b5e... b5f882c... M	nemu/src/cpu/alu.c
+:100644 100644 4b3302c... e092eca... M	nemu/src/cpu/alu.o
+
+commit e3af26370680f4c86de9c395618fdc147ff19cf3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:08:50 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:08:50 up 11:48,  1 user,  load average: 0.14, 0.11, 0.05
+    bd51d83ce14af7d424cfd3891cc6db5c6070a16c
+
+:100755 100755 2000228... 10776f1... M	nemu/nemu
+:100644 100644 3c20046... ce7dbed... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 a0b66dc... ef99b5e... M	nemu/src/cpu/alu.c
+:100644 100644 0c0ccb4... 4b3302c... M	nemu/src/cpu/alu.o
+
+commit 05cec17f3ab293b294bafe72e20713d1f06f3acc
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:08:24 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:08:24 up 11:48,  1 user,  load average: 0.04, 0.09, 0.04
+    e6a75d04cb1b2b5da046c5989149f0521274c1f
+
+:100755 100755 8df86cf... 2000228... M	nemu/nemu
+:100644 100644 74e6d5f... 3c20046... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 7d1130d... a0b66dc... M	nemu/src/cpu/alu.c
+:100644 100644 2c9cf73... 353a654... M	nemu/src/cpu/test/.alu_test.c.swp
+:100644 100644 20175c4... c90d2a9... M	nemu/src/cpu/test/alu_test.o
+
+commit 7d6e9f8c22b280d94deadb131594dd1c44a87976
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:03:57 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:03:57 up 11:43,  1 user,  load average: 0.27, 0.13, 0.04
+    c4c0cee73e35e7eb7b2c1283581d1c18daf31a9
+
+:100755 100755 432c166... 8df86cf... M	nemu/nemu
+:100644 100644 836639e... 74e6d5f... M	nemu/src/cpu/.alu.c.swp
+:100644 100644 893632f... 0c0ccb4... M	nemu/src/cpu/alu.o
+:100644 100644 105fe0f... 2c9cf73... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 92a7ea9... f47860a... M	nemu/src/cpu/test/alu_test.c
+
+commit 212c475184d4eb647a78318a5dcbedf36d259ea0
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:03:25 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:03:25 up 11:43,  1 user,  load average: 0.44, 0.14, 0.05
+    1e6c91c8fc40635af8c0e115f525a183e0a8b7
+
+:100755 100755 8dbba7f... 432c166... M	nemu/nemu
+:100644 100644 2a24cc2... 836639e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 1c1cbbf... 7d1130d... M	nemu/src/cpu/alu.c
+:100644 100644 4f4734a... 893632f... M	nemu/src/cpu/alu.o
+
+commit fad55fa3161ba5fca6dce4c42c66f7055aeb8c23
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:02:47 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:02:47 up 11:42,  1 user,  load average: 0.07, 0.02, 0.00
+    e168b23ff7dba89ac3d47bbd0861538d57afee9
+
+:100755 100755 0def424... 8dbba7f... M	nemu/nemu
+:100644 100644 2d1d83e... 2a24cc2... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 1724b1f... 1c1cbbf... M	nemu/src/cpu/alu.c
+:100644 100644 450cc83... 4f4734a... M	nemu/src/cpu/alu.o
+
+commit 6f84db3b5fdd5eeaaddf0e52d4f7eaf22fd7424d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 23:01:33 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     23:01:33 up 11:41,  1 user,  load average: 0.00, 0.01, 0.00
+    5b7b0aeb60d79e14879c0041cb4afbafe05f8d83
+
+:100755 100755 9996f48... 0def424... M	nemu/nemu
+:100644 100644 66bcf8a... 2d1d83e... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 cf7fbc7... 1724b1f... M	nemu/src/cpu/alu.c
+:100644 100644 fc325ee... 450cc83... M	nemu/src/cpu/alu.o
+
+commit 674a0515909158fb068ce29d0faff97503acbaf4
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:57:33 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:57:33 up 11:37,  1 user,  load average: 0.06, 0.05, 0.01
+    72e4e1a9acaf29d0a006d1cb19d415c93a83bd3b
+
+:100644 100644 c1da2c6... 66bcf8a... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 b5c8311... cf7fbc7... M	nemu/src/cpu/alu.c
+
+commit c37e76f55d8808d4a76229c75a6222f1932e4413
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:56:19 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:56:19 up 11:36,  1 user,  load average: 0.04, 0.03, 0.00
+    650b626f3a25df586ef627abd7396e4ed9915141
+
+:100755 100755 f541b0a... 9996f48... M	nemu/nemu
+:100644 100644 741b066... c1da2c6... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 6c70589... b5c8311... M	nemu/src/cpu/alu.c
+:100644 100644 ba07113... fc325ee... M	nemu/src/cpu/alu.o
+
+commit 01da5752b517c7324fb4af2c51e922c862343843
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:53:20 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:53:20 up 11:33,  1 user,  load average: 0.04, 0.03, 0.00
+    329fde9b292b72cf783cdb549c6a7a228d049f
+
+:100755 100755 189656f... f541b0a... M	nemu/nemu
+:100644 100644 02b02db... 741b066... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 312bcb9... 6c70589... M	nemu/src/cpu/alu.c
+:100644 100644 2a14108... ba07113... M	nemu/src/cpu/alu.o
+
+commit a4bf8c9b5df5c4721d2707d68127628cf9200427
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:52:21 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:52:21 up 11:32,  1 user,  load average: 0.03, 0.02, 0.00
+    678f4e7db5aebb7ea0ff0912e4cea87083b21dc0
+
+:100644 100644 8622701... 02b02db... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 6117bae... 312bcb9... M	nemu/src/cpu/alu.c
+
+commit fc3a001a8a611eb21d9c2132ec0a332744f83652
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:52:05 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:52:05 up 11:31,  1 user,  load average: 0.04, 0.02, 0.00
+    82f7bb02bd85980df04c56b0b60862d97e5bf26b
+
+:100755 100755 b664608... 189656f... M	nemu/nemu
+:100644 100644 0ace661... 8622701... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 2cd8287... 6117bae... M	nemu/src/cpu/alu.c
+:100644 100644 5a8b0d3... 2a14108... M	nemu/src/cpu/alu.o
+
+commit 39009ce3bc30e7193bd1338a130d1bbdfaa4207d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:47:47 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:47:47 up 11:27,  1 user,  load average: 0.00, 0.01, 0.00
+    5249e9028732c5d088e323c5f6fda1db9820a2e4
+
+:100755 100755 eda0768... b664608... M	nemu/nemu
+:100644 100644 6988681... 0ace661... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 40e967c... 2cd8287... M	nemu/src/cpu/alu.c
+:100644 100644 7e47fb4... 5a8b0d3... M	nemu/src/cpu/alu.o
+
+commit 41c9fbac4b016cafadd7ecd4f6da3feb81db7bdb
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:44:21 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:44:21 up 11:24,  1 user,  load average: 0.09, 0.04, 0.01
+    679c24d9a1d56b733677280997db7dbbd84c5a1
+
+:100755 100755 ae6ff6e... eda0768... M	nemu/nemu
+:100644 100644 eeaca5a... 6988681... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 27de326... 40e967c... M	nemu/src/cpu/alu.c
+:100644 100644 1fa88c3... 7e47fb4... M	nemu/src/cpu/alu.o
+
+commit c9300755ec144cc4b8e751460bb4599b6c5be3e4
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:43:58 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:43:58 up 11:23,  1 user,  load average: 0.05, 0.03, 0.00
+    753e100ffc05c01dd4e2ea6fe8b4895d95aaab4d
+
+:100755 100755 5ada365... ae6ff6e... M	nemu/nemu
+:100644 100644 9b062f5... eeaca5a... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 a22ab42... 27de326... M	nemu/src/cpu/alu.c
+:100644 100644 e4f4342... 1fa88c3... M	nemu/src/cpu/alu.o
+:100644 100644 0a33d22... 20175c4... M	nemu/src/cpu/test/alu_test.o
+
+commit 69a7f252b7037f9e51da0ee290ca0423fe7020c0
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:43:33 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:43:33 up 11:23,  1 user,  load average: 0.07, 0.03, 0.00
+    b76636d6b6d955bfaa48ff23f290155c51a782b3
+
+:100644 100644 0b42aaa... 9b062f5... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 3675988... a22ab42... M	nemu/src/cpu/alu.c
+
+commit 824fdea6db20087e171a1250e118a07e4ded6a90
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:41:07 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:41:07 up 11:21,  1 user,  load average: 0.02, 0.03, 0.00
+    378b16e0c8a7bf6af58b9fcae153844fab1957e0
+
+:100644 100644 1c7f698... 0b42aaa... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 06cc1fd... 3675988... M	nemu/src/cpu/alu.c
+:100644 100644 591ed3b... 105fe0f... M	nemu/src/cpu/test/.alu_test.c.swp
+
+commit 13e08691cc1e2e503c55110489b7fde1c30072ed
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:40:28 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:40:27 up 11:20,  1 user,  load average: 0.05, 0.03, 0.00
+    3eb691769873f2bb30ccdae9dcee23f2368aff81
+
+:100755 100755 05dd880... 5ada365... M	nemu/nemu
+:100644 100644 e43261d... 1c7f698... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 1bfe11a... 06cc1fd... M	nemu/src/cpu/alu.c
+:100644 100644 58b6500... 591ed3b... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 cb9f978... 92a7ea9... M	nemu/src/cpu/test/alu_test.c
+:100644 100644 2f9886f... 0a33d22... M	nemu/src/cpu/test/alu_test.o
+
+commit 04635ccd9fec462f555999f1abddb4bb5b4450d6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:37:36 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:37:36 up 11:17,  1 user,  load average: 0.06, 0.02, 0.00
+    c50da66ac3c3e94662255e8753d3e72f746736c
+
+:100755 100755 115cbcd... 05dd880... M	nemu/nemu
+:100644 100644 1369c47... 58b6500... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 98c1466... cb9f978... M	nemu/src/cpu/test/alu_test.c
+:100644 100644 a898219... 2f9886f... M	nemu/src/cpu/test/alu_test.o
+
+commit 4b97c8b30af9bfa19c1f68b95c8c75c4bf00d211
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:35:52 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:35:52 up 11:15,  1 user,  load average: 0.08, 0.02, 0.01
+    aceeb0af9a263156d6bc87e53008d685ada746a3
+
+:100755 100755 5c9617a... 115cbcd... M	nemu/nemu
+:100644 100644 1c0218a... 1369c47... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 5cf626a... 98c1466... M	nemu/src/cpu/test/alu_test.c
+:100644 100644 71a4208... a898219... M	nemu/src/cpu/test/alu_test.o
+
+commit 0bdd654969786ea4589652fdbc749e00a3d287ec
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:34:24 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:34:24 up 11:14,  1 user,  load average: 0.00, 0.00, 0.00
+    281dfd602b742dfc93313159c1ee0413d14d83fd
+
+:100755 100755 a0d7f07... 5c9617a... M	nemu/nemu
+:100644 100644 b209801... e4f4342... M	nemu/src/cpu/alu.o
+:100644 100644 ac62464... 1c0218a... M	nemu/src/cpu/test/.alu_test.c.swp
+:100755 100755 949cba3... 5cf626a... M	nemu/src/cpu/test/alu_test.c
+
+commit 97f25451a28e3af88a3252a0baeef52557e522b1
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 22:30:38 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     22:30:38 up 11:10,  1 user,  load average: 0.00, 0.00, 0.00
+    4e3e524ddf1651e0e67502181a62a1acb1f903c1
+
+:100755 100755 2a36cbc... a0d7f07... M	nemu/nemu
+:100644 100644 42f2ef2... e43261d... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c39ffed... 1bfe11a... M	nemu/src/cpu/alu.c
+:100644 100644 4d14fd9... b209801... M	nemu/src/cpu/alu.o
+
+commit dcaada4beb018a5ba5972eb993b4b76c9685bacb
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 05:32:29 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:32:29 up  2:03,  1 user,  load average: 0.13, 0.03, 0.01
+    cc9647a63f5c7b832a4c6a35ad07a1845f96a6
+
+:100755 100755 cf68f3f... 2a36cbc... M	nemu/nemu
+:100644 100644 38e45fb... 42f2ef2... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 87f316b... c39ffed... M	nemu/src/cpu/alu.c
+:100644 100644 071153c... 4d14fd9... M	nemu/src/cpu/alu.o
+
+commit 6f40e497c2bf375a09805e12246713f6b18c766d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 05:12:21 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:12:21 up  1:43,  1 user,  load average: 0.00, 0.02, 0.00
+    76bfbd03e1c3b829c6d333254b34754543866b9c
+
+:100755 100755 75a76ec... cf68f3f... M	nemu/nemu
+:100644 100644 fc91a89... 38e45fb... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 46b85a5... 87f316b... M	nemu/src/cpu/alu.c
+:100644 100644 3580870... 071153c... M	nemu/src/cpu/alu.o
+
+commit bab7a9d08c3a81df5c67dae23bbcaad9fbc119bd
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 05:10:09 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:10:09 up  1:41,  1 user,  load average: 0.05, 0.04, 0.00
+    b035b2b04a47d5bca27231a198ca853afbf80270
+
+:100755 100755 85c5cec... 75a76ec... M	nemu/nemu
+:100644 100644 f5e0d97... fc91a89... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 11665a2... 46b85a5... M	nemu/src/cpu/alu.c
+:100644 100644 c63b780... 3580870... M	nemu/src/cpu/alu.o
+
+commit 07cc66ad1a253641f84c38acfc7741fe58247055
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 05:09:24 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:09:24 up  1:40,  1 user,  load average: 0.11, 0.05, 0.01
+    f5b1d912e5a0560dd742e1912943cd92aa3ced3b
+
+:000000 100644 0000000... f5e0d97... A	nemu/src/cpu/.alu.c.swp
+:100755 100755 35aca18... 11665a2... M	nemu/src/cpu/alu.c
+
+commit ecbb4290119fb23bc039bbd18c5832ef820c9f17
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Sep 15 05:08:53 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     05:08:53 up  1:40,  1 user,  load average: 0.01, 0.02, 0.00
+    d1fee19ce8bc811bbb669a91bc70d5b458641f9e
+
+:100755 100755 2be4fcd... 85c5cec... M	nemu/nemu
+:100644 000000 f2043c2... 0000000... D	nemu/src/cpu/.alu.c.swp
+:100755 100755 e958691... 35aca18... M	nemu/src/cpu/alu.c
+:100644 100644 907ccac... c63b780... M	nemu/src/cpu/alu.o
+:100644 000000 69b1932... 0000000... D	nemu/src/cpu/test/.alu_test.c.swo
+:100644 100644 0656903... ac62464... M	nemu/src/cpu/test/.alu_test.c.swp
+
+commit b5b99ce96d350ccf1c5d4251215bcfc939675dc0
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 04:36:43 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:36:43 up 22:47,  1 user,  load average: 0.27, 0.07, 0.02
+    d12610f1d0c5877ff74c60556734e1519047e77
+
+:100755 100755 be1f43e... 2be4fcd... M	nemu/nemu
+:100644 100644 1294313... f2043c2... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 1818430... e958691... M	nemu/src/cpu/alu.c
+:100644 100644 e334e9b... 907ccac... M	nemu/src/cpu/alu.o
+
+commit 362692397fea08af08a496db1e17f85a8f76256f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 04:36:27 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:36:27 up 22:47,  1 user,  load average: 0.00, 0.01, 0.00
+    f9f19e3dc7d6c72a7fab123b135138a1d89aec72
+
+:100755 100755 45ae835... be1f43e... M	nemu/nemu
+:100644 100644 4e15372... 1294313... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 413691e... 1818430... M	nemu/src/cpu/alu.c
+:100644 100644 f392c1a... e334e9b... M	nemu/src/cpu/alu.o
+
+commit 3a02023fce3bce024ff9eb78904b8938ab2c9ee6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 04:33:10 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:33:10 up 22:43,  1 user,  load average: 0.04, 0.03, 0.00
+    5346946479cdc328af6e1d3ddd256b54bf52fa54
+
+:100755 100755 e0a30b2... 45ae835... M	nemu/nemu
+:100644 100644 89621e8... 4e15372... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 c1bf9a2... 413691e... M	nemu/src/cpu/alu.c
+:100644 100644 3066982... f392c1a... M	nemu/src/cpu/alu.o
+
+commit 917e87f210a3161288338432082bb847a7a0b704
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 04:15:00 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     04:15:00 up 22:25,  1 user,  load average: 0.00, 0.00, 0.00
+    840cf5d8c4e58d9677adf72432f69348dc828ed4
+
+:100755 100755 eba0d94... e0a30b2... M	nemu/nemu
+:100644 100644 c9dd17a... 89621e8... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 02c0028... c1bf9a2... M	nemu/src/cpu/alu.c
+:100644 100644 a55528a... 3066982... M	nemu/src/cpu/alu.o
+
+commit 437b6dcf6b2301643e957216bfb852af028f11d0
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:50:37 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:50:37 up 22:01,  1 user,  load average: 0.00, 0.02, 0.00
+    e0c2c02821770bd549fd30c97be501b46762b870
+
+:100755 100755 b575c98... eba0d94... M	nemu/nemu
+:100644 100644 9ca5d27... c9dd17a... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 9cbe72c... 02c0028... M	nemu/src/cpu/alu.c
+:100644 100644 c518974... a55528a... M	nemu/src/cpu/alu.o
+
+commit 5cb9b2b95d6d245e4807e558a450e66d0666aeb9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:48:04 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:48:04 up 21:58,  1 user,  load average: 0.04, 0.03, 0.00
+    a2bd430e5953ae417e89025eebc3b989babade69
+
+:100755 100755 0a8fb5b... b575c98... M	nemu/nemu
+:100644 100644 8c2162a... 9ca5d27... M	nemu/src/cpu/.alu.c.swp
+:100755 100755 ac1aab4... 9cbe72c... M	nemu/src/cpu/alu.c
+:100644 100644 82c95a2... c518974... M	nemu/src/cpu/alu.o
+
+commit 1e210cd2953212bd280b2b5d76790c79f976da0c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:47:29 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:47:29 up 21:58,  1 user,  load average: 0.08, 0.04, 0.01
+    82c96543e452e6999baf3737ca1af52ce14455ef
+
+:100755 100755 7ce7d12... 0a8fb5b... M	nemu/nemu
+:000000 100644 0000000... 8c2162a... A	nemu/src/cpu/.alu.c.swp
+:100755 100755 4f6ee8c... ac1aab4... M	nemu/src/cpu/alu.c
+:100644 100644 916008e... 82c95a2... M	nemu/src/cpu/alu.o
+
+commit 2a8e92d1daa14700d7492dec3a4d405586f30bf7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:47:01 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:47:01 up 21:57,  1 user,  load average: 0.00, 0.02, 0.00
+    4fb71b9729a4684b1ec2e85274ec7313358e0695
+
+:100755 100755 e14a956... 7ce7d12... M	nemu/nemu
+:100755 100755 50b0d4d... 4f6ee8c... M	nemu/src/cpu/alu.c
+:100644 100644 ddceae1... 916008e... M	nemu/src/cpu/alu.o
+
+commit 84f8676cf923c1f0277287844375984cd8d88f13
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:44:30 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:44:30 up 21:55,  1 user,  load average: 0.04, 0.05, 0.01
+    7e5d3befe14f20e42bcb181049400548ab4d94f7
+
+:100755 100755 8a0f0df... e14a956... M	nemu/nemu
+:100755 100755 3d1e8e2... 50b0d4d... M	nemu/src/cpu/alu.c
+:100644 100644 7ff5faa... ddceae1... M	nemu/src/cpu/alu.o
+
+commit 2392d990a04f537b0eb07d2a5767af9a5b71c921
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:41:11 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:41:11 up 21:51,  1 user,  load average: 0.12, 0.05, 0.01
+    fd5281e28a5720cb5ee3330ebc2408b1498381dd
+
+:100755 100755 d02694c... 8a0f0df... M	nemu/nemu
+:100755 100755 5eb880e... 3d1e8e2... M	nemu/src/cpu/alu.c
+:100644 100644 e11d82d... 7ff5faa... M	nemu/src/cpu/alu.o
+
+commit eb47e367c025c23e0119127e42cbc6aee8571bc2
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:33:24 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:33:24 up 21:44,  1 user,  load average: 0.01, 0.02, 0.00
+    1c9682edafbe929d64a668454ff2518ef0255822
+
+:100755 100755 c69d7db... d02694c... M	nemu/nemu
+:100755 100755 77c43c5... 5eb880e... M	nemu/src/cpu/alu.c
+:100644 100644 0825a9e... e11d82d... M	nemu/src/cpu/alu.o
+
+commit dea737fd69e86a98f6de73e5a0ce426254a5e9b0
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:27:09 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:27:09 up 21:37,  1 user,  load average: 0.11, 0.04, 0.01
+    11f11c4990b93274aa687ee963d84ccda82b8940
+
+:100755 100755 523b20a... c69d7db... M	nemu/nemu
+:100755 100755 6c76547... 77c43c5... M	nemu/src/cpu/alu.c
+:100644 100644 d5c06d8... 0825a9e... M	nemu/src/cpu/alu.o
+
+commit ab91a673f37bc86d2254f2f5ad88bf707b5a969c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:05:22 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:05:22 up 21:16,  1 user,  load average: 0.01, 0.02, 0.00
+    9e28707a3f8ad2301d1e9a5af0f991f43f303287
+
+:100755 100755 3550eb2... 6c76547... M	nemu/src/cpu/alu.c
+
+commit 05d5ae82a7c85efc7b29d1188e1ffe2aa2a0aaa3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 03:05:02 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     03:05:02 up 21:15,  1 user,  load average: 0.01, 0.02, 0.00
+    757587e064188b2619a7b9661256a2642145ecd0
+
+:100755 100755 b4a5f9e... 523b20a... M	nemu/nemu
+:100755 100755 6bb0efe... 3550eb2... M	nemu/src/cpu/alu.c
+:100644 100644 50f17c6... d5c06d8... M	nemu/src/cpu/alu.o
+
+commit 27f5aae95b5a15d3ace10fa36a0c5a0d9ef248f5
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 02:49:48 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:49:48 up 21:00,  1 user,  load average: 0.00, 0.00, 0.00
+    1941255cf4670ff26ca4cd7b665caf95ad10dcb5
+
+:100755 100755 c6be36b... b4a5f9e... M	nemu/nemu
+:100755 100755 19933b7... 6bb0efe... M	nemu/src/cpu/alu.c
+:100644 100644 3d54bac... 50f17c6... M	nemu/src/cpu/alu.o
+
+commit 9c25baef1b872870afa7505da740c664dc6c3ca1
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 02:48:33 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:48:33 up 20:59,  1 user,  load average: 0.00, 0.00, 0.00
+    dc7e1df4874f9331cb0dc63c208037054bcd2690
+
+:100755 100755 09ca291... c6be36b... M	nemu/nemu
+:100755 100755 1c4962a... 19933b7... M	nemu/src/cpu/alu.c
+:100644 100644 d7b2f99... 3d54bac... M	nemu/src/cpu/alu.o
+
+commit e6b320bacb32500b28e1400fc1984e1198d17ab3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 02:47:12 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:47:12 up 20:57,  1 user,  load average: 0.00, 0.00, 0.00
+    184882ac10d6da55954d2b2480c637d6cf41cff5
+
+:100755 100755 cb53229... 09ca291... M	nemu/nemu
+:100755 100755 6a955a1... 1c4962a... M	nemu/src/cpu/alu.c
+:100644 100644 679e3d8... d7b2f99... M	nemu/src/cpu/alu.o
+
+commit 96d4957865b854ad5b54f0287356853be288f62f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 02:46:28 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:46:28 up 20:57,  1 user,  load average: 0.00, 0.00, 0.00
+    ba0328f26d95498f5afdfd85b21b5f777fe42de4
+
+:100755 100755 7ff6708... cb53229... M	nemu/nemu
+:100755 100755 f718e78... 6a955a1... M	nemu/src/cpu/alu.c
+:100644 100644 287fcce... 679e3d8... M	nemu/src/cpu/alu.o
+
+commit ed15405c5fd44665750794dc6e21a280f5936ec9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 02:20:21 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:20:21 up 20:31,  1 user,  load average: 0.04, 0.01, 0.00
+    1941502385c553590a3f7fb8b85e6ce83aa44a0
+
+:100755 100755 70951bb... 7ff6708... M	nemu/nemu
+:100755 100755 dfd5144... f718e78... M	nemu/src/cpu/alu.c
+:100644 100644 09fcf04... 287fcce... M	nemu/src/cpu/alu.o
+
+commit 2b1f78e99395abd8d401160f9332f43800ea59e1
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 02:20:00 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:20:00 up 20:30,  1 user,  load average: 0.06, 0.01, 0.00
+    e09c8dee3bbb6621f3f342c21e7f48dc6e33260a
+
+:100755 100755 55e449c... dfd5144... M	nemu/src/cpu/alu.c
+
+commit f0dfa677811deb5f7c1da5b0ed311e2286686243
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 02:19:39 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     02:19:39 up 20:30,  1 user,  load average: 0.00, 0.00, 0.00
+    a35de58b829a576e26bd610142d5c3f4d8aa2dc5
+
+:100755 100755 f6a6126... 70951bb... M	nemu/nemu
+:100755 100755 8cf78d5... 55e449c... M	nemu/src/cpu/alu.c
+:100644 100644 07c53b7... 09fcf04... M	nemu/src/cpu/alu.o
+
+commit b075b3babfc92548f663a18d1655b52454f32779
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 01:57:44 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     01:57:44 up 20:08,  1 user,  load average: 0.15, 0.04, 0.01
+    2519d5392137a48ca7a3a338b5c11f707d905753
+
+:100755 100755 5e7530d... f6a6126... M	nemu/nemu
+:100755 100755 87b15f7... 8cf78d5... M	nemu/src/cpu/alu.c
+:100644 100644 3b787de... 07c53b7... M	nemu/src/cpu/alu.o
+
+commit 4757529a8a1201d5c7f73d99e0cc447221f676fa
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 01:56:16 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     01:56:16 up 20:07,  1 user,  load average: 0.01, 0.02, 0.00
+    3eee05ffdab1cb422a78519de0dee541b6ac4f24
+
+:100755 100755 b00aa31... 5e7530d... M	nemu/nemu
+:100644 000000 53cd4a4... 0000000... D	nemu/src/cpu/.alu.c.swp
+:100755 100755 115a6d0... 87b15f7... M	nemu/src/cpu/alu.c
+:100644 100644 21cfa9a... 3b787de... M	nemu/src/cpu/alu.o
+
+commit 646da42b461287e0bbf66b0decb84c8b7bb39b60
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Sep 14 01:35:37 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     01:35:37 up 19:46,  1 user,  load average: 0.00, 0.00, 0.00
+    9a1b9361f39944e0457152f15e7db88bd15e1164
+
+:000000 100755 0000000... b00aa31... A	nemu/nemu
+:000000 100644 0000000... 53cd4a4... A	nemu/src/cpu/.alu.c.swp
+:100755 100755 6e97e00... 115a6d0... M	nemu/src/cpu/alu.c
+:000000 100644 0000000... fba52da... A	nemu/src/cpu/alu.d
+:000000 100644 0000000... 21cfa9a... A	nemu/src/cpu/alu.o
+:000000 100644 0000000... b7dc632... A	nemu/src/cpu/cpu.d
+:000000 100644 0000000... 01fe226... A	nemu/src/cpu/cpu.o
+:000000 100644 0000000... d33b6f6... A	nemu/src/cpu/decode/debug.d
+:000000 100644 0000000... 8d6a58a... A	nemu/src/cpu/decode/debug.o
+:000000 100644 0000000... 6eb18a3... A	nemu/src/cpu/decode/modrm.d
+:000000 100644 0000000... e5a0478... A	nemu/src/cpu/decode/modrm.o
+:000000 100644 0000000... 772c045... A	nemu/src/cpu/decode/opcode.d
+:000000 100644 0000000... b05881e... A	nemu/src/cpu/decode/opcode.o
+:000000 100644 0000000... 4b89732... A	nemu/src/cpu/decode/operand.d
+:000000 100644 0000000... c2b12fd... A	nemu/src/cpu/decode/operand.o
+:000000 100644 0000000... 224fdd7... A	nemu/src/cpu/decode/sib.d
+:000000 100644 0000000... a99ffca... A	nemu/src/cpu/decode/sib.o
+:000000 100644 0000000... 9e9cf30... A	nemu/src/cpu/fpu.d
+:000000 100644 0000000... 3ac9e2b... A	nemu/src/cpu/fpu.o
+:000000 100644 0000000... a730a8e... A	nemu/src/cpu/instr/bt.d
+:000000 100644 0000000... efb2b25... A	nemu/src/cpu/instr/bt.o
+:000000 100644 0000000... 78ac763... A	nemu/src/cpu/instr/cbw.d
+:000000 100644 0000000... 8bdfa92... A	nemu/src/cpu/instr/cbw.o
+:000000 100644 0000000... 605cf5f... A	nemu/src/cpu/instr/cltd.d
+:000000 100644 0000000... 0b2814f... A	nemu/src/cpu/instr/cltd.o
+:000000 100644 0000000... d0d86b6... A	nemu/src/cpu/instr/cmov.d
+:000000 100644 0000000... 66cc257... A	nemu/src/cpu/instr/cmov.o
+:000000 100644 0000000... 513c88a... A	nemu/src/cpu/instr/cmps.d
+:000000 100644 0000000... e55db0c... A	nemu/src/cpu/instr/cmps.o
+:000000 100644 0000000... ad83cfe... A	nemu/src/cpu/instr/data_size.d
+:000000 100644 0000000... 3cdae2b... A	nemu/src/cpu/instr/data_size.o
+:000000 100644 0000000... eb132be... A	nemu/src/cpu/instr/div.d
+:000000 100644 0000000... e6f2987... A	nemu/src/cpu/instr/div.o
+:000000 100644 0000000... 684b632... A	nemu/src/cpu/instr/flags.d
+:000000 100644 0000000... d707348... A	nemu/src/cpu/instr/flags.o
+:000000 100644 0000000... b2a046b... A	nemu/src/cpu/instr/group.d
+:000000 100644 0000000... dfda65d... A	nemu/src/cpu/instr/group.o
+:000000 100644 0000000... 85c80b6... A	nemu/src/cpu/instr/hlt.d
+:000000 100644 0000000... 947c903... A	nemu/src/cpu/instr/hlt.o
+:000000 100644 0000000... d5ac48e... A	nemu/src/cpu/instr/idiv.d
+:000000 100644 0000000... b4f808a... A	nemu/src/cpu/instr/idiv.o
+:000000 100644 0000000... 3f177bf... A	nemu/src/cpu/instr/imul.d
+:000000 100644 0000000... 105f52f... A	nemu/src/cpu/instr/imul.o
+:000000 100644 0000000... b665536... A	nemu/src/cpu/instr/inv.d
+:000000 100644 0000000... 602f958... A	nemu/src/cpu/instr/inv.o
+:000000 100644 0000000... 398221f... A	nemu/src/cpu/instr/jcc.d
+:000000 100644 0000000... f120267... A	nemu/src/cpu/instr/jcc.o
+:000000 100644 0000000... b72070d... A	nemu/src/cpu/instr/jmp.d
+:000000 100644 0000000... d73bb59... A	nemu/src/cpu/instr/jmp.o
+:000000 100644 0000000... b71b9ff... A	nemu/src/cpu/instr/mov.d
+:000000 100644 0000000... fce32d0... A	nemu/src/cpu/instr/mov.o
+:000000 100644 0000000... 9bffd3e... A	nemu/src/cpu/instr/movs.d
+:000000 100644 0000000... 8cf9b18... A	nemu/src/cpu/instr/movs.o
+:000000 100644 0000000... 429e698... A	nemu/src/cpu/instr/mul.d
+:000000 100644 0000000... 3988762... A	nemu/src/cpu/instr/mul.o
+:000000 100644 0000000... 0dd1cbf... A	nemu/src/cpu/instr/nemu_trap.d
+:000000 100644 0000000... e0f6918... A	nemu/src/cpu/instr/nemu_trap.o
+:000000 100644 0000000... dc2be45... A	nemu/src/cpu/instr/nop.d
+:000000 100644 0000000... 29a4e18... A	nemu/src/cpu/instr/nop.o
+:000000 100644 0000000... ecb109c... A	nemu/src/cpu/instr/opcode_2_byte.d
+:000000 100644 0000000... 94d33e2... A	nemu/src/cpu/instr/opcode_2_byte.o
+:000000 100644 0000000... 2f94e6c... A	nemu/src/cpu/instr/rep_repe.d
+:000000 100644 0000000... 01aecd0... A	nemu/src/cpu/instr/rep_repe.o
+:000000 100644 0000000... 31041ed... A	nemu/src/cpu/instr/sar.d
+:000000 100644 0000000... 1a930eb... A	nemu/src/cpu/instr/sar.o
+:000000 100644 0000000... 8c2f2e5... A	nemu/src/cpu/instr/setcc.d
+:000000 100644 0000000... 275a2ec... A	nemu/src/cpu/instr/setcc.o
+:000000 100644 0000000... c1b8e4f... A	nemu/src/cpu/instr/shl.d
+:000000 100644 0000000... 49ec62f... A	nemu/src/cpu/instr/shl.o
+:000000 100644 0000000... 186af85... A	nemu/src/cpu/instr/shr.d
+:000000 100644 0000000... 20323ac... A	nemu/src/cpu/instr/shr.o
+:000000 100644 0000000... d642b55... A	nemu/src/cpu/instr/stos.d
+:000000 100644 0000000... 39744af... A	nemu/src/cpu/instr/stos.o
+:000000 100644 0000000... 640863b... A	nemu/src/cpu/instr/x87.d
+:000000 100644 0000000... b978d99... A	nemu/src/cpu/instr/x87.o
+:000000 100644 0000000... 24d56f2... A	nemu/src/cpu/intr.d
+:000000 100644 0000000... b80a391... A	nemu/src/cpu/intr.o
+:000000 100644 0000000... 022ea5d... A	nemu/src/cpu/reg.d
+:000000 100644 0000000... d31c4c4... A	nemu/src/cpu/reg.o
+:000000 100644 0000000... 69b1932... A	nemu/src/cpu/test/.alu_test.c.swo
+:000000 100644 0000000... 0656903... A	nemu/src/cpu/test/.alu_test.c.swp
+:000000 100644 0000000... d9dde98... A	nemu/src/cpu/test/alu_test.d
+:000000 100644 0000000... 71a4208... A	nemu/src/cpu/test/alu_test.o
+:000000 100644 0000000... ff41ef8... A	nemu/src/cpu/test/fpu_test.d
+:000000 100644 0000000... f738797... A	nemu/src/cpu/test/fpu_test.o
+:000000 100644 0000000... c6947a3... A	nemu/src/device/dev/ide.d
+:000000 100644 0000000... 986c3c4... A	nemu/src/device/dev/ide.o
+:000000 100644 0000000... 3f6f806... A	nemu/src/device/dev/keyboard.d
+:000000 100644 0000000... 7065c60... A	nemu/src/device/dev/keyboard.o
+:000000 100644 0000000... ead9334... A	nemu/src/device/dev/serial.d
+:000000 100644 0000000... 566486d... A	nemu/src/device/dev/serial.o
+:000000 100644 0000000... 476d632... A	nemu/src/device/dev/timer.d
+:000000 100644 0000000... 63c3216... A	nemu/src/device/dev/timer.o
+:000000 100644 0000000... 250bd36... A	nemu/src/device/dev/vga-palette.d
+:000000 100644 0000000... 8fb183c... A	nemu/src/device/dev/vga-palette.o
+:000000 100644 0000000... 7a81b99... A	nemu/src/device/dev/vga.d
+:000000 100644 0000000... e95bbd1... A	nemu/src/device/dev/vga.o
+:000000 100644 0000000... 3832483... A	nemu/src/device/i8259_pic.d
+:000000 100644 0000000... a4b9749... A	nemu/src/device/i8259_pic.o
+:000000 100644 0000000... 64f46e5... A	nemu/src/device/io/mm_io.d
+:000000 100644 0000000... 3af136e... A	nemu/src/device/io/mm_io.o
+:000000 100644 0000000... 4c8f456... A	nemu/src/device/io/port_io.d
+:000000 100644 0000000... f0095a5... A	nemu/src/device/io/port_io.o
+:000000 100644 0000000... c712bc4... A	nemu/src/device/sdl.d
+:000000 100644 0000000... 99819c3... A	nemu/src/device/sdl.o
+:000000 100644 0000000... 1b6174a... A	nemu/src/main.d
+:000000 100644 0000000... 9e95ba0... A	nemu/src/main.o
+:000000 100644 0000000... df298ba... A	nemu/src/memory/memory.d
+:000000 100644 0000000... 48041a9... A	nemu/src/memory/memory.o
+:000000 100644 0000000... 8821cb2... A	nemu/src/memory/mmu/page.d
+:000000 100644 0000000... 548c226... A	nemu/src/memory/mmu/page.o
+:000000 100644 0000000... 6f3a354... A	nemu/src/memory/mmu/segment.d
+:000000 100644 0000000... 64237cd... A	nemu/src/memory/mmu/segment.o
+:000000 100644 0000000... 7dfaf8b... A	nemu/src/memory/mmu/tlb.d
+:000000 100644 0000000... ddbe998... A	nemu/src/memory/mmu/tlb.o
+:000000 100644 0000000... cac6a6c... A	nemu/src/monitor/breakpoint.d
+:000000 100644 0000000... 39d7122... A	nemu/src/monitor/breakpoint.o
+:000000 100644 0000000... 1c22ae8... A	nemu/src/monitor/elf.d
+:000000 100644 0000000... b95a0b2... A	nemu/src/monitor/elf.o
+:000000 100644 0000000... 02f3248... A	nemu/src/monitor/expr.d
+:000000 100644 0000000... 536a51f... A	nemu/src/monitor/expr.o
+:000000 100644 0000000... 6869c5f... A	nemu/src/monitor/ui.d
+:000000 100644 0000000... eb143a8... A	nemu/src/monitor/ui.o
+
+commit d644c13f79b4d3a179da303202e6e3cdb7cd9e77
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Wed Sep 13 01:51:40 2017 -0400
+
+    >  nemu
+    161290019
+    wuyuxin
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26) i686 GNU/Linux
+     01:51:40 up 28 min,  1 user,  load average: 0.20, 0.15, 0.18
+    dd53b794ee848b395bc6319bfdc83b7a729d1031
+
+:100755 100755 acf02c0... 3fa827e... M	Makefile.git
+:100755 100755 7f96139... a295c47... M	nemu/include/cpu/reg.h
+
+commit 507dd515e1cde11dc06881485782deafd483ecc2
+Author: wangliang <wangliang@debian>
+Date:   Mon Sep 11 20:45:42 2017 +0800
+
+    fix alu_test_div()
+
+:100755 100755 e20db00... 949cba3... M	nemu/src/cpu/test/alu_test.c
+
+commit dc366f7f73613f4f9ab5ceb94d39da3c41f3a821
+Author: wangliang <wangliang@debian>
+Date:   Mon Sep 11 20:32:14 2017 +0800
+
+    fix div test case in alu_test.c
+
+:100755 100755 a0ab295... e20db00... M	nemu/src/cpu/test/alu_test.c
+
+commit c98918402c05da5084d8bfb977aa2ecab4235978
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sun Sep 10 11:49:13 2017 +0800
+
+    >  nemu
+    171220000
+    wangliang
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u1 (2017-06-18) i686 GNU/Linux
+     11:49:13 up 37 min,  1 user,  load average: 0.00, 0.01, 0.03
+    70e4c81daace156c25e6b8be1dc4431510822c4
+
+:100755 100755 9349da3... 14f1823... M	nemu/src/cpu/instr/idiv.c
+
+commit b388d73f9d4448204991891566f95b68d111e15c
+Author: wangliang <wangliang@debian>
+Date:   Sat Sep 9 23:09:07 2017 +0800
+
+    fix alu_test.c
+
+:100755 100755 8b322f0... a0ab295... M	nemu/src/cpu/test/alu_test.c
+
+commit 96266f5b3e5aebbd09d96c56d20fd3852983241c
+Author: ics-pa <31364533+ics-pa@users.noreply.github.com>
+Date:   Wed Sep 6 20:50:23 2017 +0800
+
+    Update fpu.c
+
+:100755 100755 f9afab6... 2bef19f... M	nemu/src/cpu/fpu.c
+
+commit 9dd015267c3d27c8a92b75c2ef5bfa8f507238cd
+Author: ics-pa <31364533+ics-pa@users.noreply.github.com>
+Date:   Tue Sep 5 13:52:18 2017 +0800
+
+    Update README.md
+
+:100644 100644 ddbf267... 43822f3... M	README.md
+
+commit d26ead679c0fb1638acb7884d1ff0ae9993d28f0
+Author: wangliang <wangliang@debian>
+Date:   Sat Aug 26 19:00:59 2017 +0800
+
+    init
+
+:000000 100755 0000000... 36c4a6b... A	Makefile
+:000000 100755 0000000... acf02c0... A	Makefile.git
+:100644 100644 7d9c02c... ddbf267... M	README.md
+:000000 100755 0000000... 59619dc... A	game/Makefile
+:000000 100755 0000000... 6ea95af... A	game/include/adt/linklist.h
+:000000 100755 0000000... 4147828... A	game/include/common.h
+:000000 100755 0000000... 1bda1c8... A	game/include/debug.h
+:000000 100755 0000000... e5f06e0... A	game/include/device/palette.h
+:000000 100755 0000000... 0692471... A	game/include/device/video.h
+:000000 100755 0000000... f40ddb5... A	game/include/game-common.h
+:000000 100755 0000000... 7f4d88d... A	game/include/x86.h
+:000000 100755 0000000... 124ed40... A	game/src/common/device/font.c
+:000000 100755 0000000... f49eec2... A	game/src/common/device/palette.c
+:000000 100755 0000000... 4000130... A	game/src/common/device/timer.c
+:000000 100755 0000000... 3792166... A	game/src/common/device/video.c
+:000000 100755 0000000... 679a477... A	game/src/common/lib/syscall.c
+:000000 100755 0000000... 4e42562... A	game/src/common/main.c
+:000000 100755 0000000... 2c2f4e7... A	game/src/nemu-pal/CREDITS.txt
+:000000 100755 0000000... c0b4590... A	game/src/nemu-pal/README.txt
+:000000 100755 0000000... 6320a63... A	game/src/nemu-pal/battle/battle.c
+:000000 100755 0000000... d2c8a2b... A	game/src/nemu-pal/battle/fight.c
+:000000 100755 0000000... f072ca5... A	game/src/nemu-pal/device/input.c
+:000000 100755 0000000... e40df16... A	game/src/nemu-pal/device/palette.c
+:000000 100755 0000000... fb09233... A	game/src/nemu-pal/device/video.c
+:000000 100755 0000000... 01a9804... A	game/src/nemu-pal/game/game.c
+:000000 100755 0000000... bbfd063... A	game/src/nemu-pal/game/play.c
+:000000 100755 0000000... 30980b9... A	game/src/nemu-pal/game/script.c
+:000000 100755 0000000... 0e90c87... A	game/src/nemu-pal/global/global.c
+:000000 100755 0000000... ffa3320... A	game/src/nemu-pal/global/palcommon.c
+:000000 100755 0000000... f85d723... A	game/src/nemu-pal/global/res.c
+:000000 100755 0000000... fc393b0... A	game/src/nemu-pal/gpl.txt
+:000000 100755 0000000... d0c28f5... A	game/src/nemu-pal/hal/keyboard.c
+:000000 100755 0000000... 31ac858... A	game/src/nemu-pal/hal/timer.c
+:000000 100755 0000000... 67f411b... A	game/src/nemu-pal/hal/video.c
+:000000 100755 0000000... 57ccd40... A	game/src/nemu-pal/include/_common.h
+:000000 100755 0000000... d6885d5... A	game/src/nemu-pal/include/ascii.h
+:000000 100755 0000000... 8daa24b... A	game/src/nemu-pal/include/battle.h
+:000000 100755 0000000... 3439f21... A	game/src/nemu-pal/include/big5font.h
+:000000 100755 0000000... ef1f6c7... A	game/src/nemu-pal/include/ending.h
+:000000 100755 0000000... 163b329... A	game/src/nemu-pal/include/fight.h
+:000000 100755 0000000... ea310e8... A	game/src/nemu-pal/include/font.h
+:000000 100755 0000000... 736f1f4... A	game/src/nemu-pal/include/game.h
+:000000 100755 0000000... 9b98ea8... A	game/src/nemu-pal/include/gbfont.h
+:000000 100755 0000000... a4c29c0... A	game/src/nemu-pal/include/getopt.h
+:000000 100755 0000000... d428d58... A	game/src/nemu-pal/include/global.h
+:000000 100755 0000000... 79cdbfb... A	game/src/nemu-pal/include/hal.h
+:000000 100755 0000000... 51a186f... A	game/src/nemu-pal/include/input.h
+:000000 100755 0000000... d60ca44... A	game/src/nemu-pal/include/itemmenu.h
+:000000 100755 0000000... 79072cd... A	game/src/nemu-pal/include/magicmenu.h
+:000000 100755 0000000... f351c1c... A	game/src/nemu-pal/include/main.h
+:000000 100755 0000000... 089afc4... A	game/src/nemu-pal/include/main_PSP.h
+:000000 100755 0000000... 5145e9a... A	game/src/nemu-pal/include/map.h
+:000000 100755 0000000... 071bb1f... A	game/src/nemu-pal/include/midi.h
+:000000 100755 0000000... ce68c01... A	game/src/nemu-pal/include/palcommon.h
+:000000 100755 0000000... b386497... A	game/src/nemu-pal/include/palette.h
+:000000 100755 0000000... b180a35... A	game/src/nemu-pal/include/play.h
+:000000 100755 0000000... f23c5a2... A	game/src/nemu-pal/include/res.h
+:000000 100755 0000000... 2b9fd84... A	game/src/nemu-pal/include/rixplay.h
+:000000 100755 0000000... 420848d... A	game/src/nemu-pal/include/rngplay.h
+:000000 100755 0000000... f6f0f02... A	game/src/nemu-pal/include/scene.h
+:000000 100755 0000000... 06ef5ee... A	game/src/nemu-pal/include/script.h
+:000000 100755 0000000... 5ac5fd9... A	game/src/nemu-pal/include/sound.h
+:000000 100755 0000000... 37928a1... A	game/src/nemu-pal/include/text.h
+:000000 100755 0000000... 9097bc6... A	game/src/nemu-pal/include/ui.h
+:000000 100755 0000000... efc155a... A	game/src/nemu-pal/include/uibattle.h
+:000000 100755 0000000... 6dc6d15... A	game/src/nemu-pal/include/uigame.h
+:000000 100755 0000000... 2b2425f... A	game/src/nemu-pal/include/util.h
+:000000 100755 0000000... 94103ee... A	game/src/nemu-pal/include/video.h
+:000000 100755 0000000... 9ee6c29... A	game/src/nemu-pal/main.c
+:000000 100755 0000000... 10d7185... A	game/src/nemu-pal/misc/ending.c
+:000000 100755 0000000... 07d0217... A	game/src/nemu-pal/misc/rngplay.c
+:000000 100755 0000000... 9ecc354... A	game/src/nemu-pal/misc/util.c
+:000000 100755 0000000... 3dfdba5... A	game/src/nemu-pal/misc/yj1.c
+:000000 100755 0000000... 545eb27... A	game/src/nemu-pal/scene/map.c
+:000000 100755 0000000... cf8c044... A	game/src/nemu-pal/scene/scene.c
+:000000 100755 0000000... 7d9fa95... A	game/src/nemu-pal/ui/font.c
+:000000 100755 0000000... 2164fd6... A	game/src/nemu-pal/ui/itemmenu.c
+:000000 100755 0000000... 282bbe2... A	game/src/nemu-pal/ui/magicmenu.c
+:000000 100755 0000000... c6072cd... A	game/src/nemu-pal/ui/text.c
+:000000 100755 0000000... c90f094... A	game/src/nemu-pal/ui/ui.c
+:000000 100755 0000000... 7eb5fb2... A	game/src/nemu-pal/ui/uibattle.c
+:000000 100755 0000000... fa30835... A	game/src/nemu-pal/ui/uigame.c
+:000000 100755 0000000... 556d696... A	game/src/nemu-pal/unuse/midi.c
+:000000 100755 0000000... be86b79... A	game/src/nemu-pal/unuse/rixplay.c
+:000000 100755 0000000... 6384bcb... A	game/src/nemu-pal/unuse/sdl.c
+:000000 100755 0000000... 30c1dac... A	game/src/nemu-pal/unuse/sound.c
+:000000 100755 0000000... 70d9253... A	game/src/typing/draw.c
+:000000 100755 0000000... 9d05bbc... A	game/src/typing/effect.c
+:000000 100755 0000000... 798d719... A	game/src/typing/game.c
+:000000 100755 0000000... 8f20f1e... A	game/src/typing/include/game.h
+:000000 100755 0000000... bc619d8... A	game/src/typing/keyboard.c
+:000000 100755 0000000... 1e41140... A	include/config.h
+:000000 100755 0000000... c5597b3... A	include/newlib/include/_ansi.h
+:000000 100755 0000000... 271644e... A	include/newlib/include/_syslist.h
+:000000 100755 0000000... 2ea0fd9... A	include/newlib/include/alloca.h
+:000000 100755 0000000... ac2e4ca... A	include/newlib/include/ar.h
+:000000 100755 0000000... 02c9adb... A	include/newlib/include/argz.h
+:000000 100755 0000000... 91bb040... A	include/newlib/include/assert.h
+:000000 100755 0000000... 969b20e... A	include/newlib/include/complex.h
+:000000 100755 0000000... 56ad5ab... A	include/newlib/include/ctype.h
+:000000 100755 0000000... 6fefc03... A	include/newlib/include/dirent.h
+:000000 100755 0000000... 9bb6a81... A	include/newlib/include/envlock.h
+:000000 100755 0000000... e6a31c3... A	include/newlib/include/envz.h
+:000000 100755 0000000... 7cc2ca8... A	include/newlib/include/errno.h
+:000000 100755 0000000... 95eea5f... A	include/newlib/include/fastmath.h
+:000000 100755 0000000... 86a9167... A	include/newlib/include/fcntl.h
+:000000 100755 0000000... 06311fc... A	include/newlib/include/fnmatch.h
+:000000 100755 0000000... e12d253... A	include/newlib/include/getopt.h
+:000000 100755 0000000... 7a300e6... A	include/newlib/include/glob.h
+:000000 100755 0000000... 1273e39... A	include/newlib/include/grp.h
+:000000 100755 0000000... 4c023e9... A	include/newlib/include/iconv.h
+:000000 100755 0000000... 0b06fb7... A	include/newlib/include/ieeefp.h
+:000000 100755 0000000... 1631e21... A	include/newlib/include/inttypes.h
+:000000 100755 0000000... 9040ade... A	include/newlib/include/langinfo.h
+:000000 100755 0000000... abfab0e... A	include/newlib/include/libgen.h
+:000000 100755 0000000... 190f1f7... A	include/newlib/include/limits.h
+:000000 100755 0000000... cbd658e... A	include/newlib/include/locale.h
+:000000 100755 0000000... 47986d2... A	include/newlib/include/machine/_default_types.h
+:000000 100755 0000000... 18f96d5... A	include/newlib/include/machine/_types.h
+:000000 100755 0000000... 737b6d0... A	include/newlib/include/machine/ansi.h
+:000000 100755 0000000... 07ebc8f... A	include/newlib/include/machine/endian.h
+:000000 100755 0000000... b13befa... A	include/newlib/include/machine/fastmath.h
+:000000 100755 0000000... 042e7f4... A	include/newlib/include/machine/ieeefp.h
+:000000 100755 0000000... fdada9e... A	include/newlib/include/machine/malloc.h
+:000000 100755 0000000... bdf8bf7... A	include/newlib/include/machine/param.h
+:000000 100755 0000000... 6ca5e65... A	include/newlib/include/machine/setjmp-dj.h
+:000000 100755 0000000... 73ccd94... A	include/newlib/include/machine/setjmp.h
+:000000 100755 0000000... fa3f3a1... A	include/newlib/include/machine/stdlib.h
+:000000 100755 0000000... 41fd459... A	include/newlib/include/machine/termios.h
+:000000 100755 0000000... 06e2ccf... A	include/newlib/include/machine/time.h
+:000000 100755 0000000... 40a75fa... A	include/newlib/include/machine/types.h
+:000000 100755 0000000... 41b5efd... A	include/newlib/include/malloc.h
+:000000 100755 0000000... 606fecf... A	include/newlib/include/math.h
+:000000 100755 0000000... d4fffb1... A	include/newlib/include/newlib.h
+:000000 100755 0000000... b1c70f5... A	include/newlib/include/paths.h
+:000000 100755 0000000... 3640da2... A	include/newlib/include/pthread.h
+:000000 100755 0000000... 1526abf... A	include/newlib/include/pwd.h
+:000000 100755 0000000... 861be71... A	include/newlib/include/reent.h
+:000000 100755 0000000... 8cf144b... A	include/newlib/include/regdef.h
+:000000 100755 0000000... fa3e268... A	include/newlib/include/regex.h
+:000000 100755 0000000... df77a93... A	include/newlib/include/rpc/types.h
+:000000 100755 0000000... 4f93bf3... A	include/newlib/include/rpc/xdr.h
+:000000 100755 0000000... a3f58ac... A	include/newlib/include/sched.h
+:000000 100755 0000000... ed321b0... A	include/newlib/include/search.h
+:000000 100755 0000000... c958d90... A	include/newlib/include/setjmp.h
+:000000 100755 0000000... 8c50a2e... A	include/newlib/include/signal.h
+:000000 100755 0000000... 5a6692f... A	include/newlib/include/spawn.h
+:000000 100755 0000000... 09c0cf7... A	include/newlib/include/stdatomic.h
+:000000 100755 0000000... 643b969... A	include/newlib/include/stdint.h
+:000000 100755 0000000... c2418fa... A	include/newlib/include/stdio.h
+:000000 100755 0000000... a830c88... A	include/newlib/include/stdio_ext.h
+:000000 100755 0000000... ef21866... A	include/newlib/include/stdlib.h
+:000000 100755 0000000... 6325b46... A	include/newlib/include/string.h
+:000000 100755 0000000... 131d81d... A	include/newlib/include/strings.h
+:000000 100755 0000000... 1884136... A	include/newlib/include/sys/_default_fcntl.h
+:000000 100755 0000000... 07bc276... A	include/newlib/include/sys/_types.h
+:000000 100755 0000000... a5e613c... A	include/newlib/include/sys/cdefs.h
+:000000 100755 0000000... 0de3ffb... A	include/newlib/include/sys/config.h
+:000000 100755 0000000... 96314fb... A	include/newlib/include/sys/custom_file.h
+:000000 100755 0000000... 220150d... A	include/newlib/include/sys/dir.h
+:000000 100755 0000000... a3fb5c0... A	include/newlib/include/sys/dirent.h
+:000000 100755 0000000... c93b250... A	include/newlib/include/sys/errno.h
+:000000 100755 0000000... be85f40... A	include/newlib/include/sys/fcntl.h
+:000000 100755 0000000... 02fa1eb... A	include/newlib/include/sys/features.h
+:000000 100755 0000000... 58d4fac... A	include/newlib/include/sys/file.h
+:000000 100755 0000000... 09ea183... A	include/newlib/include/sys/iconvnls.h
+:000000 100755 0000000... 9075e35... A	include/newlib/include/sys/lock.h
+:000000 100755 0000000... ef203d3... A	include/newlib/include/sys/param.h
+:000000 100755 0000000... 4bc7dac... A	include/newlib/include/sys/queue.h
+:000000 100755 0000000... ce5b3ed... A	include/newlib/include/sys/reent.h
+:000000 100755 0000000... eb82755... A	include/newlib/include/sys/resource.h
+:000000 100755 0000000... bed14bf... A	include/newlib/include/sys/sched.h
+:000000 100755 0000000... 3d6ba08... A	include/newlib/include/sys/signal.h
+:000000 100755 0000000... dbd85ee... A	include/newlib/include/sys/stat.h
+:000000 100755 0000000... 0918fe1... A	include/newlib/include/sys/stdio.h
+:000000 100755 0000000... ceedf4b... A	include/newlib/include/sys/string.h
+:000000 100755 0000000... ba9dbd6... A	include/newlib/include/sys/syslimits.h
+:000000 100755 0000000... 1932580... A	include/newlib/include/sys/time.h
+:000000 100755 0000000... 0a2c3de... A	include/newlib/include/sys/timeb.h
+:000000 100755 0000000... 927812c... A	include/newlib/include/sys/times.h
+:000000 100755 0000000... ed33e0a... A	include/newlib/include/sys/types.h
+:000000 100755 0000000... d85195f... A	include/newlib/include/sys/unistd.h
+:000000 100755 0000000... 5e937f1... A	include/newlib/include/sys/utime.h
+:000000 100755 0000000... 73fe372... A	include/newlib/include/sys/wait.h
+:000000 100755 0000000... 07b06dd... A	include/newlib/include/tar.h
+:000000 100755 0000000... ee1820c... A	include/newlib/include/termios.h
+:000000 100755 0000000... f9c8311... A	include/newlib/include/tgmath.h
+:000000 100755 0000000... b91b039... A	include/newlib/include/time.h
+:000000 100755 0000000... 0040752... A	include/newlib/include/unctrl.h
+:000000 100755 0000000... f9fca84... A	include/newlib/include/unistd.h
+:000000 100755 0000000... 652891a... A	include/newlib/include/utime.h
+:000000 100755 0000000... 88cf6f8... A	include/newlib/include/utmp.h
+:000000 100755 0000000... cdc8571... A	include/newlib/include/wchar.h
+:000000 100755 0000000... c72c9de... A	include/newlib/include/wctype.h
+:000000 100755 0000000... 1f09a64... A	include/newlib/include/wordexp.h
+:000000 100755 0000000... ce8a40e... A	include/newlib/libc.a
+:000000 100755 0000000... 7ddd886... A	include/trap.h
+:000000 100755 0000000... b704170... A	kernel/Makefile
+:000000 100755 0000000... 6b8cff8... A	kernel/include/common.h
+:000000 100755 0000000... fdc49f4... A	kernel/include/debug.h
+:000000 100755 0000000... c09a8a8... A	kernel/include/memory.h
+:000000 100755 0000000... 36b0fd4... A	kernel/include/x86.h
+:000000 100755 0000000... f5c0ffa... A	kernel/include/x86/cpu.h
+:000000 100755 0000000... f74cb09... A	kernel/include/x86/io.h
+:000000 100755 0000000... 90875c4... A	kernel/include/x86/memory.h
+:000000 100755 0000000... 1344ea9... A	kernel/src/driver/ide/cache.c
+:000000 100755 0000000... 563f316... A	kernel/src/driver/ide/disk.c
+:000000 100755 0000000... 6345f8e... A	kernel/src/driver/ide/dma.c
+:000000 100755 0000000... d93ec28... A	kernel/src/driver/ide/dma.h
+:000000 100755 0000000... 3e535b5... A	kernel/src/driver/ide/ide.c
+:000000 100755 0000000... 3e6fd7d... A	kernel/src/elf/elf.c
+:000000 100755 0000000... 2c974ab... A	kernel/src/fs/fs.c
+:000000 100755 0000000... 86dc67c... A	kernel/src/irq/do_irq.S
+:000000 100755 0000000... 78f6020... A	kernel/src/irq/i8259.c
+:000000 100755 0000000... 33cf0c2... A	kernel/src/irq/idt.c
+:000000 100755 0000000... d743170... A	kernel/src/irq/irq_handle.c
+:000000 100755 0000000... cedfd2f... A	kernel/src/lib/misc.c
+:000000 100755 0000000... 87e6149... A	kernel/src/lib/printk.c
+:000000 100755 0000000... 386f06f... A	kernel/src/lib/serial.c
+:000000 100755 0000000... 4d21489... A	kernel/src/main.c
+:000000 100755 0000000... 531259c... A	kernel/src/memory/kvm.c
+:000000 100755 0000000... 758fdd6... A	kernel/src/memory/mm.c
+:000000 100755 0000000... c264e03... A	kernel/src/memory/mm_malloc.o
+:000000 100755 0000000... 2cd5e8a... A	kernel/src/memory/vmem.c
+:000000 100755 0000000... a8009b6... A	kernel/src/syscall/do_syscall.c
+:000000 100755 0000000... 2147328... A	kernel/start/start.S
+:000000 100755 0000000... 3b9a626... A	nemu/Makefile
+:000000 100755 0000000... 2e4d178... A	nemu/include/cpu/alu.h
+:000000 100755 0000000... e647c77... A	nemu/include/cpu/cpu.h
+:000000 100755 0000000... 2e2607e... A	nemu/include/cpu/fpu.h
+:000000 100755 0000000... 7be6c49... A	nemu/include/cpu/instr.h
+:000000 100755 0000000... 6bd7de4... A	nemu/include/cpu/instr/flags.h
+:000000 100755 0000000... 6c9bb15... A	nemu/include/cpu/instr/group.h
+:000000 100755 0000000... 218e131... A	nemu/include/cpu/instr/jmp.h
+:000000 100755 0000000... 77858c7... A	nemu/include/cpu/instr/mov.h
+:000000 100755 0000000... b7ca8e8... A	nemu/include/cpu/instr/shift.h
+:000000 100755 0000000... 81fdf23... A	nemu/include/cpu/instr/special.h
+:000000 100755 0000000... d8ca5f2... A	nemu/include/cpu/instr/x87.h
+:000000 100755 0000000... 2b24c0a... A	nemu/include/cpu/instr_helper.h
+:000000 100755 0000000... 1e4217b... A	nemu/include/cpu/intr.h
+:000000 100755 0000000... 5250e17... A	nemu/include/cpu/modrm.h
+:000000 100755 0000000... 0d52701... A	nemu/include/cpu/operand.h
+:000000 100755 0000000... 7f96139... A	nemu/include/cpu/reg.h
+:000000 100755 0000000... 9db8eca... A	nemu/include/cpu/reg_fpu.h
+:000000 100755 0000000... 5d81e22... A	nemu/include/cpu/sib.h
+:000000 100755 0000000... dd18ab0... A	nemu/include/device/i8259_pic.h
+:000000 100755 0000000... b1b60cd... A	nemu/include/device/ide.h
+:000000 100755 0000000... 89ee35d... A	nemu/include/device/keyboard.h
+:000000 100755 0000000... abf78c3... A	nemu/include/device/mm_io.h
+:000000 100755 0000000... d39fe56... A	nemu/include/device/port_io.h
+:000000 100755 0000000... 592e4c4... A	nemu/include/device/sdl.h
+:000000 100755 0000000... 554f103... A	nemu/include/device/serial.h
+:000000 100755 0000000... 94a1ce9... A	nemu/include/device/timer.h
+:000000 100755 0000000... e0a8324... A	nemu/include/device/vga.h
+:000000 100755 0000000... 7c8a238... A	nemu/include/macro.h
+:000000 100755 0000000... b0e7103... A	nemu/include/memory/memory.h
+:000000 100755 0000000... 2c243e9... A	nemu/include/memory/mmu/page.h
+:000000 100755 0000000... b93fe5b... A	nemu/include/memory/mmu/segment.h
+:000000 100755 0000000... a6f5979... A	nemu/include/memory/mmu/tlb.h
+:000000 100755 0000000... 9b85977... A	nemu/include/monitor/breakpoint.h
+:000000 100755 0000000... 08381cc... A	nemu/include/monitor/ui.h
+:000000 100755 0000000... cb98b1b... A	nemu/include/nemu.h
+:000000 100755 0000000... 6e97e00... A	nemu/src/cpu/alu.c
+:000000 100755 0000000... 71aa407... A	nemu/src/cpu/cpu.c
+:000000 100755 0000000... 9f16ebf... A	nemu/src/cpu/decode/debug.c
+:000000 100755 0000000... 993d460... A	nemu/src/cpu/decode/modrm.c
+:000000 100755 0000000... 7808137... A	nemu/src/cpu/decode/opcode.c
+:000000 100755 0000000... e3050bf... A	nemu/src/cpu/decode/operand.c
+:000000 100755 0000000... 346c982... A	nemu/src/cpu/decode/sib.c
+:000000 100755 0000000... f9afab6... A	nemu/src/cpu/fpu.c
+:000000 100755 0000000... 42969f2... A	nemu/src/cpu/instr/bt.c
+:000000 100755 0000000... 7d69783... A	nemu/src/cpu/instr/cbw.c
+:000000 100755 0000000... 4868f91... A	nemu/src/cpu/instr/cltd.c
+:000000 100755 0000000... fb2f564... A	nemu/src/cpu/instr/cmov.c
+:000000 100755 0000000... 497bd8b... A	nemu/src/cpu/instr/cmps.c
+:000000 100755 0000000... 3a56fcc... A	nemu/src/cpu/instr/data_size.c
+:000000 100755 0000000... 23a20bc... A	nemu/src/cpu/instr/div.c
+:000000 100755 0000000... d343461... A	nemu/src/cpu/instr/flags.c
+:000000 100755 0000000... 7fedd44... A	nemu/src/cpu/instr/group.c
+:000000 100755 0000000... 7daa4f9... A	nemu/src/cpu/instr/hlt.c
+:000000 100755 0000000... 9349da3... A	nemu/src/cpu/instr/idiv.c
+:000000 100755 0000000... 50621da... A	nemu/src/cpu/instr/imul.c
+:000000 100755 0000000... 9637147... A	nemu/src/cpu/instr/inv.c
+:000000 100755 0000000... fdbe7e7... A	nemu/src/cpu/instr/jcc.c
+:000000 100755 0000000... 18754d8... A	nemu/src/cpu/instr/jmp.c
+:000000 100755 0000000... 27d6913... A	nemu/src/cpu/instr/mov.c
+:000000 100755 0000000... e5a3170... A	nemu/src/cpu/instr/movs.c
+:000000 100755 0000000... 86de31b... A	nemu/src/cpu/instr/mul.c
+:000000 100755 0000000... 8af4618... A	nemu/src/cpu/instr/nemu_trap.c
+:000000 100755 0000000... f943576... A	nemu/src/cpu/instr/nop.c
+:000000 100755 0000000... 144220c... A	nemu/src/cpu/instr/opcode_2_byte.c
+:000000 100755 0000000... 47c3185... A	nemu/src/cpu/instr/rep_repe.c
+:000000 100755 0000000... 55445be... A	nemu/src/cpu/instr/sar.c
+:000000 100755 0000000... 32b22f6... A	nemu/src/cpu/instr/setcc.c
+:000000 100755 0000000... b9f0acc... A	nemu/src/cpu/instr/shl.c
+:000000 100755 0000000... 6ccd62a... A	nemu/src/cpu/instr/shr.c
+:000000 100755 0000000... c4f3beb... A	nemu/src/cpu/instr/stos.c
+:000000 100755 0000000... 3fe2805... A	nemu/src/cpu/instr/x87.c
+:000000 100755 0000000... 1f4c5fe... A	nemu/src/cpu/intr.c
+:000000 100755 0000000... f330134... A	nemu/src/cpu/reg.c
+:000000 100755 0000000... 8b322f0... A	nemu/src/cpu/test/alu_test.c
+:000000 100755 0000000... 33d54bd... A	nemu/src/cpu/test/fpu_test.c
+:000000 100755 0000000... b243b1d... A	nemu/src/device/dev/ide.c
+:000000 100755 0000000... 73541eb... A	nemu/src/device/dev/keyboard.c
+:000000 100755 0000000... 6150e16... A	nemu/src/device/dev/serial.c
+:000000 100755 0000000... bc99dc6... A	nemu/src/device/dev/timer.c
+:000000 100755 0000000... dcb1d58... A	nemu/src/device/dev/vga-palette.c
+:000000 100755 0000000... 026775d... A	nemu/src/device/dev/vga.c
+:000000 100755 0000000... fd734b5... A	nemu/src/device/i8259_pic.c
+:000000 100755 0000000... 523f38f... A	nemu/src/device/io/mm_io.c
+:000000 100755 0000000... 036c665... A	nemu/src/device/io/port_io.c
+:000000 100755 0000000... f87dfa1... A	nemu/src/device/sdl.c
+:000000 100755 0000000... 34a1f86... A	nemu/src/main.c
+:000000 100755 0000000... 5471db7... A	nemu/src/memory/memory.c
+:000000 100755 0000000... 3e544a7... A	nemu/src/memory/mmu/page.c
+:000000 100755 0000000... 9a584a8... A	nemu/src/memory/mmu/segment.c
+:000000 100755 0000000... e918481... A	nemu/src/memory/mmu/tlb.c
+:000000 100755 0000000... 6bbff3b... A	nemu/src/monitor/breakpoint.c
+:000000 100755 0000000... c9ae1fb... A	nemu/src/monitor/elf.c
+:000000 100755 0000000... ec86f8c... A	nemu/src/monitor/expr.c
+:000000 100755 0000000... 2df633d... A	nemu/src/monitor/ui.c
+:000000 100755 0000000... 3dded9b... A	testcase/Makefile
+:000000 100755 0000000... e3856ac... A	testcase/src/add-longlong.c
+:000000 100755 0000000... a25f60b... A	testcase/src/add.c
+:000000 100755 0000000... d925473... A	testcase/src/bit.c
+:000000 100755 0000000... 5f2c02c... A	testcase/src/bubble-sort.c
+:000000 100755 0000000... 820e8a5... A	testcase/src/echo.c
+:000000 100755 0000000... 68de0e6... A	testcase/src/fact.c
+:000000 100755 0000000... 8a25122... A	testcase/src/fib.c
+:000000 100755 0000000... 440158f... A	testcase/src/gotbaha.c
+:000000 100755 0000000... c7a9147... A	testcase/src/hello-inline.c
+:000000 100755 0000000... c52da6d... A	testcase/src/hello-str.c
+:000000 100755 0000000... 57f9254... A	testcase/src/if-else.c
+:000000 100755 0000000... 3b93044... A	testcase/src/leap-year.c
+:000000 100755 0000000... 83a46d0... A	testcase/src/matrix-mul-small.c
+:000000 100755 0000000... fe19086... A	testcase/src/matrix-mul.c
+:000000 100755 0000000... 6c9e329... A	testcase/src/max.c
+:000000 100755 0000000... 50fdbc7... A	testcase/src/min3.c
+:000000 100755 0000000... 82acdf9... A	testcase/src/mov-c.c
+:000000 100755 0000000... 728c1ad... A	testcase/src/mov-cmp.S
+:000000 100755 0000000... 6c5806a... A	testcase/src/mov-jcc.c
+:000000 100755 0000000... 857fae6... A	testcase/src/mov.S
+:000000 100755 0000000... abf8010... A	testcase/src/movsx.c
+:000000 100755 0000000... 81318ff... A	testcase/src/mul-longlong.c
+:000000 100755 0000000... cb1fa9e... A	testcase/src/pascal.c
+:000000 100755 0000000... 75ea381... A	testcase/src/prime.c
+:000000 100755 0000000... 88166bc... A	testcase/src/quick-sort.c
+:000000 100755 0000000... 8722fc9... A	testcase/src/select-sort.c
+:000000 100755 0000000... 1265e7b... A	testcase/src/shuixianhua.c
+:000000 100755 0000000... 23a202f... A	testcase/src/string.c
+:000000 100755 0000000... eed0912... A	testcase/src/struct.c
+:000000 100755 0000000... 1fe4c4a... A	testcase/src/sub-longlong.c
+:000000 100755 0000000... 8abc9af... A	testcase/src/sum.c
+:000000 100755 0000000... 32e923d... A	testcase/src/test-float.c
+:000000 100755 0000000... d43ff0d... A	testcase/src/wanshu.c
+:000000 100755 0000000... 2ea4b95... A	testcase/start.S
+
+commit 76a625452f75afb3c2121961e16297043c81e05f
+Author: ics-pa <31364533+ics-pa@users.noreply.github.com>
+Date:   Sat Aug 26 18:57:58 2017 +0800
+
+    Initial commit
+
+:000000 100644 0000000... 7d9c02c... A	README.md
