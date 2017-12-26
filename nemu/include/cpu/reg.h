@@ -24,7 +24,7 @@ typedef union{
 		uint32_t reserve:12;
 	};
 	uint32_t val;
-}
+}CR3;
 
 typedef struct {
 // the 16-bit visible part, i.e., the selector
@@ -99,6 +99,7 @@ typedef struct {
 	};
 
 	CR0 cr0; // control register 0
+	CR3 cr3;
 
 } CPU_STATE;
 
