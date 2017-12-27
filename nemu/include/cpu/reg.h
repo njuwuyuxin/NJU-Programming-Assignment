@@ -117,8 +117,8 @@ typedef struct {
 			CR cr1;
 			CR cr2;
 			CR cr3;
-		}
-	}
+		};
+	};
 
 } CPU_STATE;
 
