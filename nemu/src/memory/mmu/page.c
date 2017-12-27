@@ -15,11 +15,11 @@ paddr_t page_translate(laddr_t laddr) {
 	laddr_21_12=laddr&0x3ff;
 	laddr=laddr>>10;
 	laddr_31_22=laddr&0x3ff;
-	PageDirectoryEntry page_table_1;
+	PDE page_table_1;
 	page_table_1.val=paddr_read(pdb+laddr_31_22*4,4);
 	assert(page_table_1.present==1);
 
-	PageTableEntry page_table_2;
+	PTE page_table_2;
 	page_table_2.val=paddr_read(page_table_1.page_frame+laddr_21_12*4,4);
 	assert(page_table_2.present==1);
 
