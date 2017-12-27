@@ -1844,7 +1844,7 @@ c00313da:	81 c3 26 ac 00 00    	add    $0xac26,%ebx
 c00313e0:	c7 45 f0 00 00 00 00 	movl   $0x0,-0x10(%ebp)
 c00313e7:	8d 83 bc c9 ff ff    	lea    -0x3644(%ebx),%eax
 c00313ed:	50                   	push   %eax
-c00313ee:	6a 1b                	push   $0x1b
+c00313ee:	6a 1a                	push   $0x1a
 c00313f0:	8d 83 70 c9 ff ff    	lea    -0x3690(%ebx),%eax
 c00313f6:	50                   	push   %eax
 c00313f7:	8d 83 80 c9 ff ff    	lea    -0x3680(%ebx),%eax

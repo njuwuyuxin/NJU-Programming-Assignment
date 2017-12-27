@@ -5,7 +5,8 @@
 paddr_t page_translate(laddr_t laddr) {
 #ifndef TLB_ENABLED
 	printf("\nPlease implement page_translate()\n");
-	assert(0);
+	//assert(0);
+	return laddr;
 #else	
 	return tlb_read(laddr) | (laddr & PAGE_MASK);;
 #endif

@@ -46,7 +46,11 @@ void paddr_write(paddr_t paddr, size_t len, uint32_t data) {
 
 
 uint32_t laddr_read(laddr_t laddr, size_t len) {
-	return paddr_read(laddr, len);
+	paddr_t paddr=laddr;
+#ifdef IA32_PAGE
+	paddr=page_translate(laddr);
+#endif
+	return paddr_read(paddr,len);
 }
 
 void laddr_write(laddr_t laddr, size_t len, uint32_t data) {
