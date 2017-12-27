@@ -36,38 +36,21 @@ uint32_t loader() {
 			//panic("Please implement the loader");
 
 			/* TODO: copy the segment from the ELF file to its proper memory area */
+#ifndef IA32_PAGE
 			uint32_t addr=ph->p_vaddr;
 			memcpy((void*)(addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 			
 			if(ph->p_memsz>ph->p_filesz)
 				memset((void*)(addr+ph->p_filesz),0,ph->p_memsz-ph->p_filesz);
+#endif
+
+#ifdef IA32_PAGE
+
+#endif
 
 
 
-			/*
-			char *start;
-			start=(char*)elf;
-			start+=ph->p_offset;
-			uint32_t  dest=ph->p_vaddr;
 			
-			for(int i=0;i<ph->p_filesz;i++)
-			{
-				uint32_t temp=(uint32_t)(*start);
-				//paddr_write(dest,1,temp);
-				memcpy((char*)dest,&temp,1);
-				dest=dest+1;
-			}
-			
-			//memcpy(dest,start,ph->p_filesz);
-			//dest+=ph->p_filesz;
-
-			for(int i=0;i<ph->p_memsz-ph->p_filesz;i++)
-			{
-				*(char*)(dest+i)=0;
-			}
-			*/
-
-			//setmem((char*)dest,ph->p_memsz-ph->p_filesz,0);
 			/* TODO: zeror the memory area [vaddr + file_sz, vaddr + mem_sz) */
 
 #ifdef IA32_PAGE
