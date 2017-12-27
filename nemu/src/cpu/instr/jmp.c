@@ -96,7 +96,7 @@ make_instr_func(ljmp)
 	assert(seg==0x8);
 	cpu.cs.val=seg;
 	load_sreg(1);
-	jmp_addr=jmp_addr+0xc0000000;
+	//jmp_addr=jmp_addr+0xc0000000;
 	cpu.eip=jmp_addr;
 	return 0;
 }
