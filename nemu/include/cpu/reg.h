@@ -16,8 +16,16 @@ typedef union {
 	uint32_t reserve :26;
 	uint32_t pg :1;
 	};
+	struct{
+		uint32_t pad0 :3;
+		uint32_t page_write_through :1;
+		uint32_t page_cache_disable :1;
+		uint32_t pad1 :7;
+		uint32_t page_directory_base :20;
+	};
 	uint32_t val;
-}CR0;
+}CR;
+/*
 typedef union{
 	struct{
 		uint32_t pad0 :3;
@@ -28,7 +36,7 @@ typedef union{
 	};
 	uint32_t val;
 }CR3;
-
+*/
 typedef struct {
 // the 16-bit visible part, i.e., the selector
 	union {
@@ -101,8 +109,16 @@ typedef struct {
 	struct { SegReg es, cs, ss, ds, fs, gs; };
 	};
 
-	CR0 cr0; // control register 0
-	CR3 cr3;
+	//control registers CR0~CR3	
+	union{
+		CR cr[4];
+		struct{
+			CR cr0;
+			CR cr1;
+			CR cr2;
+			CR cr3;
+		}
+	}
 
 } CPU_STATE;
 

@@ -8,7 +8,6 @@
 #endif
 
 #define STACK_SIZE (1 << 20)
-#define IA32_PAGE
 void ide_read(uint8_t *, uint32_t, uint32_t);
 void create_video_mapping();
 uint32_t get_ucr3();

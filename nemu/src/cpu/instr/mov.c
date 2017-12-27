@@ -20,8 +20,17 @@ make_instr_impl_2op(mov, o, a, b)
 make_instr_impl_2op(mov, o, a, v)
 
 
-make_instr_func(mov_cr02r)
+make_instr_func(mov_cr2r)
 {
+	int len=1;
+	opr_src.data_size=32;
+	len+=modrm_rm(eip+1,&opr_src);
+	
+	uint8_t opcode2=instr_fetch(eip+1,1);
+	opr_src.val=cpu.cr[(opcode2>>3)&0x7].val;
+	operand_write(&opr_src);
+	return len;
+	/*
 	uint8_t modrm=paddr_read(eip+1,1);
 	modrm=modrm<<2;
 	modrm=modrm>>5;
@@ -37,10 +46,18 @@ make_instr_func(mov_cr02r)
 		case 7:cpu.edi=cpu.cr0.val;
 	}
 	return 2;
-	
+	*/
 }
-make_instr_func(mov_r2cr0)
+make_instr_func(mov_r2cr)
 {
+	int len=1;
+	opr_src.data_size=32;
+	len+=modrm_rm(eip+1,&opr_src);
+	
+	uint8_t opcode2=instr_fetch(eip+1,1);
+	cpu.cr[(opcode2>>3)&0x7].val=opr_src.val;
+	return len;
+	/*
 	uint8_t modrm=paddr_read(eip+1,1);
 	modrm=modrm<<2;
 	modrm=modrm>>5;
@@ -57,7 +74,7 @@ make_instr_func(mov_r2cr0)
 	}
 	//printf("modrm=%u\t",modrm);
 	return 2;
-	
+	*/
 }
 make_instr_func(mov_r2sr_w)
 {
