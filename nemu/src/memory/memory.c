@@ -55,6 +55,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 }
 
 void laddr_write(laddr_t laddr, size_t len, uint32_t data) {
+	paddr_t paddr=laddr;
 #ifdef IA32_PAGE
 	if(cpu.cr0.pg==1)
 		paddr=page_translate(laddr);
