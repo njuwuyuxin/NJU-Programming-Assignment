@@ -51,6 +51,7 @@ uint32_t loader() {
 			
 			if(ph->p_memsz>ph->p_filesz)
 				memset((void*)(physical_addr+ph->p_filesz),0,ph->p_memsz-ph->p_filesz);
+			assert(0);
 
 
 #endif
