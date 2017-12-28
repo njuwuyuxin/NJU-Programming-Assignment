@@ -1,11 +1,13 @@
 #include "cpu/cpu.h"
 #include "memory/memory.h"
-
+#include <stdlib.h>
 // translate from linear address to physical address
 paddr_t page_translate(laddr_t laddr) {
 #ifndef TLB_ENABLED
 	//printf("\nPlease implement page_translate()\n");
 	//assert(0);
+	printf("cr3=%x\n",cpu.cr3.page_directory_base);
+	system("pause");
 	uint32_t pdb=cpu.cr3.page_directory_base;
 	uint32_t laddr_11_0;
 	uint32_t laddr_21_12;
