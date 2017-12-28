@@ -7,7 +7,6 @@ paddr_t page_translate(laddr_t laddr) {
 	//printf("\nPlease implement page_translate()\n");
 	//assert(0);
 	printf("cr3=%x\n",cpu.cr3.page_directory_base);
-	system("pause");
 	uint32_t pdb=cpu.cr3.page_directory_base;
 	uint32_t laddr_11_0;
 	uint32_t laddr_21_12;
@@ -19,6 +18,7 @@ paddr_t page_translate(laddr_t laddr) {
 	laddr_31_22=laddr&0x3ff;
 	PDE page_table_1;
 	page_table_1.val=paddr_read(pdb+laddr_31_22*4,4);
+	printf("pt1.val=%x\n",page_table_1.val);
 	assert(page_table_1.present==1);
 
 	PTE page_table_2;
