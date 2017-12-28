@@ -21,7 +21,7 @@ paddr_t page_translate(laddr_t laddr) {
 	pdb=0x71000;
 
 	page_table_1.val=paddr_read(pdb+laddr_31_22*4,4);
-	printf("pt1.val=%x\n",page_table_1.val);
+	printf("pt1.base=%x\n",page_table_1.page_frame);
 	assert(page_table_1.present==1);
 
 	PTE page_table_2;
