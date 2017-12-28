@@ -25,7 +25,8 @@ paddr_t page_translate(laddr_t laddr) {
 	assert(page_table_1.present==1);
 
 	PTE page_table_2;
-	page_table_2.val=paddr_read(page_table_1.page_frame+laddr_21_12*4,4);
+	//page_table_2.val=paddr_read(page_table_1.page_frame+laddr_21_12*4,4);
+	page_table_2.val=paddr_read(0x72000+laddr_21_12*4,4);
 	assert(page_table_2.present==1);
 
 	uint32_t paddr=page_table_2.page_frame+laddr_11_0;
