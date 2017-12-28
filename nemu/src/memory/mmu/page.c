@@ -17,19 +17,17 @@ paddr_t page_translate(laddr_t laddr) {
 	laddr=laddr>>10;
 	laddr_31_22=laddr&0x3ff;
 	PDE page_table_1;
-
-	pdb=0x71000;
-
+	pdb=pdb<<12;
 	page_table_1.val=paddr_read(pdb+laddr_31_22*4,4);
 	printf("pt1.base=%x\n",page_table_1.page_frame);
 	assert(page_table_1.present==1);
 
 	PTE page_table_2;
-	//page_table_2.val=paddr_read(page_table_1.page_frame+laddr_21_12*4,4);
-	page_table_2.val=paddr_read(0x72000+laddr_21_12*4,4);
+	page_table_2.val=paddr_read((page_table_1.page_frame<<12)+laddr_21_12*4,4);
+	//page_table_2.val=paddr_read(0x72000+laddr_21_12*4,4);
 	assert(page_table_2.present==1);
 
-	uint32_t paddr=page_table_2.page_frame+laddr_11_0;
+	uint32_t paddr=page_table_2.page_frame<<12+laddr_11_0;
 	return paddr;
 #else	
 	return tlb_read(laddr) | (laddr & PAGE_MASK);;
