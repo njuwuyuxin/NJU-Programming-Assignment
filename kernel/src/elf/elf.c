@@ -46,6 +46,8 @@ uint32_t loader() {
 #ifdef IA32_PAGE
 			uint32_t addr=ph->p_vaddr;
 			uint32_t physical_addr=mm_malloc(addr,ph->p_memsz);
+			Log("vaddr=%x\t",addr);
+			Log("paddr=%x\n",physical_addr);
 			memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 			
 			if(ph->p_memsz>ph->p_filesz)
