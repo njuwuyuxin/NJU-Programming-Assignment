@@ -22,7 +22,7 @@ paddr_t page_translate(laddr_t laddr) {
 	//printf("pt1.base=%x\n",page_table_1.page_frame);
 	if(page_table_1.present!=1)
 	{
-		printf("laddr=%x\n",laddr);
+		//printf("laddr=%x\n",laddr);
 		assert(page_table_1.present==1);
 	}
 
