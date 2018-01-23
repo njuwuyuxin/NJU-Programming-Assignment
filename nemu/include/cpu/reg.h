@@ -5,7 +5,7 @@
 typedef struct {
 	uint32_t limit :16;
 	uint32_t base :32;
-}GDTR;
+}GDTR,IDTR;
 typedef union {
 	struct {
 	uint32_t pe :1;
@@ -103,6 +103,7 @@ typedef struct {
 		uint32_t val;	
 	} eflags;
 	GDTR gdtr; // GDTR
+	IDTR idtr; // IDTR
 
 	union { // segment registers
 	SegReg segReg[6];
