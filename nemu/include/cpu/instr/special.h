@@ -14,5 +14,7 @@ make_instr_func(opcode_2_byte);
 make_instr_func(cbw_a_v);
 make_instr_func(lgdt);
 make_instr_func(clts);
+make_instr_func(cli);
+make_instr_func(sti);
 
 #endif
