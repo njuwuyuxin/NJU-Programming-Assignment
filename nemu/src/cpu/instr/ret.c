@@ -58,3 +58,13 @@ make_instr_func(ret_i_w)
 	print_asm_0("retw","",3);
 	return 0;
 }
+
+make_instr_func(iret)
+{
+	cpu.eip=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	cpu.cs.val=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	cpu.eflags=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+}
