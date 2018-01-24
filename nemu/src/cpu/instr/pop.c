@@ -18,3 +18,23 @@ static void instr_execute_1op()
 	cpu.esp+=data_size/8;
 }
 make_instr_impl_1op(pop,r,l)
+
+make_instr_func(popa)
+{
+	cpu.edi=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	cpu.esi=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	cpu.ebp=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	//cpu.esp=vaddr_read(cpu.esp,2,4);  throw away
+	cpu.esp+=4;
+	cpu.ebx=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	cpu.edx=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	cpu.ecx=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+	cpu.eax=vaddr_read(cpu.esp,2,4);
+	cpu.esp+=4;
+}
