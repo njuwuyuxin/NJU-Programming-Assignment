@@ -21,6 +21,7 @@ void raise_intr(uint8_t intr_no) {
 	uint32_t final_addr=base_addr+intr_no*8;
 	GateDesc Desc;
 	memcpy((void*)(&Desc),(void*)(final_addr),8);
+	printf("Desc.offset=%x\n",Desc.offset);
 #endif
 }
 
