@@ -10,8 +10,8 @@ void raise_intr(uint8_t intr_no) {
 	
 	cpu.esp-=4;
 	vaddr_write(cpu.esp,2,4,cpu.eflags.val);
-	cpu.esp-=2;
-	vaddr_write(cpu.esp,2,2,cpu.cs.val);
+	cpu.esp-=4;
+	vaddr_write(cpu.esp,2,4,cpu.cs.val);
 	cpu.esp-=4;
 	vaddr_write(cpu.esp,2,4,cpu.eip);
 
@@ -20,13 +20,13 @@ void raise_intr(uint8_t intr_no) {
 	uint32_t base_addr=cpu.idtr.base;
 	uint32_t final_addr=base_addr+intr_no*8;
 	GateDesc Desc;
-	memcpy((void*)(&Desc),(void*)(final_addr),8);
-
-	printf("Desc.offset=%x\n",Desc.offset_15_0);
+	Desc.val[0]=laddr_read(final_addr,4);
+	Desc.val[1]=laddr_read(final_addr+4,4);
+	//printf("Desc.offset=%x\n",Desc.offset_15_0);
 	uint32_t offset=Desc.offset_31_16;
 	offset=offset<<16;
 	offset+=Desc.offset_15_0;
-	//printf("Desc.offset=%x\n",offset);
+	printf("Desc.offset=%x\n",offset);
 #endif
 }
 
