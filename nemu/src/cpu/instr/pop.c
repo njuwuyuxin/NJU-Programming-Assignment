@@ -37,4 +37,5 @@ make_instr_func(popa)
 	cpu.esp+=4;
 	cpu.eax=vaddr_read(cpu.esp,2,4);
 	cpu.esp+=4;
+	return 1;
 }
