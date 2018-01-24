@@ -14,8 +14,8 @@ void raise_intr(uint8_t intr_no) {
 	vaddr_write(cpu.esp,2,4,cpu.cs.val);
 	cpu.esp-=4;
 	vaddr_write(cpu.esp,2,4,cpu.eip);
-	cpu.IF=0;
-	cpu.TF=0;
+	cpu.eflags.IF=0;
+	cpu.eflags.TF=0;
 
 	//printf("idtr=%x\n",cpu.idtr.base);
 	uint32_t base_addr=cpu.idtr.base;
