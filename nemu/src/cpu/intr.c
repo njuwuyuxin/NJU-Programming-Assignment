@@ -22,10 +22,11 @@ void raise_intr(uint8_t intr_no) {
 	GateDesc Desc;
 	memcpy((void*)(&Desc),(void*)(final_addr),8);
 
+	printf("Desc.offset=%x\n",Desc.offset_15_0);
 	uint32_t offset=Desc.offset_31_16;
 	offset=offset<<16;
 	offset+=Desc.offset_15_0;
-	printf("Desc.offset=%x\n",offset);
+	//printf("Desc.offset=%x\n",offset);
 #endif
 }
 
