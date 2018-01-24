@@ -67,7 +67,21 @@ void laddr_write(laddr_t laddr, size_t len, uint32_t data) {
 
 uint32_t vaddr_read(vaddr_t vaddr, uint8_t sreg, size_t len) {
 	if(cpu.cr0.pe==1)
+	{
+		/*
+		if(vaddr%0x10==0xf&&len>1)
+		{
+			uint32_t result;
+			uint32_t result1=laddr_read(segment_translate(vaddr,sreg),1);
+			uint32_t result2=laddr_read(segment_translate(vaddr+1,sreg),len-1);
+			if(len==2)
+			{
+				result=result
+			}
+		}
+		*/
 		vaddr=segment_translate(vaddr,sreg);
+	}
 	assert(len == 1 || len == 2 || len == 4);
 	return laddr_read(vaddr, len);
 }

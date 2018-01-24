@@ -20,9 +20,9 @@ paddr_t page_translate(laddr_t laddr) {
 	pdb=pdb<<12;
 	page_table_1.val=paddr_read(pdb+laddr_31_22*4,4);
 	//printf("pt1.base=%x\n",page_table_1.page_frame);
-	//if(page_table_1.present!=1)
+	if(page_table_1.present!=1)
 	{
-		//printf("laddr=%x\n",laddr);
+		printf("laddr=%x\n",laddr);
 		assert(page_table_1.present==1);
 	}
 
