@@ -19,7 +19,7 @@ void raise_intr(uint8_t intr_no) {
 	printf("idtr=%x\n",cpu.idtr.base);
 	uint32_t base_addr=cpu.idtr.base;
 	uint32_t final_addr=base_addr+intr_no*8;
-	GateDescriptor Desc;
+	GateDesc Desc;
 	memcpy((void*)(&Desc),(void*)(final_addr),8);
 #endif
 }
