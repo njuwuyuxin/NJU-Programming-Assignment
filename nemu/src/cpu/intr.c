@@ -8,6 +8,12 @@ void raise_intr(uint8_t intr_no) {
 	//printf("Please implement raise_intr()");
 	//assert(0);
 	
+	cpu.esp-=4;
+	vaddr_write(cpu.esp,2,4,cpu.eflags.val);
+	cpu.esp-=2;
+	vaddr_write(cpu.esp,2,2,cpu.cs.val);
+	cpu.esp-=4;
+	vaddr_write(cpu.esp,2,4,cpu.eip);
 	printf("idtr=%x\n",cpu.idtr.base);
 #endif
 }
