@@ -1,6 +1,6 @@
 #include "cpu/instr.h"
 
-make_instr_func(int)
+make_instr_func(INT)
 {
 	return 2;
 }
