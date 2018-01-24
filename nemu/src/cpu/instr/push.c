@@ -34,6 +34,7 @@ make_instr_func(pusha)
 	vaddr_write(cpu.esp,2,4,cpu.esi);
 	cpu.esp-=4;
 	vaddr_write(cpu.esp,2,4,cpu.edi);
+	return 1;
 }
 
 make_instr_impl_1op(push,r,l)
