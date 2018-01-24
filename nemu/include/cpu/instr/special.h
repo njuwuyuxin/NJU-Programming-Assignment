@@ -16,5 +16,7 @@ make_instr_func(lgdt);
 make_instr_func(clts);
 make_instr_func(cli);
 make_instr_func(sti);
+make_instr_func(int);
+
 
 #endif
