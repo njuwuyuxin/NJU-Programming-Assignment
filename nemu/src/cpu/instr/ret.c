@@ -67,4 +67,5 @@ make_instr_func(iret)
 	cpu.esp+=4;
 	cpu.eflags.val=vaddr_read(cpu.esp,2,4);
 	cpu.esp+=4;
+	return 0
 }
