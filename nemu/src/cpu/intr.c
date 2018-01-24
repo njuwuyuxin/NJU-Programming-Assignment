@@ -8,7 +8,7 @@ void raise_intr(uint8_t intr_no) {
 	//printf("Please implement raise_intr()");
 	//assert(0);
 	
-	printf("idtr=%x\n"cpu.idtr.base);
+	printf("idtr=%x\n",cpu.idtr.base);
 #endif
 }
 
