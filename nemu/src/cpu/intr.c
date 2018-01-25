@@ -13,7 +13,7 @@ void raise_intr(uint8_t intr_no) {
 	cpu.esp-=4;
 	vaddr_write(cpu.esp,2,4,cpu.cs.val);
 	cpu.esp-=4;
-	vaddr_write(cpu.esp,2,4,cpu.eip+2);
+	vaddr_write(cpu.esp,2,4,cpu.eip);
 	cpu.eflags.IF=0;
 	cpu.eflags.TF=0;
 
