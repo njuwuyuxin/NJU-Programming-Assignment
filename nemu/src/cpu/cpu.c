@@ -28,6 +28,9 @@ void init_cpu(const uint32_t init_eip) {
 	cpu.gdtr.base=0;
 	//init CR0
 	cpu.cr0.val=0;
+
+	//init intr
+	cpu.intr=0;
 }
 
 bool verbose = false;
@@ -90,8 +93,9 @@ void exec(uint32_t n) {
 		}
 
 #ifdef HAS_DEVICE_TIMER
-		printf("\nPlease call do_intr() here\n");
-		assert(0);
+		//printf("\nPlease call do_intr() here\n");
+		//assert(0);
+		do_intr();
 #endif
 	}
 	if(nemu_state == NEMU_STOP)
