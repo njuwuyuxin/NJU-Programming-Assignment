@@ -121,6 +121,7 @@ typedef struct {
 		};
 	};
 
+	uint8_t intr; //simulator of interupt handle
 } CPU_STATE;
 
 
