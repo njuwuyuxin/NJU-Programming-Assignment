@@ -55,7 +55,7 @@ static int NEMU_SDL_Thread(void * ptr) {
 	//For tracking if we want to quit
 	while(initialized) {
 #ifdef HAS_DEVICE_TIMER 
-		//timer_intr();
+		timer_intr();
 #endif
 #ifdef HAS_DEVICE_VGA
 		// update the screen
