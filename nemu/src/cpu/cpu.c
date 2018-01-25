@@ -95,7 +95,7 @@ void exec(uint32_t n) {
 #ifdef HAS_DEVICE_TIMER
 		//printf("\nPlease call do_intr() here\n");
 		//assert(0);
-		//do_intr();
+		do_intr();
 #endif
 	}
 	if(nemu_state == NEMU_STOP)
