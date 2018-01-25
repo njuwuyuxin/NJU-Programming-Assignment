@@ -48,9 +48,6 @@ static char * testcases[] = {
 	"mov",
 	"mov-cmp",
 #endif
-#ifdef IA32_INTR
-	"hello-inline", 
-#endif
 	"mov-c",
 	"mov-jcc",
 	"add",
@@ -81,6 +78,9 @@ static char * testcases[] = {
 	"hello-str", 
 	"test-float",
 
+#ifdef IA32_INTR
+	"hello-inline", 
+#endif
 #if defined(IA32_INTR) && defined(HAS_DEVICE_SERIAL) && defined(HAS_DEVICE_KEYBOARD)
 	"echo",
 #endif
