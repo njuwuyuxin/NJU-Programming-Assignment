@@ -35,7 +35,7 @@
 
 	.globl start
 	start:
-	#BREAK_POINT
+	BREAK_POINT
 #ifdef IA32_INTR
 		cli
 #endif
