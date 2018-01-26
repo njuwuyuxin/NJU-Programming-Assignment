@@ -48,6 +48,7 @@ extern uint8_t data_size;
 #include "cpu/instr/and.h"
 
 #include "cpu/instr/idt.h"
+#include "cpu/instr/in.h"
 /* TODO: add more instructions here */
 
 #endif
