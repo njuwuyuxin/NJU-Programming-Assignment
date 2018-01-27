@@ -53,8 +53,8 @@ uint32_t loader() {
 			uint32_t physical_addr=mm_malloc(addr,ph->p_memsz);
 			
 #ifdef HAS_DEVICE_IDE
-			assert(ph->p_filesz<=4096*16);
-			uint8_t buf2[4096*16];
+			assert(ph->p_filesz<=4096*32);
+			uint8_t buf2[4096*32];
 			ide_read(buf2,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
 			memcpy((void*)(physical_addr),(void*)(buf2),ph->p_filesz);
 			//memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
