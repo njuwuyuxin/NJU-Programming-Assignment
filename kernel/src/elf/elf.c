@@ -18,8 +18,12 @@ uint32_t loader() {
 	Elf32_Phdr *ph, *eph;
 
 #ifdef HAS_DEVICE_IDE
-	uint8_t buf[65536*2];
-	ide_read(buf, ELF_OFFSET_IN_DISK, 65536*2);
+	//uint8_t buf[65536*2];
+	//ide_read(buf, ELF_OFFSET_IN_DISK, 65536*2);
+	uint8_t buf[4096];
+	ide_read(buf, ELF_OFFSET_IN_DISK, 4096);
+
+
 	elf = (void*)buf;
 	Log("ELF loading from hard disk.");
 #else
@@ -49,10 +53,11 @@ uint32_t loader() {
 			uint32_t physical_addr=mm_malloc(addr,ph->p_memsz);
 			
 #ifdef HAS_DEVICE_IDE
-			//assert(ph->p_filesz<=4096);
-			//ide_read(buf,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
-			//memcpy((void*)(physical_addr),(void*)(buf),ph->p_filesz);
-			memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
+			assert(ph->p_filesz<=4096);
+			uint8_t buf2[4096];
+			ide_read(buf2,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
+			memcpy((void*)(physical_addr),(void*)(buf2),ph->p_filesz);
+			//memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 #else
 			memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 #endif
