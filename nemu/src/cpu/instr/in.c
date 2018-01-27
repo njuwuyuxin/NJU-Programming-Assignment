@@ -7,6 +7,6 @@ make_instr_func(IN_b)
 }
 make_instr_func(IN_l)
 {
-	cpu.gpr[0].eax=pio_read(cpu.gpr[2]._16,4);
+	cpu.eax=pio_read(cpu.gpr[2]._16,4);
 	return 1;
 }
