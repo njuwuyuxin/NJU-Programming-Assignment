@@ -3,6 +3,10 @@
 make_instr_func(IN_b)
 {
 	cpu.gpr[0]._8[0]=pio_read(cpu.gpr[2]._16,1);
-	//printf("eip=%x\n",cpu.eip);
+	return 1;
+}
+make_instr_func(IN_l)
+{
+	cpu.gpr[0].eax=pio_read(cpu.gpr[2]._16,4);
 	return 1;
 }
