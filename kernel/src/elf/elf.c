@@ -57,7 +57,6 @@ uint32_t loader() {
 			uint8_t buf2[4096*32];
 			ide_read(buf2,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
 			memcpy((void*)(physical_addr),(void*)(buf2),ph->p_filesz);
-			//memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 #else
 			memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 #endif
