@@ -16,11 +16,12 @@ serial_printc(char ch) {
 	//Log("Please implement serial\n");
 	while (!serial_idle()) // wait untile serial is idle
 	{
+		assert(0);
 		//Log("Please implement serial\n");
 		//putc(ch,stdout);
 		//fflush(stdout);
 		;
 	}
-	Log("ch");
+	//Log("ch");
 	//panic("please print \'ch\' via out instruction");
 }
