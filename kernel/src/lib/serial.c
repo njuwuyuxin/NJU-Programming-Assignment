@@ -1,6 +1,6 @@
 #include "common.h"
 #include "x86.h"
-
+#include "stdio.h"
 #define SERIAL_PORT  0x3F8
 
 void
