@@ -13,6 +13,9 @@ serial_idle(void) {
 
 void
 serial_printc(char ch) {
-	while (!serial_idle()); // wait untile serial is idle
+	while (!serial_idle()) // wait untile serial is idle
+	{
+		printf("Please implement serial\n");
+	}
 	//panic("please print \'ch\' via out instruction");
 }
