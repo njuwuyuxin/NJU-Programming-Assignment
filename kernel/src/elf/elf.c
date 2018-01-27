@@ -51,9 +51,10 @@ uint32_t loader() {
 			//Log("paddr=%x\n",physical_addr);
 			
 #ifdef HAS_DEVICE_IDE
-			//ide_read(buf,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
-			//memcpy((void*)(physical_addr),(void*)(buf),ph->p_filesz);
-			memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
+			assert(ph->p_filesz<=4096);
+			ide_read(buf,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
+			memcpy((void*)(physical_addr),(void*)(buf),ph->p_filesz);
+			//memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 #else
 			memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
 #endif
