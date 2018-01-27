@@ -21,6 +21,6 @@ serial_printc(char ch) {
 		//fflush(stdout);
 		;
 	}
-	Log(ch);
+	Log("ch");
 	//panic("please print \'ch\' via out instruction");
 }
