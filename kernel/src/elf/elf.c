@@ -18,8 +18,8 @@ uint32_t loader() {
 	Elf32_Phdr *ph, *eph;
 
 #ifdef HAS_DEVICE_IDE
-	uint8_t buf[4096];
-	ide_read(buf, ELF_OFFSET_IN_DISK, 4096);
+	uint8_t buf[65536];
+	ide_read(buf, ELF_OFFSET_IN_DISK, 65536);
 	elf = (void*)buf;
 	Log("ELF loading from hard disk.");
 #else
