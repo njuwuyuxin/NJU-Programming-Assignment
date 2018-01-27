@@ -18,7 +18,7 @@ uint32_t loader() {
 	Elf32_Phdr *ph, *eph;
 
 #ifdef HAS_DEVICE_IDE
-	uint8_t buf[4096*8];
+	uint8_t buf[4096*16];
 	//uint8_t *buf=(uint8_t*)malloc(4096);
 	ide_read(buf, ELF_OFFSET_IN_DISK, 4096);
 	elf = (void*)buf;
