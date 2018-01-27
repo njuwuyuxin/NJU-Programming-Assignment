@@ -1,6 +1,6 @@
 #include "common.h"
 #include "x86.h"
-#include "stdio.h"
+//#include "stdio.h"
 #define SERIAL_PORT  0x3F8
 
 void
@@ -13,11 +13,12 @@ serial_idle(void) {
 
 void
 serial_printc(char ch) {
+	Log("Please implement serial\n");
 	while (!serial_idle()) // wait untile serial is idle
 	{
 		//Log("Please implement serial\n");
-		putc(ch,stdout);
-		fflush(stdout);
+		//putc(ch,stdout);
+		//fflush(stdout);
 	}
 	//panic("please print \'ch\' via out instruction");
 }
