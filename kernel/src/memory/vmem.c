@@ -15,7 +15,7 @@ void create_video_mapping() {
 	 * [0xa0000, 0xa0000 + SCR_SIZE) for user program. You may define
 	 * some page tables to create this mapping.
 	 */
-	assert(0);
+	//assert(0);
 	//panic("please implement me");
 }
 
