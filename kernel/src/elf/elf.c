@@ -56,7 +56,7 @@ uint32_t loader() {
 			assert(ph->p_filesz<=4096*32);
 			//uint8_t buf2[4096*32];
 			//ide_read(buf2,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
-			ide_read((uint8_t*)(addr),ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
+			ide_read((uint8_t*)(physical_addr),ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
 			//memcpy((void*)(physical_addr),(void*)(buf2),ph->p_filesz);
 #else
 			memcpy((void*)(physical_addr),(void*)((void*)elf+ph->p_offset),ph->p_filesz);
