@@ -38,11 +38,11 @@ create_new_letter(void) {
 		fly_insert(NULL, head, now); /* 插入到链表的头部 */
 		head = now;
 	}
-	assert(0);
 	/* 字母、初始位置、掉落速度均为随机设定 */
 	head->x = 0;
 	head->y = rand() % (SCR_WIDTH / 8 - 2) * 8 + 8;
 	head->v = (rand() % 1000) / 2000 + 0.5;
+	assert(0);
 	head->text = rand() % 26;
 	release_key(head->text); /* 清除过往的按键 */
 }
