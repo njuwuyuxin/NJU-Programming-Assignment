@@ -109,8 +109,11 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 				uint16_t data=(temp_t<<24)+temp;
 				return data;
 			}
-			//else
-				//assert(0);
+			else
+			{
+				printf("pr=%x\t,len=%x\n",pr,len);
+				assert(0);
+			}
 		}
 		else
 		{
