@@ -17,6 +17,16 @@ void create_video_mapping() {
 	 */
 	//assert(0);
 	//panic("please implement me");
+	PDE *updir=get_updir();
+	PTE *vtable=(PTE*)va_to_pa(vptable);
+	updir->val=make_pde(vtable);
+	uint32_t pframe_addr=VMEM_ADDR;
+	vtable+=160;
+	for(;pframe_addr<VMEM_ADDR+SCR_SIZE;pframe_addr+=PAGE_SIZE)
+	{
+		((PTE*)(pa_to_va((void*)vtable)))->val=make_pte(pframe_addr);
+		vtable++;
+	}
 }
 
 void video_mapping_write_test() {
