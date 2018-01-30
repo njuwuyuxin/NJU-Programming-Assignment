@@ -39,11 +39,11 @@ main_loop(void) {
 	int num_draw = 0;
 	bool redraw;
 	
-	assert(0);
 
 	while (true) {
 		wait_intr();
 		cli();
+	assert(0);
 		if (now == tick) {
 			sti();
 			continue;
