@@ -48,7 +48,7 @@ make_instr_func(call)
         operand_read(&rel);
 
 	int offset = sign_ext(rel.val, data_size);
-	print_asm_0("call", "", 10);
+	print_asm_0("call", "", 1+data_size/8);
 
 	cpu.eip += offset;
 	/*
