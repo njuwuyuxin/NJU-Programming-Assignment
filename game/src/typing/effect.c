@@ -38,6 +38,7 @@ create_new_letter(void) {
 		fly_insert(NULL, head, now); /* 插入到链表的头部 */
 		head = now;
 	}
+	assert(0);
 	/* 字母、初始位置、掉落速度均为随机设定 */
 	head->x = 0;
 	head->y = rand() % (SCR_WIDTH / 8 - 2) * 8 + 8;
