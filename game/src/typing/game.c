@@ -38,6 +38,8 @@ main_loop(void) {
 	int now = 0, target;
 	int num_draw = 0;
 	bool redraw;
+	
+	assert(0);
 
 	while (true) {
 		wait_intr();
