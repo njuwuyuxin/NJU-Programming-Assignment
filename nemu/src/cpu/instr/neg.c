@@ -7,7 +7,8 @@ static void instr_execute_1op()
 		cpu.eflags.CF=0;
 	else
 		cpu.eflags.CF=1;
-	opr_src.val=-opr_src.val;
+	opr_src.val=~opr_src.val;
+	opr_src.val+=1;
 	operand_write(&opr_src);
 }
 make_instr_impl_1op(neg,rm,v)
