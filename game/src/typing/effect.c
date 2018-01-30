@@ -40,8 +40,8 @@ create_new_letter(void) {
 	}
 	/* 字母、初始位置、掉落速度均为随机设定 */
 	head->x = 0;
-	assert(0);
 	head->y = rand() % (SCR_WIDTH / 8 - 2) * 8 + 8;
+	assert(0);
 	head->v = (rand() % 1000) / 2000 + 0.5;
 	head->text = rand() % 26;
 	release_key(head->text); /* 清除过往的按键 */
