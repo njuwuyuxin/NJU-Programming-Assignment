@@ -3,11 +3,14 @@
 static void instr_execute_1op()
 {
 	operand_read(&opr_src);
+	/*
 	if(opr_src.val==0)
 		cpu.eflags.CF=0;
 	else
 		cpu.eflags.CF=1;
-	opr_src.val=-opr_src.val;
+		*/
+	opr_src.val=0-opr_src.val;
+	cpu.eflags.CF=(opr_src.val!=0);
 	operand_write(&opr_src);
 }
 make_instr_impl_1op(neg,rm,v)
