@@ -135,7 +135,7 @@ void laddr_write(laddr_t laddr, size_t len, uint32_t data) {
 #ifdef IA32_PAGE
 	if(cpu.cr0.pg==1)
 	{
-		paddr=page_translate(laddr);
+		paddr_t paddr=page_translate(laddr);
 		paddr_write(paddr,len,data);
 	}
 #else
