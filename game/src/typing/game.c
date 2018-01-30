@@ -74,6 +74,7 @@ main_loop(void) {
 			if (now % (HZ / FPS) == 0) {
 				redraw = true;
 			}
+	assert(0);
 			/* 更新fps统计信息 */
 			if (now % (HZ / 2) == 0) {
 				int now_fps = num_draw * 2 + 1;
@@ -82,7 +83,6 @@ main_loop(void) {
 				num_draw = 0;
 			}
 			now ++;
-	assert(0);
 		}
 
 		if (redraw) { /* 当需要重新绘图时重绘 */
