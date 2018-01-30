@@ -91,7 +91,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 				uint16_t data=(temp_t<<8)+temp;
 				return data;
 			}
-			else if((pr==0xfff)&(len==2))
+			else if((pr==0xffe)&(len==4))
 			{
 				paddr_t hwaddr=page_translate(laddr);
 				uint32_t temp=paddr_read(hwaddr,2);
@@ -100,7 +100,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 				uint16_t data=(temp_t<<16)+temp;
 				return data;
 			}
-			else if((pr==0xfff)&(len==2))
+			else if((pr==0xffd)&(len==4))
 			{
 				paddr_t hwaddr=page_translate(laddr);
 				uint32_t temp=paddr_read(hwaddr,3);
