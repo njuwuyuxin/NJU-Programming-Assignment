@@ -16,7 +16,6 @@ uint32_t get_ucr3();
 uint32_t loader() {	
 	Elf32_Ehdr *elf;
 	Elf32_Phdr *ph, *eph;
-	assert(0);
 #ifdef HAS_DEVICE_IDE
 	//uint8_t buf[65536*2];
 	//ide_read(buf, ELF_OFFSET_IN_DISK, 65536*2);
