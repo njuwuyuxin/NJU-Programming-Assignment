@@ -75,7 +75,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 		{
 			if((pr==0xfff)&(len==2))
 			{
-				paddr_t hwaddr_page_translate(laddr);
+				paddr_t hwaddr=page_translate(laddr);
 				uint32_t temp=paddr_read(hwaddr,1);
 				paddr_t hwaddr_t=page_translate(laddr+1);
 				uint32_t temp_t=paddr_read(hwaddr_t,1);
@@ -84,7 +84,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 			}
 			else if((pr==0xfff)&(len==4))
 			{
-				paddr_t hwaddr_page_translate(laddr);
+				paddr_t hwaddr=page_translate(laddr);
 				uint32_t temp=paddr_read(hwaddr,1);
 				paddr_t hwaddr_t=page_translate(laddr+1);
 				uint32_t temp_t=paddr_read(hwaddr_t,3);
@@ -93,7 +93,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 			}
 			else if((pr==0xfff)&(len==2))
 			{
-				paddr_t hwaddr_page_translate(laddr);
+				paddr_t hwaddr=page_translate(laddr);
 				uint32_t temp=paddr_read(hwaddr,2);
 				paddr_t hwaddr_t=page_translate(laddr+2);
 				uint32_t temp_t=paddr_read(hwaddr_t,2);
@@ -102,7 +102,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 			}
 			else if((pr==0xfff)&(len==2))
 			{
-				paddr_t hwaddr_page_translate(laddr);
+				paddr_t hwaddr=page_translate(laddr);
 				uint32_t temp=paddr_read(hwaddr,3);
 				paddr_t hwaddr_t=page_translate(laddr+3);
 				uint32_t temp_t=paddr_read(hwaddr_t,1);
