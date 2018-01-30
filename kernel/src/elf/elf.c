@@ -49,11 +49,12 @@ uint32_t loader() {
 #endif
 
 #ifdef IA32_PAGE
+			assert(0);
 			uint32_t addr=ph->p_vaddr;
 			uint32_t physical_addr=mm_malloc(addr,ph->p_memsz);
 			
 #ifdef HAS_DEVICE_IDE
-			assert(ph->p_filesz<=4096*32);
+			//assert(ph->p_filesz<=4096*32);
 			//uint8_t buf2[4096*32];
 			//ide_read(buf2,ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
 			ide_read((uint8_t*)(physical_addr),ELF_OFFSET_IN_DISK+ph->p_offset,ph->p_filesz);
