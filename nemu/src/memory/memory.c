@@ -138,6 +138,8 @@ void laddr_write(laddr_t laddr, size_t len, uint32_t data) {
 		paddr_t paddr=page_translate(laddr);
 		paddr_write(paddr,len,data);
 	}
+	else
+		paddr_write(laddr,len,data);
 #else
 	paddr_write(laddr, len, data);
 #endif
