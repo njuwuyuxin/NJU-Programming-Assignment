@@ -23,12 +23,6 @@ make_instr_func(call_rm_v)
 make_instr_func(call)
 {
 	/*
-	OPERAND temp_op;
-	temp_op.type=OPR_REG;
-	temp_op.addr=REG_EIP;
-	temp_op.data_size=32;
-	operand_read(&temp_op);
-	*/
 	cpu.esp-=4;
 	OPERAND temp;
 	temp.type=OPR_MEM;
@@ -51,15 +45,25 @@ make_instr_func(call)
 	print_asm_0("call", "", 1+data_size/8);
 
 	cpu.eip += offset;
-	/*
-	OPERAND test_esp;
-	test_esp.type=OPR_MEM;
-	test_esp.addr=cpu.esp;
-	test_esp.data_size=32;
-	operand_read(&test_esp);
-	printf("(esp)=%x  ",test_esp.val);
-        */
 	return 1 + data_size / 8;
+	*/
+
+	OPERAND rel;
+        rel.type = OPR_IMM;
+	rel.sreg = SREG_CS;
+        rel.data_size = data_size;
+        rel.addr = eip + 1;
+
+	operand_read(&rel);
+	cpu.esp-=data_size/8;
+	uint32_t data=cpu.eip+1+data_size/8;
+	vaddr_write(cpu.esp,SREG_SS,data_size/8,data);
+
+	int offset=sign_ext(rel.val,data_size);
+	print_asm_1("call", "", 1+data_size/8,&rel);
+	cpu.eip+=offset;
+	return 1+data_size/8;
+
 }
 
 
