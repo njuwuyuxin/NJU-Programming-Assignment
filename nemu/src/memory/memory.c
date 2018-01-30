@@ -64,12 +64,67 @@ void paddr_write(paddr_t paddr, size_t len, uint32_t data) {
 
 
 uint32_t laddr_read(laddr_t laddr, size_t len) {
-	paddr_t paddr=laddr;
+	//paddr_t paddr=laddr;
 #ifdef IA32_PAGE
 	if(cpu.cr0.pg==1)
-		paddr=page_translate(laddr);
+	{
+		//paddr=page_translate(laddr);
+
+		uint32_t pr=(laddr&0xfff);
+		if(pr+len>0x1000)
+		{
+			if((pr==0xfff)&(len==2))
+			{
+				paddr_t hwaddr_page_translate(laddr);
+				uint32_t temp=paddr_read(hwaddr,1);
+				paddr_t hwaddr_t=page_translate(laddr+1);
+				uint32_t temp_t=paddr_read(hwaddr_t,1);
+				uint16_t data=(temp_t<<8)+temp;
+				return data;
+			}
+			else if((pr==0xfff)&(len==4))
+			{
+				paddr_t hwaddr_page_translate(laddr);
+				uint32_t temp=paddr_read(hwaddr,1);
+				paddr_t hwaddr_t=page_translate(laddr+1);
+				uint32_t temp_t=paddr_read(hwaddr_t,3);
+				uint16_t data=(temp_t<<8)+temp;
+				return data;
+			}
+			else if((pr==0xfff)&(len==2))
+			{
+				paddr_t hwaddr_page_translate(laddr);
+				uint32_t temp=paddr_read(hwaddr,2);
+				paddr_t hwaddr_t=page_translate(laddr+2);
+				uint32_t temp_t=paddr_read(hwaddr_t,2);
+				uint16_t data=(temp_t<<16)+temp;
+				return data;
+			}
+			else if((pr==0xfff)&(len==2))
+			{
+				paddr_t hwaddr_page_translate(laddr);
+				uint32_t temp=paddr_read(hwaddr,3);
+				paddr_t hwaddr_t=page_translate(laddr+3);
+				uint32_t temp_t=paddr_read(hwaddr_t,1);
+				uint16_t data=(temp_t<<24)+temp;
+				return data;
+			}
+			else
+				assert(0);
+		}
+		else
+		{
+			paddr_t hwaddr=page_translate(laddr);
+			return paddr_read(hwaddr,len);
+		}
+
+	}
+	else
+		return paddr_read(laddr,len);
+		
+#else
+	return paddr_read(laddr,len);
 #endif
-	return paddr_read(paddr,len);
 }
 
 void laddr_write(laddr_t laddr, size_t len, uint32_t data) {
