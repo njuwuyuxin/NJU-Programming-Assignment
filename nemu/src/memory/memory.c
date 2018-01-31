@@ -82,18 +82,21 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 				uint16_t data=(temp_t<<8)+temp;
 				return data;
 			}
-			/*
+			
 			else if(((pr==0xfff)||(pr==0xffe)||(pr==0xffd))&&(len==4))
 			{
+				uint32_t temp1=0x1000-pr;
+				uint32_t temp2=4-temp1;
 				paddr_t hwaddr=page_translate(laddr);
-				uint32_t temp=paddr_read(hwaddr,(0x1000-pr));
-				paddr_t hwaddr_t=page_translate(laddr+(0x1000-pr));
-				uint32_t temp_t=paddr_read(hwaddr_t,(pr-0xffc));
-				uint16_t data=(temp_t<<(3*(0x1000-pr)))+temp;
+				uint32_t temp=paddr_read(hwaddr,temp1);
+				paddr_t hwaddr_t=page_translate(laddr+temp1);
+				uint32_t temp_t=paddr_read(hwaddr_t,temp2);
+				temp2*=8;
+				uint16_t data=(temp_t<<temp2)+temp;
 				return data;
 
 			}
-			*/
+			/*
 			else if((pr==0xfff)&(len==4))
 			{
 				paddr_t hwaddr=page_translate(laddr);
@@ -127,6 +130,7 @@ uint32_t laddr_read(laddr_t laddr, size_t len) {
 				printf("pr=%x\t,len=%x\n",pr,len);
 				assert(0);
 			}
+			*/
 		}
 		else
 		{
