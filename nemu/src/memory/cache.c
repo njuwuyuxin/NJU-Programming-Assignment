@@ -27,6 +27,7 @@ uint32_t cache_read(paddr_t paddr,size_t len)
 	group_No=group_No>>6;
 	uint32_t block_addr=paddr&0x0000003f;
 	bool if_hit=false;
+	uint32_t my_result=0;
 	for(int i=0;i<8;i=i+1)
 	{
 		if(L1_dcache[group_No*8+i].sign==sign)
@@ -38,7 +39,6 @@ uint32_t cache_read(paddr_t paddr,size_t len)
 				//printf("correct addr=%u\n",paddr);
 				//printf("sign=%u,group_No=%u,block_addr=%u\n",sign,group_No,block_addr);
 				if_hit=true;
-				uint32_t my_result=0;
 				if(len==1)
 					my_result= L1_dcache[group_No*8+i].content[block_addr];
 				if(len==2)
