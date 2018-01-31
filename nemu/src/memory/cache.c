@@ -72,6 +72,7 @@ uint32_t cache_read(paddr_t paddr,size_t len)
 						//}
 					//}
 				}
+				assert(my_result==correct_result);
 				return my_result;
 				break;
 			}
@@ -100,13 +101,14 @@ uint32_t cache_read(paddr_t paddr,size_t len)
 						//printf("paddr=%x\n",paddr);
 						//for(int j=0;j<64;j+=1)
 						//{
+						//
 							//uint8_t t=hw_mem_read(paddr+j,1);
 							//printf("0x%x=%x\t",paddr+j,t);
 							//printf("content[0x%x]=%x\n",block_addr+j,L1_dcache[group_No*8+No].content[j]);
 						//}
 					//}
 		
-		return hw_mem_read(paddr,len);
+		return hw_mem_read(paddr,len); //MISS
 	}
 	return hw_mem_read(paddr,len);
 }
